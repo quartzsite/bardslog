@@ -50,4 +50,16 @@ li {
     background-image: none;
     color: #e8dcc0;
   }
+
+  h1, h2, h3 {
+    color: #e8dcc0;
+  }
+
+  a { !important
+    color: #e0b574;
+  }
+ !important
+  a:hover {
+    color: #f5c58a;
+  }
 }
