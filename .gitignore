@@ -1,0 +1,17 @@
+# Hugo build output
+/public/
+
+# Generated resources
+/resources/_gen/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+.vscode/
+.idea/
+*.swp
+
+# Node dependencies (if you add JS or themes)
+node_modules/
