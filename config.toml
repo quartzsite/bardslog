@@ -1,4 +1,4 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "bardslog"
-theme = "ananke"
+theme = "github.com/theNewDynamic/gohugo-theme-ananke"
