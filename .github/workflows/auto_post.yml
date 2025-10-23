@@ -1,0 +1,35 @@
+name: Daily AI Post
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # Runs daily at 08:00 America/Toronto
+  workflow_dispatch:
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate HEMA Post
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          RESPONSE=$(curl https://api.openai.com/v1/chat/completions \
+            -s \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{"model": "gpt-4o-mini", "messages": [{"role": "system", "content": "You are a HEMA historian writing daily essays for bardslog."}, {"role": "user", "content": "Write a detailed 700-word blog post in Markdown about a Historical European Martial Arts concept or technique. Include YAML front matter with title, date, and tags (HEMA)."}]}' )
+          CONTENT=$(echo "$RESPONSE" | jq -r '.choices[0].message.content')
+          mkdir -p content
+          FILE="content/$DATE-hema-post.md"
+          echo "$CONTENT" > "$FILE"
+
+      - name: Commit & Push
+        run: |
+          git config user.name "bardslog-bot"
+          git config user.email "actions@github.com"
+          git add content
+          git commit -m "AI post for $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push
