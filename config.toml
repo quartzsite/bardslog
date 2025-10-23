@@ -1,5 +1,5 @@
 baseURL = "https://bardslog.pages.dev/"
 languageCode = "en-us"
 title = "bardslog"
-t
+
 disableKinds = ["taxonomy", "term"]
