@@ -1,3 +1,5 @@
-baseURL = "https://example.com/"
+baseURL = "https://bardslog.pages.dev/"
 languageCode = "en-us"
 title = "bardslog"
+theme = "gohugo-theme-ananke"
+disableKinds = ["taxonomy", "term"]
