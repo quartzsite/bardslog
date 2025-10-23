@@ -1,7 +1,10 @@
+/* Import EB Garamond font for vintage look */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
   background-color: #fdf7e2;
   background-image: radial-gradient(circle at 50% 50%, #fef9e8 0%, #f4e5b5 100%);
-  font-family: "EB Garamond", "Georgia", serif;
+  font-family: 'EB Garamond', serif;
   color: #3b2f1c;
   max-width: 700px;
   margin: 4rem auto;
@@ -13,7 +16,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Garamond", "Georgia", serif;
+  font-family: 'EB Garamond', serif;
   color: #2a1d0b;
   margin-top: 1.5em;
   text-align: center;
