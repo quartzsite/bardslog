@@ -44,22 +44,23 @@ li {
   background: #d8c69a;
 }
 
+/* DARK MODE — accessible contrast */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #2a2419;
-    background-image: none;
-    color: #e8dcc0;
+    background-color: #1b1712 !important;
+    background-image: none !important;
+    color: #f4e8c1 !important; /* high contrast text */
   }
 
   h1, h2, h3 {
-    color: #e8dcc0;
+    color: #f4e8c1 !important;
   }
 
-  a { !important
-    color: #e0b574;
+  a {
+    color: #e0b574 !important; /* lighter bronze for contrast */
   }
- !important
+
   a:hover {
-    color: #f5c58a;
+    color: #ffd08a !important;
   }
 }
