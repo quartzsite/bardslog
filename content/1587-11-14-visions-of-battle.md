@@ -17,4 +17,4 @@ I imagined ranks of footmen, the push of pikes, the crash of cavalry, the scent 
 In those visions I saw how each movement fit into a greater pattern, how the drills in the Fechtschule were fragments of a living tapestry.  \
 These exercises were not just about my own skill but about the bodies that would stand with me.  \
 By the end of the week I moved with a confidence I had not felt as a singer.  \
-My songs were still within me, but now they were joined by visions of battle, and I knew that when I finally left Strasbourg for the south, I would carry both with me.
+My songs were still within me, but now they were joined by visions of battle, and I knew that I would only grow stronger under Master Merryen's tutelage.
