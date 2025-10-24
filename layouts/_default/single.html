@@ -2,19 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ .Title }}</title>
+    <title>{{ .Title }} – {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <header>
+      <h1><a href="/">{{ .Site.Title }}</a></h1>
+    </header>
+
     <main>
-      <h1>{{ .Title }}</h1>
+      <h2>{{ .Title }}</h2>
 
       {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" style="max-width:100%; border-radius:8px; margin-bottom:1.5rem;">
+        <img src="{{ . }}" alt="{{ $.Title }}" />
       {{ end }}
 
       <article>
         {{ .Content }}
       </article>
+
+      <nav class="post-nav">
+        {{ with .PrevInSection }}
+          <a class="prev" href="{{ .RelPermalink }}">\u2190 Previous</a>
+        {{ end }}
+        <a class="home" href="/">Back to Home</a>
+        {{ with .NextInSection }}
+          <a class="next" href="{{ .RelPermalink }}">Next \u2192</a>
+        {{ end }}
+      </nav>
     </main>
   </body>
 </html>
