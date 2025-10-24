@@ -2,14 +2,26 @@ name: Daily AI Post
 
 on:
   schedule:
-    - cron: "0 12 * * *" # Runs daily at 08:00 America/Toronto
+    - cron: "0 12 * * *"  # 08:00 Toronto time
   workflow_dispatch:
 
 jobs:
   generate-post:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install openai==1.43.0
 
       - name: Generate new post and image
         env:
@@ -55,8 +67,8 @@ jobs:
 
       - name: Commit & Push
         run: |
-          git config user.name "bardslog-bot"
-          git config user.email "actions@github.com"
-          git add content static/images
-          git commit -m "AI post for $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated post for $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
