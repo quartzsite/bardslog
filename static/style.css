@@ -1,66 +1,73 @@
-/* Import EB Garamond font for vintage look */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+:root {
+  --bg-color: #fdfaf6;
+  --text-color: #2a1f16;
+  --link-color: #44515c;
+  --heading-color: #2a1f16;
+  --max-width: 700px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1b1712;
+    --text-color: #f4e8c1;
+    --link-color: #e0b574;
+    --heading-color: #f4e8c1;
+  }
+}
 
 body {
-  background-color: #fdf7e2;
-  background-image: radial-gradient(circle at 50% 50%, #fef9e8 0%, #f4e5b5 100%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: 'EB Garamond', serif;
-  color: #3b2f1c;
-  max-width: 700px;
+  max-width: var(--max-width);
   margin: 4rem auto;
   padding: 2rem;
   line-height: 1.7;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  background-blend-mode: multiply;
 }
 
-h1, h2, h3 {
-  font-family: 'EB Garamond', serif;
-  color: #2a1d0b;
-  margin-top: 1.5em;
+header h1 {
+  margin: 0;
   text-align: center;
 }
 
+header h1 a {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 1.5em;
+  color: var(--heading-color);
+}
+
+article {
+  margin-top: 1.5em;
+}
+
+nav.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+nav.post-nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.post-nav a:hover {
+  text-decoration: underline;
+}
+
+/* links in content */
 a {
-  color: #4b2a0e;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 a:hover {
-  color: #7b4415;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  margin: 1rem 0;
-}
-
-::selection {
-  background: #d8c69a;
-}
-
-/* DARK MODE — accessible contrast */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1b1712 !important;
-    background-image: none !important;
-    color: #f4e8c1 !important; /* high contrast text */
-  }
-
-  h1, h2, h3 {
-    color: #f4e8c1 !important;
-  }
-
-  a {
-    color: #e0b574 !important; /* lighter bronze for contrast */
-  }
-
-  a:hover {
-    color: #ffd08a !important;
-  }
+  color: var(--link-color);
+  text-decoration: none;
 }
