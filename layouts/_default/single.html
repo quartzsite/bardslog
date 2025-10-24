@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-</head>
-<body>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    <p><a href="/">← Back to Home</a></p>
-</body>
+  </head>
+  <body>
+    <main>
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" style="max-width:100%; border-radius:8px; margin-bottom:1.5rem;">
+      {{ end }}
+
+      <article>
+        {{ .Content }}
+      </article>
+    </main>
+  </body>
 </html>
