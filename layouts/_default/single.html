@@ -23,11 +23,11 @@
 
       <nav class="post-nav">
         {{ with .PrevInSection }}
-          <a class="prev" href="{{ .RelPermalink }}">\u2190 Previous</a>
+          <a class="prev" href="{{ .RelPermalink }}">← Previous</a>
         {{ end }}
         <a class="home" href="/">Back to Home</a>
         {{ with .NextInSection }}
-          <a class="next" href="{{ .RelPermalink }}">Next \u2192</a>
+          <a class="next" href="{{ .RelPermalink }}">Next →</a>
         {{ end }}
       </nav>
     </main>
