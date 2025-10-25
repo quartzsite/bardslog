@@ -1,7 +1,7 @@
 ---
 title: "A Final Wish"
 date: 1587-11-22
-place: "Merryen's Bedside, Strasbourg"
+place: "Merryen's Bedside, Maraisbourg"
 mood: "Heartbroken"
 lesson: "Every path ends, but another begins"
 ---
