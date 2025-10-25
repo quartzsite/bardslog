@@ -20,5 +20,4 @@ Bonona thrives in the Empire's shadow and yet claws for its own freedom; Maraisb
 If I stayed, I would be drawn into their web.  
 That night, with the taste of sour wine still on my tongue, I decided to slip away.  
 I would find a ship heading west and hide among its crew as a common sailor.  
-Where it would carry me I could not know, only that the sea might wash me up near the Distant Isles and the master whose name had come to me like a refrain: Carlen Rowen of Lynden.  
-My next steps would be taken far from Bonona's watchful eyes.
+Where it would carry me I could not know, only that my next steps would be taken far from Bonona's watchful eyes.
