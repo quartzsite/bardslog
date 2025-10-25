@@ -1,7 +1,7 @@
 ---
 title: "The Cut and Thrust"
 date: 1587-11-10
-place: "Fechtschule, Strasbourg"
+place: "Fechtschule, Maraisbourg"
 mood: "Focused"
 lesson: "Balance the edge and the point"
 ---
