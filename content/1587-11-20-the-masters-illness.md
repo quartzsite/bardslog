@@ -1,7 +1,7 @@
 ---
 title: "The Master's Illness"
 date: 1587-11-20
-place: "Strasbourg Fechtschule"
+place: "Maraisbourg Fechtschule"
 mood: "Uneasy"
 lesson: "Even masters are mortal"
 ---
