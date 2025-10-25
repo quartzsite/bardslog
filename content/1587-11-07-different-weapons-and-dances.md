@@ -1,7 +1,7 @@
 ---
 title: "Different Weapons and Dances"
 date: 1587-11-07
-place: "Fechtschule, Strasbourg"
+place: "Fechtschule, Maraisbourg"
 mood: "Curious"
 lesson: "Every form has its own rhythm"
 ---
