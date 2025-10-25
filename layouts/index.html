@@ -5,6 +5,63 @@
     <title>{{ .Site.Title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            margin: 0;
+            background-color: #0f0d0c;
+            color: #f5f1e6;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 2rem;
+            font-size: 2.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: #c4a36e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Cinematic banner section */
+        .footer-banner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 3rem;
+        }
+
+        .footer-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            filter: brightness(80%) contrast(95%);
+        }
+
+        .footer-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(15, 13, 12, 0.95), rgba(15, 13, 12, 0));
+        }
+    </style>
 </head>
 <body>
     <h1>{{ .Site.Title }}</h1>
@@ -13,5 +70,13 @@
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}</li>
     {{ end }}
     </ul>
+
+    <div class="footer-banner">
+        <img 
+            src="https://github.com/quartzsite/bardslog/blob/main/static/images/bardslog.png?raw=true" 
+            alt="Faelar writing by candlelight - Bardslog banner" 
+            loading="lazy">
+        <div class="footer-overlay"></div>
+    </div>
 </body>
 </html>
