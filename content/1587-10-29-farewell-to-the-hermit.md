@@ -6,7 +6,7 @@ mood: "Grateful"
 lesson: "Parting is also part of training"  
 ---  
 
-The morning was crisp and brittle when the Great Grandmaster von Leichtnauer told me it was time to leave. After a week in his hidden glade, the very air had begun to smell of pine and steel. My body was bruised, my mind sharpened. He had taught me the master strikes until they were stitched into my muscles, correcting my stance with a stick and a smile that rarely showed his teeth. When I faltered he spoke in parables: of birds that do not force their song, of rivers that find the sea no matter how many rocks bar the way.  
+The morning was crisp and brittle when the Great Grandmaster von Lychenar told me it was time to leave. After a week in his hidden glade, the very air had begun to smell of pine and steel. My body was bruised, my mind sharpened. He had taught me the master strikes until they were stitched into my muscles, correcting my stance with a stick and a smile that rarely showed his teeth. When I faltered he spoke in parables: of birds that do not force their song, of rivers that find the sea no matter how many rocks bar the way.  
 
 “You are not meant to be a hermit,” he said, handing back my mended lute. “Go where there are people. Go where there are masters who still teach in halls, not in shadows.” He mentioned a name I had heard in whispers: Master Merryen of Maraisbourg, a young man said to have revived the old guild and written a book of cuts both old and new. “He was my student once,” the hermit added, eyes distant, “but he surpassed me in ambition. He will show you strikes that are still being born.”  
 
