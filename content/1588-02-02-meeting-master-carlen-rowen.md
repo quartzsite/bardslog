@@ -14,4 +14,4 @@ Rowen spoke of Maraisbourg and the free cities. He said they should have taken t
   
 Still, he listened when I spoke of Master Maros's eight-pointed star and the way the blade could sing. He nodded, begrudgingly admitting there was value in poise. "We'll teach each other," he said finally. "You show me your star; I'll show you how to cut through a boar's spine."  
   
-We shook on it. In that moment I felt the weight of all my masters behind me—von Leichtnauer's discipline, Merryen's ambition, Maros's grace—and the rough humour of Rowen before me. It seemed the path would only grow stranger.
+We shook on it. In that moment I felt the weight of all my masters behind me—von Lychenar's discipline, Merryen's ambition, Maros's grace—and the rough humour of Rowen before me. It seemed the path would only grow stranger.
