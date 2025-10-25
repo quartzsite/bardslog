@@ -1,7 +1,7 @@
 ---
 title: "On the Road South"
 date: 1587-11-25
-place: "The Road from Strasbourg"
+place: "The Road from Maraisbourg"
 mood: "Resolute"
 lesson: "The journey shapes the blade"
 ---
