@@ -1,7 +1,7 @@
 ---
 title: "Visions of Battle"
 date: 1587-11-14
-place: "Fechtschule, Strasbourg"
+place: "Fechtschule, Maraisbourg"
 mood: "Determined"
 lesson: "Imagine the field to master the form"
 ---
