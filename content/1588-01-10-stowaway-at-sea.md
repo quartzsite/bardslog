@@ -12,7 +12,7 @@ But within a day a sailor's boot nudged my ribs, and I was hauled before the cap
 He could have thrown me overboard or chained me to the pump; instead he set a brush in my hand and ordered me to earn my passage swabbing decks.  
 The punishment stung my pride more than my back, yet it gave me time to watch.  
 These men were sailors, not fighters; their hands were sure on lines but uncertain on hilts.  
-When I mentioned that I had studied under masters in Strasbourg and Bonona, the captain's eyes narrowed with interest.  
+When I mentioned that I had studied under masters in Maraisbourg and Bonona, the captain's eyes narrowed with interest.  
 He asked me to show him a cut, then another.  
 Soon the swabbing brush was traded for a stick, and I chalked an eight‑pointed star on the planks.  
 We spent calm mornings practising footwork and simple cuts—the circling molinero, the descending stremaçone, the thrusts that follow.  
