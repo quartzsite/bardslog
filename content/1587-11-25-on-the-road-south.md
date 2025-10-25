@@ -6,7 +6,7 @@ mood: "Resolute"
 lesson: "The journey shapes the blade"
 ---
 
-The road from Strasbourg stretched out before me like a ribbon of muddy brown and autumn gold.  
+The road from Maraisbourg stretched out before me like a ribbon of muddy brown and autumn gold.  
 I left the city with the sound of the guild's salute still ringing in my ears and the weight of Master Merryen's final wish on my shoulders.  
 As I walked, the spires of the cathedral faded into the mist and were replaced by rolling fields, small villages and the long sweep of the river.  
 Every innkeeper and ferryman I met asked if I were a soldier or a minstrel; I told them I was both, and that felt true.  
