@@ -1,7 +1,7 @@
 ---
 title: "The Guild's Farewell"
 date: 1587-11-23
-place: "Fechtschule Courtyard, Strasbourg"
+place: "Fechtschule Courtyard, Maraisbourg"
 mood: "Solemn"
 lesson: "Honour the fallen, honour the art"
 ---
