@@ -6,7 +6,7 @@ mood: "Enlightened"
 lesson: "Strike with intention, not with anger"  
 ---  
 
-The hermit known as the Great Grandmaster von Leichtnauer led me deeper into the Blackwood, to a clearing strewn with weathered stumps and carved posts. For three days we practised the Oberhau until my arms sang like strings drawn too tight. Only when he was satisfied did he reveal that there were *other* cuts, secretive and strange – the master strikes of legend.  
+The hermit known as the Great Grandmaster von Lychenar led me deeper into the Blackwood, to a clearing strewn with weathered stumps and carved posts. For three days we practised the Oberhau until my arms sang like strings drawn too tight. Only when he was satisfied did he reveal that there were *other* cuts, secretive and strange – the master strikes of legend.  
 
 Master Merryen might call them something else in Maraisbourg, but here in the silence of the forest the old man gave each its proper name. The *Zornhau* taught me to meet fury with fury, not by force but by structure. The *Krumphau* curved like a question mark around a shield. The *Zwerchhau* taught me to cut across the line, to use my body like a windmill. The *Schielhau* looked at my opponent askance, striking where they least expected. The *Scheitelhau* cut straight down the centre, splitting doubt in two.  
 
