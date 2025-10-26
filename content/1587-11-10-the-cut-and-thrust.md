@@ -6,7 +6,7 @@ mood: "Focused"
 lesson: "Balance the edge and the point"
 ---
 
-The days blurred into one another as I stayed in Strasbourg, and yet each brought a new lesson.  \
+The days blurred into one another as I stayed in Maraisbourg, and yet each brought a new lesson.  \
 After the dussack and halberd, Master Merryen placed a rapier in my hand and told me to forget everything and remember it all.  \
 "This is neither broadsword nor lute," he said. "It is a line."  \
 He taught me how to draw that line through the air, how to extend my arm from the shoulder, how to let the point speak before the edge.  \
