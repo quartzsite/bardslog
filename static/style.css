@@ -70,4 +70,28 @@ a {
 a:hover {
   color: var(--link-color);
   text-decoration: none;
+
+/* Lute icon animation */
+.lute-link {
+  position: fixed;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  opacity: .9;
+  transition: transform .4s ease, opacity .4s ease;
+  z-index: 999;
+}
+.lute-link:hover {
+  transform: rotate(-6deg) scale(1.15);
+  opacity: 1;
+}
+.lute {
+  width: 64px;
+  height: 64px;
+  animation: sway 4s ease-in-out infinite;
+  display: block;
+}
+@keyframes sway {
+  0%,100% { transform: rotate(0); }
+  50% { transform: rotate(5deg); }
+}
 }
