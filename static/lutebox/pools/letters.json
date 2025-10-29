@@ -141,6 +141,102 @@
       }
     },
     {
+      "id": "lt-minstrel-road",
+      "rarity": "common",
+      "type": "letter",
+      "title": "A Minstrel’s Note to His Companion",
+      "body": "Tara—\nThe tavern in Drossel burned last night. I saved my lute, though not the case. The crowd sang while the rafters fell. I think the gods prefer a melody with danger in its chorus.",
+      "meta": {
+        "factions": ["Free Cities"],
+        "voices": ["Flame","Wind"],
+        "date": "1588-07-03"
+      }
+    },
+    {
+      "id": "lt-scribe-field",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Scribe’s Field Report",
+      "body": "To the Archivist of Meyren:\nThe field copyists have begun carving words into their shields. They say it helps recall stances. One wrote ‘Patience’ upon his guard, and the enemy broke his rhythm reading it.",
+      "meta": {
+        "factions": ["Guilds","Empire"],
+        "voices": ["Stone","Wind"],
+        "date": "1589-03-11"
+      }
+    },
+    {
+      "id": "lt-duchess-invitation",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "Invitation from the Duchess of Irenne",
+      "body": "To Master of Songs and Blades,\nAttend upon our hall this midsummer eve. Bring not your steel, but bring your verses. The court would learn how men once fought with grace, not noise.",
+      "meta": {
+        "factions": ["Nobility","Empire"],
+        "voices": ["Silence","Flame"],
+        "date": "1588-06-20"
+      }
+    },
+    {
+      "id": "lt-hermit-final",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "The Hermit’s Last Page",
+      "body": "I burned the book today. Not for heresy, but for warmth. The snow took my ink, the cold my will. If any find this ash, know that truth was written once, between parries, and that it sang.",
+      "meta": {
+        "factions": ["Abbey","Outlands"],
+        "voices": ["Silence","Water"],
+        "date": "1588-12-31"
+      }
+    },
+    {
+      "id": "lt-smith-song",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Smith’s Ledger Margin",
+      "body": "Note: The third hammer-swing hums truer if struck to the rhythm of the March of Bonona. Apprentice to sing as he works—steel remembers music better than words.",
+      "meta": {
+        "factions": ["Guilds"],
+        "voices": ["Stone","Flame"],
+        "date": "1587-11-19"
+      }
+    },
+    {
+      "id": "lt-librarian-warning",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "Librarian’s Warning to the Master of Pages",
+      "body": "Seal the lower stacks. The diagrams breathe when wet. The last reader forgot to close the clasp and the ink crawled across his palm. We keep him writing, for now.",
+      "meta": {
+        "factions": ["Abbey","Guilds"],
+        "voices": ["Water","Silence"],
+        "date": "1589-03-22"
+      }
+    },
+    {
+      "id": "lt-seer-fragment",
+      "rarity": "legendary",
+      "type": "letter",
+      "title": "Fragment from a Seer’s Journal",
+      "body": "They will build an Empire of rhythm and call it peace. When every man moves in time, none will hear the off-beat. My task is not to sing—but to cough.",
+      "meta": {
+        "factions": ["—"],
+        "voices": ["Silence","Wind"],
+        "date": "1589-04-12"
+      }
+    },
+    {
+      "id": "lt-unknown-edict",
+      "rarity": "legendary",
+      "type": "letter",
+      "title": "Unsent Edict Found in the Emperor’s Desk",
+      "body": "Let it be written that no blade shall sing unless tuned by the hand of law. Let it be whispered that music itself may rebel.",
+      "meta": {
+        "factions": ["Empire"],
+        "voices": ["Stone","Flame","Silence"],
+        "date": "1589-05-01"
+      }
+    },
+    {
       "id": "lt-captain-vess-everspring",
       "rarity": "ultrarare",
       "type": "letter",
