@@ -1,5 +1,5 @@
 <!-- Lutebox Shortcode -->
-<!-- Usage example in any .md:  {{< lootbox pool="letters" title="Open the Lutebox" hint="One sealed letter a day—unseal the intrigue." cooldown="24" >}} -->
+<!-- Usage example in any .md:  {{< lutebox pool="letters" title="Open the Lutebox" hint="One sealed letter a day—unseal the intrigue." cooldown="24" >}} -->
 <div class="lutebox" data-pool='{{ .Get "pool" | default "letters" }}'
      data-title='{{ .Get "title" | default "Open the Lutebox" }}'
      data-hint='{{ .Get "hint"  | default "One sealed letter a day." }}'
@@ -240,7 +240,7 @@
   }
 
   async function loadPool(){
-    const url = `/lootbox/pools/${poolName}.json`;
+    const url = `/lutebox/pools/${poolName}.json`;
     const data = await fetch(url, {cache:'no-store'}).then(r=>r.json());
     return data;
   }
@@ -290,7 +290,7 @@
         btn.disabled = true;
       }, 750);
     }catch(e){
-      hint.textContent = 'Could not load letters. Check /lootbox/pools/letters.json';
+      hint.textContent = 'Could not load letters. Check /lutebox/pools/letters.json';
       btn.disabled = false;
       chest.classList.remove('open');
     }
