@@ -1,0 +1,299 @@
+<!-- Lutebox Shortcode -->
+<!-- Usage example in any .md:  {{< lootbox pool="letters" title="Open the Lutebox" hint="One sealed letter a day—unseal the intrigue." cooldown="24" >}} -->
+<div class="lutebox" data-pool='{{ .Get "pool" | default "letters" }}'
+     data-title='{{ .Get "title" | default "Open the Lutebox" }}'
+     data-hint='{{ .Get "hint"  | default "One sealed letter a day." }}'
+     data-cooldown='{{ .Get "cooldown" | default "24" }}'>
+  <div class="lutebox__wrap">
+    <div class="lutebox__chest" aria-live="polite" aria-label="Lutebox">
+      <div class="lutebox__lid"></div>
+      <div class="lutebox__body"></div>
+      <div class="lutebox__glow"></div>
+    </div>
+
+    <button class="lutebox__btn" type="button"></button>
+    <div class="lutebox__hint"></div>
+
+    <div class="lutebox__cooldown" hidden>
+      Come back in <span class="lutebox__cooldown-time">00:00:00</span> to open again.
+    </div>
+
+    <div class="lutebox__result" hidden>
+      <div class="lutebox__rarity"></div>
+      <h4 class="lutebox__title"></h4>
+      <p class="lutebox__meta"></p>
+      <pre class="lutebox__body"></pre>
+    </div>
+
+    <div class="lutebox__confetti" aria-hidden="true"></div>
+  </div>
+</div>
+
+<style>
+/* --- Lutebox styles (scoped) --- */
+.lutebox{margin:2.25rem 0; display:flex; justify-content:center}
+.lutebox__wrap{max-width:820px; width:100%; text-align:center}
+.lutebox__chest{position:relative; width:320px; height:180px; margin:0 auto 1rem; perspective:900px}
+.lutebox__body{
+  position:absolute; left:0; right:0; bottom:0; height:120px; margin:0 auto; width:100%;
+  background:linear-gradient(#7a4b1e,#5c3614);
+  border:3px solid #2b1708; border-radius:14px 14px 10px 10px; box-shadow:0 8px 24px rgba(0,0,0,.35) inset, 0 8px 20px rgba(0,0,0,.25);
+}
+.lutebox__lid{
+  position:absolute; left:0; right:0; top:0; height:78px; margin:0 auto; width:100%;
+  transform-origin:top center; transform:rotateX(0deg);
+  background:linear-gradient(#8d5623,#6a3f17);
+  border:3px solid #2b1708; border-bottom:none; border-radius:10px 10px 0 0;
+  box-shadow:0 8px 14px rgba(0,0,0,.35) inset;
+  transition:transform .9s cubic-bezier(.2,.65,.2,1), box-shadow .6s ease;
+}
+.lutebox__chest.open .lutebox__lid{ transform:rotateX(-78deg); box-shadow:0 2px 10px rgba(0,0,0,.25) inset; }
+
+.lutebox__glow{
+  position:absolute; left:50%; top:38px; transform:translateX(-50%); width:220px; height:120px; filter:blur(14px);
+  background:radial-gradient(ellipse at center, rgba(255,241,171,.0) 0%, rgba(255,241,171,.0) 30%, rgba(255,190,0,.0) 60%, rgba(255,190,0,.0) 100%);
+  pointer-events:none; transition:opacity .25s ease, filter .25s ease;
+}
+.lutebox__chest.open .lutebox__glow{
+  background:radial-gradient(ellipse at center, rgba(255,241,171,.85) 0%, rgba(255,208,60,.55) 40%, rgba(255,180,0,.25) 75%, rgba(255,160,0,.05) 100%);
+  filter:blur(10px);
+}
+
+.lutebox__btn{
+  appearance:none; cursor:pointer; border-radius:999px; padding:.75rem 1.15rem; font-weight:700; letter-spacing:.02em;
+  border:1px solid rgba(0,0,0,.12); background:#f3e1b0;
+  box-shadow:0 1px 2px rgba(0,0,0,.05), 0 6px 16px rgba(0,0,0,.12);
+}
+.lutebox__btn:hover{ filter:saturate(110%) brightness(1.05) }
+.lutebox__hint{ opacity:.8; margin:.35rem 0 1.25rem; font-size:.95rem }
+
+.lutebox__result{
+  text-align:left; border:1px solid rgba(0,0,0,.1); border-radius:12px; padding:1rem; margin:1rem auto 0; max-width:820px;
+  background:#fffaf0; box-shadow:0 1px 2px rgba(0,0,0,.05), 0 8px 20px rgba(0,0,0,.06);
+}
+.lutebox__result h4{ margin:.15rem 0 .25rem }
+.lutebox__result pre{ white-space:pre-wrap; margin:.65rem 0 0; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+.lutebox__meta{ margin:.15rem 0 .25rem; opacity:.8; font-size:.92rem }
+.lutebox__rarity{ font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; font-weight:800; opacity:.8 }
+
+.lutebox__cooldown{ margin-top:.5rem; font-size:.95rem; opacity:.85 }
+.lutebox__confetti{ position:fixed; inset:0; pointer-events:none; display:none; }
+
+@media (prefers-color-scheme:dark){
+  .lutebox__body{ background:linear-gradient(#5b3616,#40240e); border-color:#1e1208 }
+  .lutebox__lid{ background:linear-gradient(#6d3f17,#4f2b0f); border-color:#1e1208 }
+  .lutebox__btn{ background:#3a3325; color:#f2e6c6; border-color:#5b4d30 }
+  .lutebox__result{ background:#0f1115; border-color:#2b3240 }
+}
+
+/* Rarity glow tints */
+.lute-rarity--common .lutebox__glow{ filter:hue-rotate(0deg) }
+.lute-rarity--uncommon .lutebox__glow{ filter:hue-rotate(50deg) }
+.lute-rarity--rare .lutebox__glow{ filter:hue-rotate(200deg) saturate(130%) }
+.lute-rarity--ultrarare .lutebox__glow{ filter:hue-rotate(300deg) saturate(160%) }
+
+/* subtle pop when the lid opens */
+@keyframes lute-pop { 0%{ transform:scale(.98) } 100%{ transform:scale(1) } }
+.lutebox__chest.open{ animation:lute-pop .35s ease }
+</style>
+
+<script>
+(function(){
+  const root = document.currentScript.previousElementSibling.closest('.lutebox');
+  const wrap = root.querySelector('.lutebox__wrap');
+  const chest = root.querySelector('.lutebox__chest');
+  const btn   = root.querySelector('.lutebox__btn');
+  const hint  = root.querySelector('.lutebox__hint');
+  const cd    = root.querySelector('.lutebox__cooldown');
+  const cdTime= root.querySelector('.lutebox__cooldown-time');
+  const res   = root.querySelector('.lutebox__result');
+  const rTitle= root.querySelector('.lutebox__title');
+  const rMeta = root.querySelector('.lutebox__meta');
+  const rBody = root.querySelector('.lutebox__body');
+  const rRar  = root.querySelector('.lutebox__rarity');
+  const confetti = root.querySelector('.lutebox__confetti');
+
+  const poolName = root.dataset.pool || 'letters';
+  const title = root.dataset.title || 'Open the Lutebox';
+  const hintText = root.dataset.hint || 'One sealed letter a day.';
+  const cooldownHours = parseInt(root.dataset.cooldown || '24', 10);
+
+  btn.textContent = title;
+  hint.textContent = hintText;
+
+  const LAST_KEY = `lutebox:last:${poolName}`;
+  const UNLOCKED_KEY = `lutebox:unlocked:${poolName}`;
+
+  function fmt(h){ return h.toString().padStart(2,'0') }
+  function timeLeftMs(fromIso){
+    const prev = new Date(fromIso).getTime();
+    const now = Date.now();
+    const ms = (cooldownHours*3600*1000) - (now - prev);
+    return Math.max(0, ms);
+  }
+  function tickCooldown(untilMs){
+    function frame(){
+      const ms = untilMs - (Date.now() - started);
+      if (ms <= 0) { cd.hidden = true; btn.disabled = false; btn.textContent = title; return; }
+      const s = Math.floor(ms/1000), hh = Math.floor(s/3600), mm = Math.floor((s%3600)/60), ss = s%60;
+      cdTime.textContent = `${fmt(hh)}:${fmt(mm)}:${fmt(ss)}`;
+      requestAnimationFrame(frame);
+    }
+    const started = Date.now();
+    requestAnimationFrame(frame);
+  }
+  function setCooldownAndShow(ms){
+    btn.disabled = true;
+    cd.hidden = false;
+    btn.textContent = 'Come back later';
+    // run a ticking display that ends when cooldown is done
+    const untilMs = Date.now() + ms;
+    function frame(){
+      const remain = untilMs - Date.now();
+      if (remain <= 0) { cd.hidden = true; btn.disabled = false; btn.textContent = title; return; }
+      const s = Math.floor(remain/1000), hh = Math.floor(s/3600), mm = Math.floor((s%3600)/60), ss = s%60;
+      cdTime.textContent = `${fmt(hh)}:${fmt(mm)}:${fmt(ss)}`;
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  function showConfetti(){
+    // simple paper strips
+    confetti.innerHTML = '';
+    confetti.style.display = 'block';
+    const N = 80;
+    for (let i=0;i<N;i++){
+      const d = document.createElement('div');
+      const size = 6 + Math.random()*8;
+      d.style.position = 'absolute';
+      d.style.width = `${size}px`;
+      d.style.height = `${size*2.2}px`;
+      d.style.left = Math.random()*100 + 'vw';
+      d.style.top = (-10 - Math.random()*30) + 'px';
+      d.style.background = `hsl(${Math.floor(Math.random()*360)},80%,60%)`;
+      d.style.opacity = 0.9;
+      d.style.transform = `rotate(${Math.random()*180}deg)`;
+      d.style.willChange = 'transform, top';
+      confetti.appendChild(d);
+
+      const fall = () => {
+        const duration = 2500 + Math.random()*2200;
+        const xDrift = (Math.random()-.5)*200;
+        d.animate([
+          { transform: d.style.transform, top: d.style.top },
+          { transform: `translateX(${xDrift}px) rotate(${360+Math.random()*360}deg)`, top: '110vh' }
+        ], { duration, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
+      };
+      requestAnimationFrame(fall);
+    }
+    setTimeout(()=>{ confetti.style.display='none'; confetti.innerHTML=''; }, 5200);
+  }
+
+  function pickWeighted(items, odds){
+    // odds like {common:0.72, uncommon:0.2, rare:0.07, ultrarare:0.01}
+    // fallback weights if not provided
+    const W = odds || { common:0.72, uncommon:0.20, rare:0.07, ultrarare:0.01 };
+    const byRarity = {
+      common: items.filter(i=>i.rarity==='common'),
+      uncommon: items.filter(i=>i.rarity==='uncommon'),
+      rare: items.filter(i=>i.rarity==='rare'),
+      ultrarare: items.filter(i=>i.rarity==='ultrarare')
+    };
+    const roll = Math.random();
+    let choice = 'common';
+    let acc = 0;
+    for (const r of ['ultrarare','rare','uncommon','common']) { // bias top if pools are empty later
+      if (!byRarity[r].length) W[r]=0;
+    }
+    const order = ['common','uncommon','rare','ultrarare'];
+    for (const r of order){
+      acc += (W[r] || 0);
+      if (roll <= acc){ choice = r; break; }
+    }
+    const bucket = byRarity[choice].length ? byRarity[choice] : items;
+    return [choice, bucket[Math.floor(Math.random()*bucket.length)]];
+  }
+
+  function render(item, rarity){
+    root.classList.remove('lute-rarity--common','lute-rarity--uncommon','lute-rarity--rare','lute-rarity--ultrarare');
+    root.classList.add(`lute-rarity--${rarity}`);
+
+    rRar.textContent = rarity.replace(/(^|[-_])(\w)/g, (_,p,c)=> (p? ' ':'') + c.toUpperCase());
+    rTitle.textContent = item.title || '(Untitled Letter)';
+    const metaBits = [];
+    if (item.meta?.date) metaBits.push(item.meta.date);
+    if (item.meta?.factions?.length) metaBits.push(item.meta.factions.join(' · '));
+    if (item.meta?.voices?.length) metaBits.push('Voices: '+item.meta.voices.join(', '));
+    rMeta.textContent = metaBits.join(' — ');
+    rBody.textContent = (item.body || '').trim();
+
+    res.hidden = false;
+    if (rarity === 'rare' || rarity === 'ultrarare') showConfetti();
+  }
+
+  function storeUnlocked(id){
+    try{
+      const set = new Set(JSON.parse(localStorage.getItem(UNLOCKED_KEY) || '[]'));
+      set.add(id);
+      localStorage.setItem(UNLOCKED_KEY, JSON.stringify(Array.from(set)));
+    }catch(e){}
+  }
+
+  async function loadPool(){
+    const url = `/lootbox/pools/${poolName}.json`;
+    const data = await fetch(url, {cache:'no-store'}).then(r=>r.json());
+    return data;
+  }
+
+  // On load: check cooldown
+  (function init(){
+    const lastRaw = localStorage.getItem(LAST_KEY);
+    if (lastRaw){
+      try{
+        const last = JSON.parse(lastRaw);
+        const left = timeLeftMs(last.at);
+        if (left > 0){
+          setCooldownAndShow(left);
+          // Also show what they opened last time
+          render(last.item, last.rarity || last.item?.rarity || 'common');
+        }
+      }catch(e){}
+    }
+  })();
+
+  btn.addEventListener('click', async ()=>{
+    // respect cooldown
+    const lastRaw = localStorage.getItem(LAST_KEY);
+    if (lastRaw){
+      try{
+        const last = JSON.parse(lastRaw);
+        const left = timeLeftMs(last.at);
+        if (left > 0){ setCooldownAndShow(left); return; }
+      }catch(e){}
+    }
+
+    btn.disabled = true; hint.textContent = 'Opening...'; res.hidden = true;
+    chest.classList.add('open');
+
+    try{
+      const pool = await loadPool();
+      const [rarity, item] = pickWeighted(pool.items || [], pool.odds);
+      // small dramatic delay so the lid animation feels right
+      setTimeout(()=>{
+        render(item, rarity);
+        // Save state & cooldown
+        const state = { at: new Date().toISOString(), rarity, item };
+        localStorage.setItem(LAST_KEY, JSON.stringify(state));
+        storeUnlocked(item.id || `${rarity}-${item.title || 'untitled'}`);
+        setCooldownAndShow(cooldownHours*3600*1000);
+        hint.textContent = 'One sealed letter a day.';
+        btn.disabled = true;
+      }, 750);
+    }catch(e){
+      hint.textContent = 'Could not load letters. Check /lootbox/pools/letters.json';
+      btn.disabled = false;
+      chest.classList.remove('open');
+    }
+  });
+})();
+</script>
