@@ -46,56 +46,44 @@
         <div class="footer-overlay"></div>
     </div>
 
-   <!-- ✨ Add the lute here, before </body> -->
-    <div class="lute-hint">
-        <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-            <!-- lute body -->
-            <ellipse cx="60" cy="30" rx="40" ry="25" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2"/>
-            <!-- sound hole -->
-            <circle cx="45" cy="30" r="5" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-            <!-- neck -->
-            <rect x="90" y="25" width="70" height="10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
-            <!-- tuning pegs -->
-            <line x1="160" y1="25" x2="170" y2="20" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
-            <line x1="160" y1="35" x2="170" y2="40" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
-            <!-- strings -->
-            <line class="string" x1="45" y1="30" x2="160" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-            <line class="string" x1="43" y1="28" x2="160" y2="28" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-            <line class="string" x1="43" y1="32" x2="160" y2="32" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-        </svg>
-        <a href="/lootbox/pools/letters.json" class="lute-link" title="Access the sealed letters"></a>
-    </div>
+  <!-- Decorative animated lute -->
+<a href="/lootbox/pools/letters.json" class="lute-link" aria-label="Sealed Letters">
+  <svg class="lute" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 90 C 60 80, 140 80, 190 90 C 180 70, 160 40, 100 30 C 60 35, 40 60, 10 90 Z" 
+          fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <line x1="70" y1="30" x2="100" y2="90" stroke="rgba(255,255,255,0.3)" stroke-width="1">
+      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+  </svg>
+</a>
 
-    <style>
-        .lute-hint {
-            position: fixed;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%) rotate(0deg);
-            opacity: 0.08;
-            width: 200px;
-            pointer-events: none;
-        }
-        .lute-link {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: auto;
-        }
-        .lute-link:hover {
-            opacity: 0.3;
-            cursor: pointer;
-        }
-        /* 🎵 Animation: gentle lute shimmer */
-        @keyframes stringVibe {
-            0%, 100% { stroke-width: 0.5; stroke-opacity: 0.08; }
-            50% { stroke-width: 1.5; stroke-opacity: 0.3; }
-        }
-        .lute-hint:hover .string {
-            animation: stringVibe 0.6s ease-in-out infinite alternate;
-        }
-    </style>
+<style>
+  .lute {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.15;
+    width: 200px;
+    pointer-events: none;
+  }
+  .lute-link {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 50;
+    pointer-events: auto;
+  }
+  .lute-link:hover .lute {
+    opacity: 0.4;
+  }
+</style>
 </body>
 </html>
