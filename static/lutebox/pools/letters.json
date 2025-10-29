@@ -1,0 +1,156 @@
+{
+  "pool": "letters",
+  "cooldownHours": 24,
+  "odds": {
+    "common": 0.72,
+    "uncommon": 0.20,
+    "rare": 0.07,
+    "legendary": 0.01
+  },
+  "items": [
+    {
+      "id": "lt-abbey-01859",
+      "rarity": "common",
+      "type": "letter",
+      "title": "From the Scriptorium",
+      "body": "To the Prior at St. Eber,\nThe chest you sent contained three leaves under a merchant’s accounts. Two bear the same hand as the so-called Maros diagrams, though the ink is poorer. We copy by night. Tell the men with torches to find another door.",
+      "meta": {
+        "factions": ["Abbey","Guilds"],
+        "voices": ["Water"],
+        "date": "1589-02-16"
+      }
+    },
+    {
+      "id": "lt-soldier-home",
+      "rarity": "common",
+      "type": "letter",
+      "title": "A Soldier’s Letter Home",
+      "body": "Marta—\nThe little one coughs? Keep her by the hearth. We march slow; the Duke’s men argue more than they drill. I saw a man cross blades without anger—he sang under his breath. If I come home, I’ll ask him to teach me that.",
+      "meta": {
+        "factions": ["Dukes"],
+        "voices": ["Flame","Wind"],
+        "date": "1588-11-03"
+      }
+    },
+    {
+      "id": "lt-printer-apprentice",
+      "rarity": "common",
+      "type": "letter",
+      "title": "Apprentice to His Mother",
+      "body": "Mother,\nThe master hides his formes in flour sacks. If soldiers come, I am to spill the meal and sneeze until they laugh. I press letters by day and copy by night. My fingers are black, but my heart is clean.",
+      "meta": {
+        "factions": ["Guilds","Free Cities"],
+        "voices": ["Water"],
+        "date": "1587-12-19"
+      }
+    },
+    {
+      "id": "lt-quartermaster-memo",
+      "rarity": "common",
+      "type": "letter",
+      "title": "Quartermaster’s Memo",
+      "body": "To Captain Vess:\nSalt short. Vinegar gone. Men cut with rust for want of oil. Request wagon from East Gate. If refused, purchase from canal men at double. The Duke prefers speed to thrift.",
+      "meta": {
+        "factions": ["Dukes"],
+        "voices": ["Flame","Stone"],
+        "date": "1588-10-12"
+      }
+    },
+    {
+      "id": "lt-sea-log-illness",
+      "rarity": "common",
+      "type": "letter",
+      "title": "Entry from the Westward Trader",
+      "body": "Fifth day without fresh water. Three down with fever. A passenger set the men to drilling with ropes for blades; spirits steadier after. If we see a green coast by week’s end, I’ll name him our lucky star.",
+      "meta": {
+        "factions": ["Free Cities"],
+        "voices": ["Wind","Stone"],
+        "date": "1588-01-15"
+      }
+    },
+    {
+      "id": "lt-bonona-guild-minute",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Minute of the Red Canal Guild",
+      "body": "Item: The vote stands at six for silence, three for appeal.\nItem: Concerning the printer of Maraisbourg—keep his name from the rolls.\nItem: The hand that stirs the ink must not stir the city.",
+      "meta": {
+        "factions": ["Guilds","Free Cities"],
+        "voices": ["Water","Stone"],
+        "date": "1587-12-30"
+      }
+    },
+    {
+      "id": "lt-noble-memorandum",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "Memorandum to the Council",
+      "body": "The art is best kept in open halls, where its music tames young blood. Close the doors, and Flame finds its own teachers. I, as surety, offer my seal that Lutefecht will not mint soldiers.",
+      "meta": {
+        "factions": ["Empire"],
+        "voices": ["Stone","Wind"],
+        "date": "1589-04-02"
+      }
+    },
+    {
+      "id": "lt-empire-edict",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "Extract of an Imperial Edict",
+      "body": "Let no man sell manuals of war without patent or priestly witness. Those who keep schools must post their names. Those who keep secrets must answer for them.",
+      "meta": {
+        "factions": ["Empire"],
+        "voices": ["Stone"],
+        "date": "1589-01-20"
+      }
+    },
+    {
+      "id": "lt-lynden-dock",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Lynden Dockmaster’s Report",
+      "body": "To the Harbor Warden:\nStorm wreckage came in with the morning tide. One man clung to a plank, half-frozen, carrying a journal in oilcloth. Says little, watches much.",
+      "meta": {
+        "factions": ["Free Cities"],
+        "voices": ["Water","Wind"],
+        "date": "1588-01-24"
+      }
+    },
+    {
+      "id": "lt-abbey-admonition",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Admonition to a Young Scribe",
+      "body": "Ink is mercy when fire is law. Copy the verses, but leave breath between the lines. A book without rests is a drum for marching.",
+      "meta": {
+        "factions": ["Abbey"],
+        "voices": ["Water","Silence"],
+        "date": "1589-02-18"
+      }
+    },
+    {
+      "id": "lt-lychenar-gloss",
+      "rarity": "legendary",
+      "type": "letter",
+      "title": "A Gloss in the Margin (unsigned)",
+      "body": "Four sing, the fifth listens. When a city forgets the fifth, the song becomes a march. Leave rests upon the bar or the bar will break. —L.",
+      "meta": {
+        "factions": ["—"],
+        "voices": ["Silence"],
+        "date": "(undated)"
+      }
+    },
+    {
+      "id": "lt-captain-vess-everspring",
+      "rarity": "ultrarare",
+      "type": "letter",
+      "title": "Unmailed Letter from Captain Vess",
+      "body": "To be opened by the Boatswain, or, failing him, by any man who still knows the taste of tar and wind,\n\nAboard the Everspring,\nthree leagues west of the Iron Shoals\n\nBosun—\n\nYou may think me drunk on sour rum or sunstroke, but I’ll swear this by the mizzenmast’s own creak: the stowaway was a blessing. Found him coiled among the sailcloth like a cat, thin as rope’s end and twice as frayed, clutching a lute as if it were scripture. I’d have had him whipped to the gunwale for hiding, but the tide was foul and the wind colder than law, so I kept him on to swab the deck. By second bell he’d made the planks shine, and by sunset he’d taught half the crew how to step to measure.\n\nCalls himself Faelar Brighton, a bard by trade, though I’ve seen few bards who keep such measure in the midst of a gale. When we were becalmed near the Shoals, he drew a star on the deck between main and mizzen—five points, broad and perfect—and began to teach the crew footwork as though he’d a school instead of a ship. I meant to have it holystoned off, but the men fought better for it, so I let it be.\n\nCome next dawn, raiders rose out of the fog—black sails, no colours shown. Faelar took the quarterdeck without leave and called the crew to measure. They fought not as killers but as craftsmen. The star on the deck became a compass, and the Everspring herself sang through the smoke.\n\nThat night, when all was done and our dead counted, he and I shared what little rum remained. He spoke of guilds where art and mercy were brothered, and I—fool that I am—believed we might found one of our own. “A seaward chapter,” I told him, “to teach measure before men learn blood.” He smiled and said the sea was too wide for a single compass, but his eyes said hope otherwise.\n\nNow the wind’s turned. Rations thin, casks lighter than they should be, and the hands whisper mutiny. They say I spare faith for a bard and none for sailors. They forget that the Everspring’s name was meant as a promise—new beginnings for us all. But promises rot faster than rope in damp hold.\n\nIf this reaches you, Bosun, tell Faelar that Captain Vess forgave the sea before it took him. Tell him the measure holds, even when the ship heels. Tell him to build the Guild on land, where no tide can claim it.\n\nI can hear them now on the ladderway. The mizzen groans like a soul that knows its end.\n\n— Captain T. Vess\nMaster and Commander, Everspring\nWestward Trader Line, in faith to no crown but the compass",
+      "meta": {
+        "factions": ["Free Cities","Westward Traders","Maraisbourg"],
+        "voices": ["Wind","Stone"],
+        "date": "1588-01-23"
+      }
+    }
+  ]
+}
