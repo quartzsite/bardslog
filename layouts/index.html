@@ -47,43 +47,16 @@
     </div>
 
   <!-- Decorative animated lute -->
-<a href="/lootbox/pools/letters.json" class="lute-link" aria-label="Sealed Letters">
-  <svg class="lute" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 90 C 60 80, 140 80, 190 90 C 180 70, 160 40, 100 30 C 60 35, 40 60, 10 90 Z" 
-          fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
-    </path>
-    <line x1="70" y1="30" x2="100" y2="90" stroke="rgba(255,255,255,0.3)" stroke-width="1">
-      <animate attributeName="stroke-opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
-    </line>
-  </svg>
-</a>
+    <!-- 🎸 Lute animation / Lootbox link -->
+    <div class="lute-link">
+      <a href="/lootbox/pools/letters.json" target="_blank" title="Lootbox of Letters">
+        <svg class="lute" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50,10 C70,30 70,70 50,90 C30,70 30,30 50,10 Z" fill="goldenrod" stroke="saddlebrown" stroke-width="3"/>
+          <circle cx="50" cy="50" r="6" fill="peru"/>
+          <line x1="50" y1="10" x2="50" y2="90" stroke="sienna" stroke-width="1"/>
+        </svg>
+      </a>
+    </div>
 
-<style>
-  .lute {
-    position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.15;
-    width: 200px;
-    pointer-events: none;
-  }
-  .lute-link {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    z-index: 50;
-    pointer-events: auto;
-  }
-  .lute-link:hover .lute {
-    opacity: 0.4;
-  }
-</style>
 </body>
 </html>
