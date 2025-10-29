@@ -6,105 +6,52 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'EB Garamond', serif;
-      background-color: var(--bg-color, #fdfaf6);
-      color: var(--text-color, #2a1f16);
-    }
+    body { margin: 0; padding: 2rem; font-family: 'EB Garamond', serif; background-color: var(--bg-color, #fdfaf6); color: var(--text-color, #2a1f16); }
+    h1 { text-align: center; margin-bottom: 2rem; }
+    ul { list-style: none; padding: 0; text-align: center; }
+    ul li { margin: 0.4rem 0; }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+    .footer-banner { position: relative; width: 100%; overflow: hidden; margin-top: 3rem; }
+    .footer-banner img { width: 100%; height: auto; display: block; object-fit: cover; filter: brightness(80%) contrast(95%); }
+    .footer-overlay { position: absolute; bottom: 0; width: 100%; height: 40%; background: linear-gradient(to top, rgba(15,13,12,.95), rgba(15,13,12,0)); }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
+    /* Lute icon animation */
+    .lute-link { position: fixed; bottom: 1.2rem; right: 1.2rem; opacity: .9; transition: transform .4s ease, opacity .4s ease; z-index: 999; }
+    .lute-link:hover { transform: rotate(-6deg) scale(1.15); opacity: 1; }
+    .lute { width: 64px; height: 64px; animation: sway 4s ease-in-out infinite; display: block; }
+    @keyframes sway { 0%,100%{transform:rotate(0)} 50%{transform:rotate(5deg)} }
 
-    ul li {
-      margin: 0.4rem 0;
-    }
-
-    .footer-banner {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      margin-top: 3rem;
-    }
-
-    .footer-banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      filter: brightness(80%) contrast(95%);
-    }
-
-    .footer-overlay {
-      position: abso;
-      bottom: 0;
-      width: 100%;
-      height: 40%;
-      background: linear-gradient(to top, rgba(15, 13, 12, 0.95), rgba(15, 13, 12, 0));
-    }
-
-    /*  icon animation */
-    .-link {
-      position: fixed;
-      bottom: 1.2rem;
-      right: 1.2rem;
-      opacity: 0.9;
-      transition: transform 0.4s ease, opacity 0.4s ease;
-      z-index: 999;
-    }
-
-    .-link:hover {
-      transform: rotate(-6deg) scale(1.15);
-      opacity: 1;
-    }
-
-    . {
-      width: 64px;
-      height: 64px;
-      animation: sway 4s ease-in-out infinite;
-      display: block;
-    }
-
-    @keyframes sway {
-      0%, 100% { transform: rotate(0deg); }
-      50% { transform: rotate(5deg); }
-    }
+    /* Optional wrapper so shortcode output has spacing */
+    .home-content { max-width: 820px; margin: 0 auto 2rem; }
   </style>
 </head>
-
 <body>
   <h1>{{ .Site.Title }}</h1>
+
+  <!-- Renders content from content/_index.md (this is where the {{< lutebox >}} shortcode lives) -->
+  {{ with .Content }}
+    <div class="home-content">
+      {{ . }}
+    </div>
+  {{ end }}
+
   <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}
-      </li>
+    {{ range .Site.RegularPages.ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}</li>
     {{ end }}
   </ul>
 
   <div class="footer-banner">
-    <img
-      src="https://raw.githubusercontent.com/quartzsite/bardslog/main/static/images/bardslog.png"
-      alt="Faelar writing by candlelight - Bardslog banner"
-      loading="lazy">
+    <img src="https://raw.githubusercontent.com/quartzsite/bardslog/main/static/images/bardslog.png"
+         alt="Faelar writing by candlelight - Bardslog banner" loading="lazy">
     <div class="footer-overlay"></div>
   </div>
 
-  <!-- 🎸 Decorative animated  / box link -->
-  <div class="-link">
+  <!-- Decorative animated lute / Lutebox link (optional, separate from the shortcode) -->
+  <div class="lute-link">
     <a href="/lutebox/pools/letters.json" target="_blank" title="Lutebox of Letters">
       <svg class="lute" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M50,10 C70,30 70,70 50,90 C30,70 30,30 50,10 Z"
-              fill="goldenrod" stroke="saddlebrown" stroke-width="3"/>
+        <path d="M50,10 C70,30 70,70 50,90 C30,70 30,30 50,10 Z" fill="goldenrod" stroke="saddlebrown" stroke-width="3"/>
         <circle cx="50" cy="50" r="6" fill="peru"/>
         <line x1="50" y1="10" x2="50" y2="90" stroke="sienna" stroke-width="1"/>
       </svg>
