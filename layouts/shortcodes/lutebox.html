@@ -31,7 +31,7 @@
 
 <script>
 (() => {
-  const POOL  = {{ $pool | jsonify }};
+  const POOL = {"cooldownHours":0, ... };
   const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
   const ODDS  = POOL.odds || {};
 
