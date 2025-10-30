@@ -13,6 +13,366 @@
   },
   "items": [
    {
+  "id": "cmn-lady-ysabet-steward-audience",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Lady Ysabet to Her Steward, On Proper Audiences",
+  "body": "Steward Dorant—\nOn market days admit petitioners by craft, not rank. The printers first; their ink keeps better order than swords. If Master Merryen sends another broadside to be posted on my gates, paste it at the river stairs instead where the lads already practice their measure.\n—Ysabet of Irenne",
+  "meta": {
+    "factions": ["Nobility","Guilds","Free Cities"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-19"
+  }
+},
+{
+  "id": "cmn-steward-dorant-grain-ledger",
+  "rarity": "common",
+  "type": "memo",
+  "title": "Entry from the Irenne Steward’s Ledger",
+  "body": "Item: Two sacks coarse meal to the riverside yard for drills (by Lady’s order). Item: Chalk to the fencing-master for lines. Item: Sand to cover pride when boys fall.",
+  "meta": {
+    "factions": ["Nobility","Free Cities"],
+    "voices": ["Stone","Water"],
+    "date": "1589-03-20"
+  }
+},
+{
+  "id": "cmn-herald-irenic-courtyard-note",
+  "rarity": "common",
+  "type": "note",
+  "title": "Court Herald’s Courtyard Note",
+  "body": "Trumpets to be soft when the Lady watches the drills from the gallery; hard brass makes the steps into a march. The fencing-man says the point is grace, not thunder.",
+  "meta": {
+    "factions": ["Nobility"],
+    "voices": ["Wind"],
+    "date": "1589-03-21"
+  }
+},
+{
+  "id": "cmn-footman-benit-errand",
+  "rarity": "common",
+  "type": "note",
+  "title": "Footman Benit’s Errand Slip",
+  "body": "From the kitchens to the practice yard: three jugs water, one pot salve, a loaf. The Lady says feed the boys that learn to step; hungry lads learn to shove.",
+  "meta": {
+    "factions": ["Nobility","Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1589-03-22"
+  }
+},
+{
+  "id": "cmn-tutor-irenic-copybook",
+  "rarity": "common",
+  "type": "note",
+  "title": "From the Irenne Children’s Copybook",
+  "body": "Copy: “Measure is kindness.” Copy again: “Noise is not courage.” The little one asked if the letters could dance. I said yes, but only in the margins.",
+  "meta": {
+    "factions": ["Nobility","Guilds"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-24"
+  }
+},
+{
+  "id": "cmn-printers-devil-tomalin-market-errand",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Tomalin the Devil to Mira at the Press",
+  "body": "M—\nBought vinegar (ink), bread (bread), and a sack for formes that looks like flour (it is flour). The guard at East Gate asked why I carry an alphabet. I said to feed a city.\n—T.",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1588-12-03"
+  }
+},
+{
+  "id": "cmn-mira-typesetter-sorts-lament",
+  "rarity": "common",
+  "type": "note",
+  "title": "Mira the Typesetter’s Lament",
+  "body": "Lost: three ‘e’s and a patient temper. Found: a line that sings if you space it gentle. The bard came by and said letters are steps; I told him steps are letters for feet.",
+  "meta": {
+    "factions": ["Guilds"],
+    "voices": ["Wind"],
+    "date": "1588-12-05"
+  }
+},
+{
+  "id": "cmn-apprentice-ink-on-hands",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Apprentice to His Sister, On Ink",
+  "body": "Ses,\nMy fingers blacken faster than the sun sets. Master says a clean hand makes a dull page. He keeps a lute under the counter and plays when the formes dry.\n—Joren",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Water","Silence"],
+    "date": "1589-01-14"
+  }
+},
+{
+  "id": "cmn-runner-jani-canal-route",
+  "rarity": "common",
+  "type": "report",
+  "title": "Runner Jani’s Canal Route Notes",
+  "body": "From press to quay: three bridges, one watch post (kind), two dogs (unkind). Safer to hum than to run. Men step aside if you keep a measure.",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Water","Wind"],
+    "date": "1589-02-01"
+  }
+},
+{
+  "id": "cmn-brother-ansel-cellar-task",
+  "rarity": "common",
+  "type": "memo",
+  "title": "Brother Ansel’s Cellar Tasks",
+  "body": "Turn the barrels. Wipe the damp off the bindings. Do not sing in the lower stacks; the stone keeps time and we ought not teach it.",
+  "meta": {
+    "factions": ["Abbey"],
+    "voices": ["Water","Silence"],
+    "date": "1589-02-16"
+  }
+},
+{
+  "id": "cmn-brother-ansel-letter-to-prior",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Brother Ansel to the Prior, On Visitors",
+  "body": "Father—\nA gentleman in city boots asked to see the diagrams. I showed him the herb garden instead. He left with thyme and less pride. A mercy.\n—A.",
+  "meta": {
+    "factions": ["Abbey","Nobility"],
+    "voices": ["Silence","Wind"],
+    "date": "1589-02-20"
+  }
+},
+{
+  "id": "cmn-novice-piero-penance-lines",
+  "rarity": "common",
+  "type": "note",
+  "title": "Novice Piero’s Penance Lines",
+  "body": "I will leave rests between my words. I will leave rests between my deeds. I will not teach a door to march.",
+  "meta": {
+    "factions": ["Abbey"],
+    "voices": ["Stone","Silence"],
+    "date": "1589-02-22"
+  }
+},
+{
+  "id": "cmn-prior-theobald-gate-book",
+  "rarity": "common",
+  "type": "report",
+  "title": "From the Abbey Gate-Book",
+  "body": "Visitors: a tinker, a widow, two boys with a wooden sword (confiscated, returned with blessing), a bard with quiet eyes (admitted to the garden, not the library).",
+  "meta": {
+    "factions": ["Abbey","Free Cities"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-01"
+  }
+},
+{
+  "id": "cmn-veteran-joryn-advice-to-recruit",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Veteran Joryn to a Young Recruit",
+  "body": "Boy—\nKeep your feet like you keep your tongue: still unless asked. If a man shouts himself brave, loan him your silence; he’ll spend it quick and go home early.\n—J. Veld",
+  "meta": {
+    "factions": ["Dukes","Free Cities"],
+    "voices": ["Wind","Silence"],
+    "date": "1588-10-28"
+  }
+},
+{
+  "id": "cmn-hobb-cutter-salve-receipt",
+  "rarity": "common",
+  "type": "receipt",
+  "title": "Receipt for Salve and Bandage",
+  "body": "Paid by H. Cutter, late of the Pike: one jar salve, one roll linen, one song taught to the apothecary’s boy (worth more than coin, said he).",
+  "meta": {
+    "factions": ["Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1588-11-06"
+  }
+},
+{
+  "id": "cmn-veteran-alard-street-song",
+  "rarity": "common",
+  "type": "note",
+  "title": "Alard the Tanner’s Street Song",
+  "body": "Step wide, step kind,\nLeave thunder to the drumline.\nIf your heel finds time,\nYour heart will, in turn.",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Wind"],
+    "date": "1588-12-09"
+  }
+},
+{
+  "id": "cmn-bosun-rell-dockside-list",
+  "rarity": "common",
+  "type": "memo",
+  "title": "Bosun Rell’s Dockside List",
+  "body": "Rope, tar, biscuit, and chalk (for the lads who fancy drawing stars on deck). Captain says leave it; they fight neater with it underfoot.",
+  "meta": {
+    "factions": ["Westward Traders","Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1588-01-26"
+  }
+},
+{
+  "id": "cmn-innkeep-drossel-room-book",
+  "rarity": "common",
+  "type": "report",
+  "title": "From the Room Book at the Crescent Hearth",
+  "body": "Let the bard have the corner by the stove; his songs make men forget to argue. Charge him half for the chair he broke. Full for the pie.",
+  "meta": {
+    "factions": ["Free Cities"],
+    "voices": ["Flame","Wind"],
+    "date": "1589-03-03"
+  }
+},
+{
+  "id": "cmn-guardsman-irenic-watch",
+  "rarity": "common",
+  "type": "report",
+  "title": "City Watch Note from Irenne",
+  "body": "No brawls at the river stairs. Boys with sticks kept time and tempers. A noblewoman watched from the wall and smiled like a schoolmistress.",
+  "meta": {
+    "factions": ["Nobility","Free Cities","Empire"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-04-04"
+  }
+},
+{
+  "id": "cmn-canalman-tide-rhyme",
+  "rarity": "common",
+  "type": "note",
+  "title": "Canalmen’s Tide Rhyme",
+  "body": "When stone hums low and water’s slack,\nStep easy, boys, and mind your back.\nWhen wind comes round and flame takes air,\nSing soft, or trouble climbs the stair.",
+  "meta": {
+    "factions": ["Free Cities"],
+    "voices": ["Water","Stone","Wind"],
+    "date": "1589-02-28"
+  }
+},
+{
+  "id": "cmn-abbey-kitchen-chit",
+  "rarity": "common",
+  "type": "receipt",
+  "title": "Abbey Kitchen Chit",
+  "body": "Loaves to the copyists (4). Broth to the guest with the lute (1 bowl, refilled thrice). Salt to the gate (a pinch for the road).",
+  "meta": {
+    "factions": ["Abbey","Free Cities"],
+    "voices": ["Water"],
+    "date": "1589-02-17"
+  }
+},
+{
+  "id": "cmn-merchant-carta-on-copies",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Merchant Carta to a Partner, On Copies",
+  "body": "Giles—\nThey will not sell me the book, only trade leaf for leaf. I left them a shipping table and received a poem with numbers hiding in it. Profitable? Perhaps in a kinder world.\n—C.",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-06"
+  }
+},
+{
+  "id": "cmn-city-broadside-mind-the-steps",
+  "rarity": "common",
+  "type": "broadside",
+  "title": "City Broadside: “Mind the Steps”",
+  "body": "Citizens! Keep markets clear for measure at the second bell. Bring a stick; leave your quarrels. Lost tempers to be claimed at the watch-house.",
+  "meta": {
+    "factions": ["Free Cities","Empire"],
+    "voices": ["Wind","Stone"],
+    "date": "1588-09-10"
+  }
+},
+{
+  "id": "cmn-widow-irenne-candle-note",
+  "rarity": "common",
+  "type": "note",
+  "title": "Widow’s Candle-Note at the Chapel",
+  "body": "For a husband who marched to drums and forgot to listen. For a son who learned to step and came home laughing.",
+  "meta": {
+    "factions": ["Nobility","Free Cities"],
+    "voices": ["Silence","Water"],
+    "date": "1589-04-06"
+  }
+},
+{
+  "id": "cmn-cartwright-axle-song",
+  "rarity": "common",
+  "type": "note",
+  "title": "Cartwright’s Axle Song",
+  "body": "Grease speaks better than orders. If your wheel sings, listen; it tells you where the road is crooked.",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Stone","Wind"],
+    "date": "1588-11-21"
+  }
+},
+{
+  "id": "cmn-scrivener-market-minute",
+  "rarity": "common",
+  "type": "report",
+  "title": "Scrivener’s Market Minute",
+  "body": "Noted: boys in wide steps by the fishmongers; quarrel settled at the third cut (no blood). A bard bought a lemon and a silence.",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1589-03-08"
+  }
+},
+{
+  "id": "cmn-stable-boy-steps-in-straw",
+  "rarity": "common",
+  "type": "note",
+  "title": "Stable Boy’s Practice in Straw",
+  "body": "Master said mind the corners. The mare learned first; she steps wider than me.",
+  "meta": {
+    "factions": ["Nobility","Free Cities"],
+    "voices": ["Wind"],
+    "date": "1589-03-23"
+  }
+},
+{
+  "id": "cmn-ferryman-quiet-oar",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Ferryman to His Brother, On a Quiet Oar",
+  "body": "We pulled a noble and her maid across at dusk. She paid in silver and asked about the boys with sticks. I said they were learning to listen with their feet.",
+  "meta": {
+    "factions": ["Nobility","Free Cities"],
+    "voices": ["Water","Silence"],
+    "date": "1589-03-25"
+  }
+},
+{
+  "id": "cmn-seamstress-patch-and-song",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Seamstress to a Soldier’s Wife",
+  "body": "Marta—\nThe patch is strong where his jacket split. I stitched a little rest into the seam. Tell him to wear it where men shout.",
+  "meta": {
+    "factions": ["Free Cities","Dukes"],
+    "voices": ["Silence","Flame"],
+    "date": "1588-11-05"
+  }
+},
+{
+  "id": "cmn-bellringer-noon-toll",
+  "rarity": "common",
+  "type": "note",
+  "title": "Bellringer’s Noon Toll Note",
+  "body": "Second bell for drill. Third for bread. Fourth if the wind turns rough.\nP.S. Do not let the drummer lead the boys; he forgets the rests.",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Wind","Stone"],
+    "date": "1589-03-18"
+  }
+}
+   {
   "id": "fb-ml-quiet-sigil",
   "rarity": "ultrarare",
   "type": "letter",
