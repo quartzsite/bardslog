@@ -12,6 +12,162 @@
 "noopen": 0.05
   },
   "items": [
+   {
+  "id": "lt-bonona-playbill",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Playbill for a Street Comedy",
+  "body": "Tonight at the Red Bridge: 'The Sergeant Who Forgot to March' — a harmless farce with four doors, one lute, two barrels of vinegar (paper), and exactly zero soldiers. Laughter free; bribes extra.\n— Printer's Alley",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Wind"],
+    "date": "1589-04-07"
+  }
+},
+{
+  "id": "lt-hidden-guild-boneink",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Bone-Ink Instruction",
+  "body": "Prepare the ink from marrow taken without cry. Write the names of battles no songs recall. In the margin, leave a notch for the step that is not taught. When the page warms in the hand, do not look up.\n— From the Ledger of the Veiled Ones",
+  "meta": {
+    "factions": ["Hidden Guild"],
+    "voices": ["Silence","Flame"],
+    "date": "1588-10-31"
+  }
+},
+{
+  "id": "lt-lychenar-margin",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Lychenar's Quiet Margin",
+  "body": "What you keep unwritten cannot be drilled. Teach the rests as refuge, not rally. War walks with Death; call neither by their names unless you mean to feed them.\n— L.",
+  "meta": {
+    "factions": ["Guilds"],
+    "voices": ["Silence","Stone"],
+    "date": "1587-12-02"
+  }
+},
+{
+  "id": "lt-merryen-stage-direction",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Stage Direction Pinned to a Pell",
+  "body": "Enter student, shoulders high with borrowed thunder. Cut once to spend it. Exit thunder. Teach him to listen to his heels.\n— M. of Maraisbourg",
+  "meta": {
+    "factions": ["Guilds"],
+    "voices": ["Wind","Silence"],
+    "date": "1587-11-05"
+  }
+},
+{
+  "id": "lt-dispatch-icewind",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Intercepted Dispatch by Icewind Couriers",
+  "body": "To the Eastern General: West ports multiply 'neighbors' where we require 'ranks.' Recommend gifts to certain nobles (stone for halls, silver for seals) and rain-famine in the Free Cities via tariff on ink.\nAdvise: dancers placed along the frontier report a new step that makes companies lose cadence.\n— Cipher Clerk 34",
+  "meta": {
+    "factions": ["Wind Empire","Stone Empire","Nobility"],
+    "voices": ["Wind","Stone"],
+    "date": "1589-03-18"
+  }
+},
+{
+  "id": "lt-apprentice-flood-smear",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Smear on a Flooded Broadside",
+  "body": "Master said to hang the sheets high. I thought the night would stay dry but the river came up like a—",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Water"],
+    "date": "1589-04-08"
+  }
+},
+{
+  "id": "lt-alisoun-errata",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Lady Alisoun's Errata",
+  "body": "Remove my crest from the bottom corner. Let the deed rest on its text, not its title. Where it reads 'charity,' change to 'debt paid late.' Send the novice with the plain hand.\n— A. of Irenne",
+  "meta": {
+    "factions": ["Nobility","Abbey"],
+    "voices": ["Stone","Silence"],
+    "date": "1589-04-05"
+  }
+},
+{
+  "id": "lt-waryn-quiet-rotation",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Quiet Rotation to the Watch",
+  "body": "Two on the bridge, two at the stairs. If song rises, let it. If drums rise, ask who paid for them. Count boards. Breathe.\n— Waryn",
+  "meta": {
+    "factions": ["Dukes"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-29"
+  }
+},
+{
+  "id": "lt-hubert-dream-breathing-stone",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Dream Noted Between Psalms",
+  "body": "I dreamt a Basilith that breathed, and each breath took a banner's edge and made it into a page. When I woke, the ink on my fingers smelled of—",
+  "meta": {
+    "factions": ["Abbey","Basilith Collegium"],
+    "voices": ["Silence","Stone"],
+    "date": "1589-03-27"
+  }
+},
+{
+  "id": "lt-wind-dancer-fall",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Letter from a Wind Dancer",
+  "body": "Master, I leapt on the third and turned twice, as taught. The ground refused me for a heartbeat longer than the music. In that pause I saw a hallway of doors and every door—",
+  "meta": {
+    "factions": ["Wind Empire"],
+    "voices": ["Wind","Silence"],
+    "date": "1588-07-19"
+  }
+},
+{
+  "id": "lt-donbettir-salt-oath",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Salt Oath of the Wide Waters",
+  "body": "By the low tide teeth and the high tide tongue, we keep bargains wet. We will not carry drums; we will carry bread. If war comes dressed as a net, we cut it with songs the nets cannot learn.\n— Signed at Deephaven",
+  "meta": {
+    "factions": ["Donbettir Waterfolk","Free Cities"],
+    "voices": ["Water","Silence"],
+    "date": "1588-10-02"
+  }
+},
+{
+  "id": "lt-corsair-bottle",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Bottle Note from the Black Reef",
+  "body": "To whoever fishes this: the current off Red Tower runs two minds deep. A man with a lute bought our wake with a tune that made knives heavy. Tell him the reef keeps his secret and wants another verse.\n— Captain Ness",
+  "meta": {
+    "factions": ["Corsairs","Free Cities"],
+    "voices": ["Water","Wind","Silence"],
+    "date": "1588-09-21"
+  }
+},
+{
+  "id": "lt-basilith-prayer-chip",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Prayer Chip from a Monolith Mason",
+  "body": "One God of Stone, hold the weight I cannot. Teach my chisel to stop before it becomes a horn. Let the page under my daughter's hand be heavier than the banner over my—",
+  "meta": {
+    "factions": ["Stone Empire","Basilith Collegium"],
+    "voices": ["Stone","Silence"],
+    "date": "1589-01-09"
+  }
+},
 {
   "id": "lt-stone-catechism-slate",
   "rarity": "uncommon",
