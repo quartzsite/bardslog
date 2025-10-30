@@ -13,99 +13,99 @@
   },
   "items": [
    {
-"id”: "lt-basilith-watch-brief-1589-03-08”,
-"rarity”: "rare”,
-"type”: "letter”,
-"title”: "Basilith Watch Brief”,
-"body”: "To the Stone-Prefect at Westgate,\nThe Basilith of Irenne throws its noon shadow due east for thirty-seven breaths before the bell—an adjustment from last winter’s measure. The court preachers call it a miracle of the One. The masons call it settling. I call it a compass.\nPatrols have doubled along the quay roads, but their eyes look past the Free Cities and their Oct banners, as if tin boats could not carry fire. The edicts are sermons about stone; the enemy in the east is wind, they say, and wind dies on rock. I have swept enough steps to know wind brings dust, and dust becomes mortar if you wet it.\nRecommendation: stop counting shadows; start counting printers.\n— Scribe Janna, Basilith Watch”,
-"meta”: {
-"factions”: ["Stone Empire”,"Free Cities”,"Octs”],
-"voices”: ["Stone”,"Wind”,"Silence”],
-"date”: "1589-03-08”
+"id": "lt-basilith-watch-brief-1589-03-08,
+"rarity": "rare",
+"type": "letter",
+"title": "Basilith Watch Brief",
+"body": "To the Stone-Prefect at Westgate,\nThe Basilith of Irenne throws its noon shadow due east for thirty-seven breaths before the bell—an adjustment from last winter’s measure. The court preachers call it a miracle of the One. The masons call it settling. I call it a compass.\nPatrols have doubled along the quay roads, but their eyes look past the Free Cities and their Oct banners, as if tin boats could not carry fire. The edicts are sermons about stone; the enemy in the east is wind, they say, and wind dies on rock. I have swept enough steps to know wind brings dust, and dust becomes mortar if you wet it.\nRecommendation: stop counting shadows; start counting printers.\n— Scribe Janna, Basilith Watch",
+"meta": {
+"factions": ["Stone Empire","Free Cities","Octs"],
+"voices": ["Stone","Wind","Silence"],
+"date": "1589-03-08"
 }
 },
 {
-"id”: "lt-caravan-note-siroc-1589-03-12”,
-"rarity”: "rare”,
-"type”: "letter”,
-"title”: "Caravan Note from the Siroc Road”,
-"body”: "Master, we traded salt for silk at the third cistern east of Bonona. The eastern riders arrived like a storm that forgot its rain—cloth masks, crescent blades, and a dance that put their heels where their heads had been. I saw a man leap as if a dune lifted him and cut a sample-bale from its cord without nicking a single thread. They laugh at stone law. They listen to wind and say it remembers shapes better than chisels do.\nIf these are enemies, they will never push like our drill; they will pull, and we will follow.\n— Kesh, factor’s clerk”,
-"meta”: {
-"factions”: ["Wind Empire”,"Free Cities”],
-"voices”: ["Wind”,"Water”],
-"date”: "1589-03-12”
+"id": "lt-caravan-note-siroc-1589-03-12",
+"rarity": "rare",
+"type": "letter",
+"title": "Caravan Note from the Siroc Road",
+"body": "Master, we traded salt for silk at the third cistern east of Bonona. The eastern riders arrived like a storm that forgot its rain—cloth masks, crescent blades, and a dance that put their heels where their heads had been. I saw a man leap as if a dune lifted him and cut a sample-bale from its cord without nicking a single thread. They laugh at stone law. They listen to wind and say it remembers shapes better than chisels do.\nIf these are enemies, they will never push like our drill; they will pull, and we will follow.\n— Kesh, factor’s clerk",
+"meta": {
+"factions": ["Wind Empire","Free Cities"],
+"voices": ["Wind","Water"],
+"date": "1589-03-12"
 }
 },
 {
-"id”: "lt-lychenar-margin-merryen-1589-03-17”,
-"rarity”: "ultrarare”,
-"type”: "letter”,
-"title”: "Lychenar’s Margin to Merryen (Unsent)”,
-"body”: "Merryen,\nYour wide steps teach citizens; keep teaching them. The wind-court’s leapers break measure with purpose; we must show our people how to break it without breaking each other. The One-God men carve Basiliths to steady hearts. The wind-priests carve air to loosen feet. Both speak true in their tongue.\nYou asked about the Fifth. Forget the word and remember the rest between words. We do not name that god; we make it wait. When rulers are afraid, they beat drums to wake it. We write rests so it sleeps.\nIf the Stone Court calls you for a parade, make them walk a tune that cannot be marched. If the Wind Court offers you silk, use it to bind a wound. If you must choose between stone and wind, choose the road.\n— L.”,
-"meta”: {
-"factions”: ["Guilds”,"Stone Empire”,"Wind Empire”],
-"voices”: ["Wind”,"Stone”,"Silence”],
-"date”: "1589-03-17”
+"id": "lt-lychenar-margin-merryen-1589-03-17",
+"rarity": "ultrarare",
+"type": "letter",
+"title": "Lychenar’s Margin to Merryen (Unsent)",
+"body": "Merryen,\nYour wide steps teach citizens; keep teaching them. The wind-court’s leapers break measure with purpose; we must show our people how to break it without breaking each other. The One-God men carve Basiliths to steady hearts. The wind-priests carve air to loosen feet. Both speak true in their tongue.\nYou asked about the Fifth. Forget the word and remember the rest between words. We do not name that god; we make it wait. When rulers are afraid, they beat drums to wake it. We write rests so it sleeps.\nIf the Stone Court calls you for a parade, make them walk a tune that cannot be marched. If the Wind Court offers you silk, use it to bind a wound. If you must choose between stone and wind, choose the road.\n— L.",
+"meta": {
+"factions": ["Guilds","Stone Empire","Wind Empire"],
+"voices": ["Wind","Stone","Silence"],
+"date": "1589-03-17"
 }
 },
 {
-"id”: "lt-foundation-log-basilith-1589-03-25”,
-"rarity”: "ultrarare”,
-"type”: "letter”,
-"title”: "Foundation Log: Basilith at North March”,
-"body”: "Entry VII: We set the seventh course and sealed the blessed box inside the heart of the Basilith, per canon. The priest intoned the One Name and the stone held its breath. A hairline opened from corner to corner when the desert wind rose at vespers. The master mason said wind only finds what was already there. The priest said wind blasphemes.\nEntry IX: Couriers from the east carried scimitars wrapped in prayer-cloth. Our wardens would not touch the cloth. The couriers smiled and stepped away without leaving footprints.\nEntry XI: An old veteran came at dusk and traced a rest in the dust at the site’s edge. The crack stopped growing.\n— Adept Maro, Mason’s Company”,
-"meta”: {
-"factions”: ["Stone Empire”,"Wind Empire”],
-"voices”: ["Stone”,"Wind”,"Silence”],
-"date”: "1589-03-25”
+"id": "lt-foundation-log-basilith-1589-03-25",
+"rarity": "ultrarare",
+"type": "letter",
+"title": "Foundation Log: Basilith at North March",
+"body": "Entry VII: We set the seventh course and sealed the blessed box inside the heart of the Basilith, per canon. The priest intoned the One Name and the stone held its breath. A hairline opened from corner to corner when the desert wind rose at vespers. The master mason said wind only finds what was already there. The priest said wind blasphemes.\nEntry IX: Couriers from the east carried scimitars wrapped in prayer-cloth. Our wardens would not touch the cloth. The couriers smiled and stepped away without leaving footprints.\nEntry XI: An old veteran came at dusk and traced a rest in the dust at the site’s edge. The crack stopped growing.\n— Adept Maro, Mason’s Company",
+"meta": {
+"factions": ["Stone Empire","Wind Empire"],
+"voices": ["Stone","Wind","Silence"],
+"date": "1589-03-25"
 }
 },
 {
-"id”: "lt-quiet-ashen-article-1589-04-02”,
-"rarity”: "reallyultrarare”,
-"type”: "letter”,
-"title”: "Article of the Quiet Ash (Seized)”,
-"body”: "We, the undersigned, make covenant in unlight: to read the rests between the Four; to name by breath that which the bards refuse to speak; to call the God-who-Answers-Only-to-War by the old cadence; to soothe the Unappeased by spilling lawfully and tidily until thirst breaks.\nMethod: steal the margin that Lychenar wrote, pry the hinge Merryen hid, threaten the singer until he sings the fifth note without breaking it.\nSign: a smear of cold ash where a seal should be.\nAddendum, scribe’s hand: the paper smells of funeral oil and vinegar-ink. One line reads backward unless held to a candle: "Summon Death to bargain for Peace.”\n— Confiscated by the Red Canal Guild, copied twice, burned once.”,
-"meta”: {
-"factions”: ["Hidden Orders”,"Guilds”],
-"voices”: ["Silence”,"Flame”,"Stone”],
-"date”: "1589-04-02”
+"id": "lt-quiet-ashen-article-1589-04-02",
+"rarity": "reallyultrarare",
+"type": "letter",
+"title": "Article of the Quiet Ash (Seized)",
+"body": "We, the undersigned, make covenant in unlight: to read the rests between the Four; to name by breath that which the bards refuse to speak; to call the God-who-Answers-Only-to-War by the old cadence; to soothe the Unappeased by spilling lawfully and tidily until thirst breaks.\nMethod: steal the margin that Lychenar wrote, pry the hinge Merryen hid, threaten the singer until he sings the fifth note without breaking it.\nSign: a smear of cold ash where a seal should be.\nAddendum, scribe’s hand: the paper smells of funeral oil and vinegar-ink. One line reads backward unless held to a candle: "Summon Death to bargain for Peace."\n— Confiscated by the Red Canal Guild, copied twice, burned once.",
+"meta": {
+"factions": ["Hidden Orders","Guilds"],
+"voices": ["Silence","Flame","Stone"],
+"date": "1589-04-02"
 }
 },
 {
-"id”: "lt-siroc-courtyard-choreia-1589-04-06”,
-"rarity”: "reallyultrarare”,
-"type”: "letter”,
-"title”: "Choreia of the Courtyard, Rendered into Prose”,
-"body”: "At the Satrap’s court the duelists did not circle— they spiraled. A master in saffron leapt to the height of a man’s banner, cut downward through hanging carpet with a single crescent like he was cutting wind from cloth, and landed with both heels soft. Our Bononese dancers keep one foot courting earth; these unwed it and trusted air.\nTheir creed: wind remembers you if you fall through it bravely. Their heresy (to us): stone is a jailer, not a home. Their rumor: the Stone Emperor prays to a god that can be toppled, for every Basilith has a seam.\n— Observed by Magda of the Guild of Lenses”,
-"meta”: {
-"factions”: ["Wind Empire”,"Free Cities”],
-"voices”: ["Wind”,"Water”],
-"date”: "1589-04-06”
+"id": "lt-siroc-courtyard-choreia-1589-04-06",
+"rarity": "reallyultrarare",
+"type": "letter",
+"title": "Choreia of the Courtyard, Rendered into Prose",
+"body": "At the Satrap’s court the duelists did not circle— they spiraled. A master in saffron leapt to the height of a man’s banner, cut downward through hanging carpet with a single crescent like he was cutting wind from cloth, and landed with both heels soft. Our Bononese dancers keep one foot courting earth; these unwed it and trusted air.\nTheir creed: wind remembers you if you fall through it bravely. Their heresy (to us): stone is a jailer, not a home. Their rumor: the Stone Emperor prays to a god that can be toppled, for every Basilith has a seam.\n— Observed by Magda of the Guild of Lenses",
+"meta": {
+"factions": ["Wind Empire","Free Cities"],
+"voices": ["Wind","Water"],
+"date": "1589-04-06"
 }
 },
 {
-"id”: "lt-border-parley-oasis-1589-04-16”,
-"rarity”: "legendary”,
-"type”: "letter”,
-"title”: "Minutes of the Oasis Parley (Stone and Wind)”,
-"body”: "Held at the Broken Palm where the marchlands forget whose dust they are.\nAttendees: Envoy of the Stone Emperor beneath the Basilith standard; Emissary of the Wind Court beneath seven ribbons; three translators; one bard who tuned and pretended not to hear.\nThe Stone Envoy placed a cube of polished granite on the cloth. The Wind Emissary placed a length of silk so thin it made the stars ripple. They spoke of tariffs and maps while meaning soldiers and shrines. Stone said: hold. Wind said: move. Both said: peace, meaning wintering.\nWhen the translators rested their tongues, the bard struck a measure that limps if you try to march to it. The Wind Emissary’s foot almost followed; the Stone Envoy’s hand almost clenched. Almost is sometimes a victory.\nNotes:\n— Stone ignores the western nuisance (their phrase) of Free Cities and Oct banners; their eyes lean east like their shadows.\n— Wind names the western pact pagan and small; their riders know the river paths better than we guessed.\n— Both courts deny a fifth god; both fear the word for it. The Wind calls it Sandstorm. Stone calls it Siege. The bard wrote only a rest.\nAdjourned at moonrise. The cube and the silk were exchanged: a copy for a copy. Somewhere a printer will make sense of that.\n— Set down by an unnamed clerk who owes Faelar his life”,
-"meta”: {
-"factions”: ["Stone Empire”,"Wind Empire”,"Free Cities”,"Octs”],
-"voices”: ["Wind”,"Stone”,"Silence”],
-"date”: "1589-04-16”
+"id": "lt-border-parley-oasis-1589-04-16",
+"rarity": "legendary",
+"type": "letter",
+"title": "Minutes of the Oasis Parley (Stone and Wind)",
+"body": "Held at the Broken Palm where the marchlands forget whose dust they are.\nAttendees: Envoy of the Stone Emperor beneath the Basilith standard; Emissary of the Wind Court beneath seven ribbons; three translators; one bard who tuned and pretended not to hear.\nThe Stone Envoy placed a cube of polished granite on the cloth. The Wind Emissary placed a length of silk so thin it made the stars ripple. They spoke of tariffs and maps while meaning soldiers and shrines. Stone said: hold. Wind said: move. Both said: peace, meaning wintering.\nWhen the translators rested their tongues, the bard struck a measure that limps if you try to march to it. The Wind Emissary’s foot almost followed; the Stone Envoy’s hand almost clenched. Almost is sometimes a victory.\nNotes:\n— Stone ignores the western nuisance (their phrase) of Free Cities and Oct banners; their eyes lean east like their shadows.\n— Wind names the western pact pagan and small; their riders know the river paths better than we guessed.\n— Both courts deny a fifth god; both fear the word for it. The Wind calls it Sandstorm. Stone calls it Siege. The bard wrote only a rest.\nAdjourned at moonrise. The cube and the silk were exchanged: a copy for a copy. Somewhere a printer will make sense of that.\n— Set down by an unnamed clerk who owes Faelar his life",
+"meta": {
+"factions": ["Stone Empire","Wind Empire","Free Cities","Octs"],
+"voices": ["Wind","Stone","Silence"],
+"date": "1589-04-16"
 }
 },
 {
-"id”: "lt-alisoun-quiet-spies-1589-04-18”,
-"rarity”: "ultrarare”,
-"type”: "letter”,
-"title”: "Lady Alisoun on Quiet Spies”,
-"body”: "To Prior Hubert,\nYour candles gutter when a certain hymn is hummed near the stacks. That hymn is a door. I have word of a guild that wears ash and speaks peace like a ledger; they want the door’s key. Their doctrine crowns Death to hire War as a steward. It is tidy theology for murderers.\nThe Stone Court will not see them—stone is blind to smoke. The Wind Court will pretend they are fireside stories—wind is vain. Let us be neither. Keep the Fifth unspoken and taught only by rest, as Lychenar wrote and Merryen bled for.\nI will turn the Basilith’s shadow to the west one morning by mirrors and gossip, long enough for the Empire to remember we exist.\n— A.”,
-"meta”: {
-"factions”: ["Nobility”,"Abbey”,"Free Cities”],
-"voices”: ["Silence”,"Stone”,"Wind”],
-"date”: "1589-04-18”
+"id": "lt-alisoun-quiet-spies-1589-04-18",
+"rarity": "ultrarare",
+"type": "letter",
+"title": "Lady Alisoun on Quiet Spies",
+"body": "To Prior Hubert,\nYour candles gutter when a certain hymn is hummed near the stacks. That hymn is a door. I have word of a guild that wears ash and speaks peace like a ledger; they want the door’s key. Their doctrine crowns Death to hire War as a steward. It is tidy theology for murderers.\nThe Stone Court will not see them—stone is blind to smoke. The Wind Court will pretend they are fireside stories—wind is vain. Let us be neither. Keep the Fifth unspoken and taught only by rest, as Lychenar wrote and Merryen bled for.\nI will turn the Basilith’s shadow to the west one morning by mirrors and gossip, long enough for the Empire to remember we exist.\n— A.",
+"meta": {
+"factions": ["Nobility","Abbey","Free Cities"],
+"voices": ["Silence","Stone","Wind"],
+"date": "1589-04-18"
 }
 },
 {
@@ -113,7 +113,7 @@
   "rarity": "rare",
   "type": "letter",
   "title": "Lady Alisoun’s Margin to the Council",
-  "body": "To the Twelve of Irenne—\nYou asked whether Merryen’s wide steps make rebels. I answer: they make citizens who do not stumble. On the river stairs this morning a fishmonger steadied a porter with a turn any knight would envy; no trumpet sounded, and yet the city kept its footing. If drill must exist, let it be the kind that leaves no corpse.\nThe guild’s road-treaty—this "copy for a copy”—offends merchants who prefer locks. Let them be offended. Locks breed thieves, but shared books breed witnesses. I will not bid the presses silent; I will bid them wise.\nAs for the Fifth, call it by its true name: Silence. It is not for parades, nor for my household guard. Keep it coded in song and margin. Give the young four voices to sing in the square; let the last be a rest marked only between friends.\nIf the Empire asks for patents on breath, send them my seal and my laughter.\n— Lady Alisoun of Irenne",
+  "body": "To the Twelve of Irenne—\nYou asked whether Merryen’s wide steps make rebels. I answer: they make citizens who do not stumble. On the river stairs this morning a fishmonger steadied a porter with a turn any knight would envy; no trumpet sounded, and yet the city kept its footing. If drill must exist, let it be the kind that leaves no corpse.\nThe guild’s road-treaty—this "copy for a copy"—offends merchants who prefer locks. Let them be offended. Locks breed thieves, but shared books breed witnesses. I will not bid the presses silent; I will bid them wise.\nAs for the Fifth, call it by its true name: Silence. It is not for parades, nor for my household guard. Keep it coded in song and margin. Give the young four voices to sing in the square; let the last be a rest marked only between friends.\nIf the Empire asks for patents on breath, send them my seal and my laughter.\n— Lady Alisoun of Irenne",
   "meta": {
     "factions": ["Nobility","Free Cities","Guilds"],
     "voices": ["Stone","Flame","Silence"],
@@ -233,7 +233,7 @@
   "rarity": "common",
   "type": "note",
   "title": "From the Irenne Children’s Copybook",
-  "body": "Copy: "Measure is kindness.” Copy again: "Noise is not courage.” The little one asked if the letters could dance. I said yes, but only in the margins.",
+  "body": "Copy: "Measure is kindness." Copy again: "Noise is not courage." The little one asked if the letters could dance. I said yes, but only in the margins.",
   "meta": {
     "factions": ["Nobility","Guilds"],
     "voices": ["Stone","Wind"],
@@ -448,7 +448,7 @@
   "id": "cmn-city-broadside-mind-the-steps",
   "rarity": "common",
   "type": "broadside",
-  "title": "City Broadside: "Mind the Steps”",
+  "title": "City Broadside: "Mind the Steps"",
   "body": "Citizens! Keep markets clear for measure at the second bell. Bring a stick; leave your quarrels. Lost tempers to be claimed at the watch-house.",
   "meta": {
     "factions": ["Free Cities","Empire"],
@@ -641,7 +641,7 @@
   "rarity": "legendary",
   "type": "letter",
   "title": "FB to ML",
-  "body": "Master,\n\nThe market bells here ring on time even when the men do not. Merryen smiles too brightly. He measures courtyards with his eyes as if they were parade grounds and says the north wind will bring friends who knot their maps instead of drawing them. He will not speak the name of Rowen’s city without spitting first; Lynden lives rent-free in his jaw. I nod, take notes that look like scales for a sad song, and keep my counsel.\n\nThe Free Cities talk louder than they listen. In the guild we have not forgotten our fifth. We name it only as a folded page. We play Wind, Stone, Flame, and Water in the open, but the last we keep under the bridge of the lute, where the sound is felt and not heard. I can hear its tread in the courtyards—counting, counting. You taught me to hear it and then to put it away.\n\nOnce a trader offered silver for the whole manuscript-in-progress. I closed the cover and pushed it back to him. "You can have a copy,” I said, "if you leave a copy behind.” He left a page he did not understand and took away a page he never will. The bargain holds: knowledge breeds only when it travels both ways.\n\nI confess a weariness. Every tool finds a hand; even wrapped in cloth, a blade teaches the fingers by shape alone. The fifth is a stair and fools will climb it just to see who salutes. So I write the steps into chords and waystones, and I sing them wrong when company gathers. Let the wrong ears remember the wrong tune.\n\nIf you would have me leave this city, write a single dot under the third line of your reply. If not, I will linger and practice the long measure at dusk until the drilling drowns it. The stone by the river hums at the turn of tide. Either the gods are listening, or men are.\n\nYour student in poor spirits and plain ink,\nFB",
+  "body": "Master,\n\nThe market bells here ring on time even when the men do not. Merryen smiles too brightly. He measures courtyards with his eyes as if they were parade grounds and says the north wind will bring friends who knot their maps instead of drawing them. He will not speak the name of Rowen’s city without spitting first; Lynden lives rent-free in his jaw. I nod, take notes that look like scales for a sad song, and keep my counsel.\n\nThe Free Cities talk louder than they listen. In the guild we have not forgotten our fifth. We name it only as a folded page. We play Wind, Stone, Flame, and Water in the open, but the last we keep under the bridge of the lute, where the sound is felt and not heard. I can hear its tread in the courtyards—counting, counting. You taught me to hear it and then to put it away.\n\nOnce a trader offered silver for the whole manuscript-in-progress. I closed the cover and pushed it back to him. "You can have a copy," I said, "if you leave a copy behind." He left a page he did not understand and took away a page he never will. The bargain holds: knowledge breeds only when it travels both ways.\n\nI confess a weariness. Every tool finds a hand; even wrapped in cloth, a blade teaches the fingers by shape alone. The fifth is a stair and fools will climb it just to see who salutes. So I write the steps into chords and waystones, and I sing them wrong when company gathers. Let the wrong ears remember the wrong tune.\n\nIf you would have me leave this city, write a single dot under the third line of your reply. If not, I will linger and practice the long measure at dusk until the drilling drowns it. The stone by the river hums at the turn of tide. Either the gods are listening, or men are.\n\nYour student in poor spirits and plain ink,\nFB",
   "meta": {
     "factions": ["Guilds", "Free Cities", "Octs", "Pritenia"],
     "voices": ["Silence", "Water", "Stone"],
@@ -989,7 +989,7 @@
       "rarity": "legendary",
       "type": "letter",
       "title": "Unmailed Letter from Captain Vess",
-      "body": "To be opened by the Boatswain, or, failing him, by any man who still knows the taste of tar and wind,\n\nAboard the Everspring,\nthree leagues west of the Iron Shoals\n\nBosun—\n\nYou may think me drunk on sour rum or sunstroke, but I’ll swear this by the mizzenmast’s own creak: the stowaway was a blessing. Found him coiled among the sailcloth like a cat, thin as rope’s end and twice as frayed, clutching a lute as if it were scripture. I’d have had him whipped to the gunwale for hiding, but the tide was foul and the wind colder than law, so I kept him on to swab the deck. By second bell he’d made the planks shine, and by sunset he’d taught half the crew how to step to measure.\n\nCalls himself Faelar Brighton, a bard by trade, though I’ve seen few bards who keep such measure in the midst of a gale. When we were becalmed near the Shoals, he drew a star on the deck between main and mizzen—five points, broad and perfect—and began to teach the crew footwork as though he’d a school instead of a ship. I meant to have it holystoned off, but the men fought better for it, so I let it be.\n\nCome next dawn, raiders rose out of the fog—black sails, no colours shown. Faelar took the quarterdeck without leave and called the crew to measure. They fought not as killers but as craftsmen. The star on the deck became a compass, and the Everspring herself sang through the smoke.\n\nThat night, when all was done and our dead counted, he and I shared what little rum remained. He spoke of guilds where art and mercy were brothered, and I—fool that I am—believed we might found one of our own. "A seaward chapter,” I told him, "to teach measure before men learn blood.” He smiled and said the sea was too wide for a single compass, but his eyes said hope otherwise.\n\nNow the wind’s turned. Rations thin, casks lighter than they should be, and the hands whisper mutiny. They say I spare faith for a bard and none for sailors. They forget that the Everspring’s name was meant as a promise—new beginnings for us all. But promises rot faster than rope in damp hold.\n\nIf this reaches you, Bosun, tell Faelar that Captain Vess forgave the sea before it took him. Tell him the measure holds, even when the ship heels. Tell him to build the Guild on land, where no tide can claim it.\n\nI can hear them now on the ladderway. The mizzen groans like a soul that knows its end.\n\n— Captain T. Vess\nMaster and Commander, Everspring\nWestward Trader Line, in faith to no crown but the compass",
+      "body": "To be opened by the Boatswain, or, failing him, by any man who still knows the taste of tar and wind,\n\nAboard the Everspring,\nthree leagues west of the Iron Shoals\n\nBosun—\n\nYou may think me drunk on sour rum or sunstroke, but I’ll swear this by the mizzenmast’s own creak: the stowaway was a blessing. Found him coiled among the sailcloth like a cat, thin as rope’s end and twice as frayed, clutching a lute as if it were scripture. I’d have had him whipped to the gunwale for hiding, but the tide was foul and the wind colder than law, so I kept him on to swab the deck. By second bell he’d made the planks shine, and by sunset he’d taught half the crew how to step to measure.\n\nCalls himself Faelar Brighton, a bard by trade, though I’ve seen few bards who keep such measure in the midst of a gale. When we were becalmed near the Shoals, he drew a star on the deck between main and mizzen—five points, broad and perfect—and began to teach the crew footwork as though he’d a school instead of a ship. I meant to have it holystoned off, but the men fought better for it, so I let it be.\n\nCome next dawn, raiders rose out of the fog—black sails, no colours shown. Faelar took the quarterdeck without leave and called the crew to measure. They fought not as killers but as craftsmen. The star on the deck became a compass, and the Everspring herself sang through the smoke.\n\nThat night, when all was done and our dead counted, he and I shared what little rum remained. He spoke of guilds where art and mercy were brothered, and I—fool that I am—believed we might found one of our own. "A seaward chapter," I told him, "to teach measure before men learn blood." He smiled and said the sea was too wide for a single compass, but his eyes said hope otherwise.\n\nNow the wind’s turned. Rations thin, casks lighter than they should be, and the hands whisper mutiny. They say I spare faith for a bard and none for sailors. They forget that the Everspring’s name was meant as a promise—new beginnings for us all. But promises rot faster than rope in damp hold.\n\nIf this reaches you, Bosun, tell Faelar that Captain Vess forgave the sea before it took him. Tell him the measure holds, even when the ship heels. Tell him to build the Guild on land, where no tide can claim it.\n\nI can hear them now on the ladderway. The mizzen groans like a soul that knows its end.\n\n— Captain T. Vess\nMaster and Commander, Everspring\nWestward Trader Line, in faith to no crown but the compass",
       "meta": {
         "factions": ["Free Cities","Westward Traders","Maraisbourg"],
         "voices": ["Wind","Stone"],
