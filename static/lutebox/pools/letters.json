@@ -11,7 +11,103 @@
     "legendary": 0.001
   },
   "items": [
-    {
+   {
+  "id": "fb-ml-quiet-sigil",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "FB → ML: The Quiet Sigil",
+  "body": "Master Lychenar,\nI tried the new step you taught—the circle that closes like a book. Here, it closes too neatly; men in Maraisbourg notice neatness, and notice is a tax I cannot pay. Merryen holds court with Octish traders in the tannery loft. He calls it a fencing society; I hear the rustle of paper more than steel. Their talk is wind on stone. Mine is Silence on ink. I keep your sigil covered and speak when strings demand it.\nIf the fifth song is to be played, it will be by accident—like a chord struck by a drunk who somehow finds harmony. My cure is to keep the lute in its case.\n—FB",
+  "meta": {
+    "factions": ["Guilds","Free Cities","Octs"],
+    "voices": ["Silence","Wind"],
+    "date": "1589-02-26"
+  }
+},
+{
+  "id": "fb-maraisbourg-quays",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "From the Quays at Maraisbourg",
+  "body": "ML,\nBarges from the north unloaded casks labeled VINEGAR that smell like ink. Printers wink as if winks were currency. I played a tavern set to muddy the room while a crate changed hands. The tune was cheerful enough that no one noticed the silence underneath it. You were right: songs are cloaks when worn correctly.\nThe Octs want a banner for their hills. Merryen wants a book for his throne. I want my supper hot and my conscience cool. Two of us will be disappointed.\n—Faelar",
+  "meta": {
+    "factions": ["Octs","Guilds"],
+    "voices": ["Water","Silence"],
+    "date": "1589-03-07"
+  }
+},
+{
+  "id": "ml-margin-note-on-steps",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Margin Note on the Wide Steps",
+  "body": "FB—\nKeep the wide step wide; narrow steps are invitations to small mistakes with large funerals. If Merryen is dancing in print, step off the page. When a crowd claps, it is not for truth—it is for rhythm. We teach neither crowd nor clap. We teach men to walk away.\n—ML",
+  "meta": {
+    "factions": ["Guilds"],
+    "voices": ["Stone","Wind"],
+    "date": "1589-03-12"
+  }
+},
+{
+  "id": "fb-chalk-dust-and-copies",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Chalk Dust and Copies",
+  "body": "Master,\nA trader offered silver for the whole book again. I told him what I told the last man: a copy for a copy. He laughed and said that was priest-talk. I said no—printer-talk. He paid for the ale and left poorer.\nIf you find my tone casual, forgive me; the city teaches casual like the sea teaches damp. Still, I keep the pages dry. If a storm comes, I know which song not to sing.\n—FB",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Water","Silence"],
+    "date": "1589-02-18"
+  }
+},
+{
+  "id": "fb-unscored-fragments",
+  "rarity": "reallyultrarare",
+  "type": "letter",
+  "title": "Unscored Fragments (Not for the Stage)",
+  "body": "ML,\nThree fragments arrived from Lynden with the corners burned and the measures missing. Whoever copied them knew enough to cut the parts where men start marching in straight lines. I hummed what was left. The room cooled. The Fifth is a winter even in summer.\nI locked them behind the bread bin; thieves love jewels and forget flour.\n—Faelar",
+  "meta": {
+    "factions": ["Pritenia","Guilds"],
+    "voices": ["Silence","Flame"],
+    "date": "1589-03-18"
+  }
+},
+{
+  "id": "fb-letter-of-not-playing",
+  "rarity": "reallyultrarare",
+  "type": "letter",
+  "title": "A Letter of Not Playing",
+  "body": "Master,\nThere is a fashion here for loud courage. Men shout plans so the plans feel real. I played a soft air until their bravery remembered its wife and went home. Tomorrow I travel with canal men who fear only leaky barrels. I envy them; their gods are water and rope.\nI remain, as always, your student in the art of not performing.\n—FB",
+  "meta": {
+    "factions": ["Free Cities"],
+    "voices": ["Water","Silence"],
+    "date": "1589-03-22"
+  }
+},
+{
+  "id": "ml-seven-strings-in-quiet",
+  "rarity": "legendary",
+  "type": "letter",
+  "title": "Seven Strings in Quiet",
+  "body": "Faelar,\nYou ask when to tune the seventh string. Never in public, seldom in private, and only when the room is so still you can hear ink drying. If you must strike it, strike it like an apology. Men who love banners will not understand what they have heard until it is too late.\nTeach the young to fix roofs before they learn to knock doors.\n—Lychenar",
+  "meta": {
+    "factions": ["Guilds"],
+    "voices": ["Silence","Stone"],
+    "date": "1589-03-29"
+  }
+},
+{
+  "id": "fb-oath-by-the-canal",
+  "rarity": "legendary",
+  "type": "letter",
+  "title": "An Oath by the Canal",
+  "body": "ML,\nA boy tried to swear himself to me tonight. I gave him a rope knot instead of a vow and told him to learn which way water wants to go. He laughed, then listened, then cried. I suppose that is the order of wisdom.\nIf the city burns for its gods, we will carry buckets until the fire remembers it is only a temper.\n—FB",
+  "meta": {
+    "factions": ["Free Cities","Octs"],
+    "voices": ["Water","Flame","Silence"],
+    "date": "1589-04-02"
+  }
+}, 
+   {
   "id": "lt-fb-to-ml-1589-03-22",
   "rarity": "legendary",
   "type": "letter",
