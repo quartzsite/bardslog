@@ -12,6 +12,210 @@
 "noopen": 0.05
   },
   "items": [
+   {
+  "id": "basilith-spandrel-gospel",
+  "type": "letter",
+  "title": "The Spandrel Gospel of the Basilith",
+  "rarity": "legendary",
+  "body": "To Master Hewe and any who set ear to stone. You asked why the Basilith bears a seam no plan accounts for. I set scaffold and lanterns, chalked the curve, and found what the charterers call a blemish is in truth a spandrel—an architectural mercy where force forgets itself. The seam accepts the city’s weight and returns it as tone. At noon it hums in C; at eclipse it lowers to something my apprentices cannot name without shaking. We wedged a bronze feather into the joint and the whole monolith breathed out mortar-dust that settled in lines like verses. I read them backwards and found a sentence: ‘One body suffers two vows.’ Stone remembers every oath sworn against it, writ as hairline veining. If the Empire’s One God is stone, His catechism is compression, His amen a crack. Do not strike the seam. It is the hinge of a door that should never decide which way to open.",
+  "meta": {
+    "factions": ["Stonewrights", "Imperial Curia of Stone"],
+    "voices": ["Stone", "Silence"],
+    "date": "1589-05-06"
+  }
+},
+{
+  "id": "faelar-keelbottle-testament",
+  "type": "letter",
+  "title": "Testament Under the Keel",
+  "rarity": "legendary",
+  "body": "For Lychenar, if tide and mercy allow. The Donbettir’s chant came like fog, and the captain laughed at weather. Then the sea stood up. Not a wave—an intention. The ship lifted as if to read itself, ribs out, letters of tar and oak. I tied my lute to my waist and heard the strings tune themselves to the pitch of drowning. I was in the water before fear arrived, and in the water I found a fifth rest longer than breath. A woman with salt in her hair and rope in her hands touched my forehead and spoke without mouth: ‘Copy for a copy.’ I gave her a song I had not yet written; she gave me a corridor through the green. When the hull broke, men shouted to Mars; when the mast burned underwater, I saw the Sun pulled thin as a blade. If this bottle reaches you, master, teach the guild that water can write without ink and that some debts are paid in unwritten measures.",
+  "meta": {
+    "factions": ["Donbettir Host", "Guild of Light and Ink"],
+    "voices": ["Water", "Silence", "Wind"],
+    "date": "1588-01-23"
+  }
+},
+{
+  "id": "edict-basalt-throne-sealed",
+  "type": "letter",
+  "title": "The Sealed Edict of the Basalt Throne",
+  "rarity": "legendary",
+  "body": "By the authority of the One, whose Name is Stone and whose Will stands in Basiliths: let the banners of Wind be harried from the marches, for they teach a god that wanders and cannot be taxed. Let the Ember Vigil polish both sword and conscience, for fire is a steward only when watched. Let printers submit matrices for inspection; the Sun may illumine, but it is Stone that binds. Concerning the Free Cities: their covenant of copies is tolerated as scaffolding until the dome is set. Concerning the fifth voice the minstrels whisper: it is rest and not command. Concerning war: Mars is a tool in the temple. Concerning death: there is no god of it, only arrears. Signed at noon, beneath the Seam That Is Not a Flaw.",
+  "meta": {
+    "factions": ["Imperial Curia of Stone", "Ember Vigil"],
+    "voices": ["Stone", "Flame"],
+    "date": "1589-05-07"
+  }
+},
+{
+  "id": "lychenar-untaken-benediction",
+  "type": "letter",
+  "title": "Lychenar’s Untaken Benediction",
+  "rarity": "legendary",
+  "body": "Children of Light and Ink, I write for the day when a second drum begins beneath your ribs. You will be told that Mars is necessary and the Sun is noble; both are true and both are snares. War does not come when you summon it; it arrives when Death has cleared chairs at your table and asks only that you set one more place. Do not sing for War even to frighten Death away. Instead, teach rests as duties: the mercy-rest that freezes a blade mid-fall; the witness-rest that turns a mob into a choir; the burial-rest that seals a name without selling it. If a page bleeds from the margins inward, bind it to another page of equal weight and let silence clot them both. Should you ever see the Basilith’s seam open, do not ask what is inside. Ask whether your shadow is long enough to bridge the gap without breaking.",
+  "meta": {
+    "factions": ["Guild of Light and Ink"],
+    "voices": ["Silence", "Stone", "Flame"],
+    "date": "1589-05-08"
+  }
+},
+{
+  "id": "eastern-audit-windlitany",
+  "type": "letter",
+  "title": "Wind Auditor’s Litany",
+  "rarity": "legendary",
+  "body": "I was sent to measure the Free Cities’ covenant for the Eastern court. Their dancers mocked my scales, leaping from pan to pan until weight forgot which side to favor. In the desert the wind keeps all ledgers; dunes are their columns, and every morning the book is new. They say the Sun is a coin and Mars the hand that spends it, and that both belong to a treasury that calls robbery ‘tithe.’ I walked their academy’s roof and saw apprentices carve sabres from air, edges honed on the horizon itself. ‘Your god is a wall,’ their matron told me. ‘Ours is the door.’ I answered that doors cannot stand without walls. She smiled: ‘Then learn to be a hinge.’ That night a storm erased the camp but left our footprints stitched together into a pattern I am forbidden to describe. It reads like a proof of mercy requiring wind.",
+  "meta": {
+    "factions": ["Eastern Wind Empire", "Free Cities"],
+    "voices": ["Wind", "Silence"],
+    "date": "1589-05-09"
+  }
+},
+{
+  "id": "merryen-true-account",
+  "type": "letter",
+  "title": "A True Account of Merryen’s Death",
+  "rarity": "legendary",
+  "body": "This I swear by ink and breath. The man who cut Merryen bore no blade. He unspoke a word from the master’s page and the absence of that syllable made an edge. Merryen stepped into measure to bind it with a rest, and the press itself betrayed him, drawing him as if he were type. When we pulled him free, letters were stamped into his palm—not his own glyphs, but the spaces between them. The killer wore a signet of matte black that reflected nothing, and when I looked too long the room forgot I was inside it. He said he was from a guild that serves what comes when music is counted to zero. He bowed to the Sun’s window and to Mars’s trophies equally, then to the seam of the floorboards, and left by not being there. We burned the proof-sheet, and the smoke went straight down.",
+  "meta": {
+    "factions": ["Maraisbourg Fechtschule", "Hidden Guild"],
+    "voices": ["Silence", "Flame"],
+    "date": "1587-11-20"
+  }
+},
+{
+  "id": "red-bridge-midnight-sun",
+  "type": "letter",
+  "title": "Midnight Sun over the Red Bridge",
+  "rarity": "legendary",
+  "body": "Bonona kept vigil while rumors fought like cats in the rafters. At the stroke between days a light rose—not dawn, not torch, but a patient noon that made the river show its handwriting. On the under-beams we found the Covenant again, tar-thread intact, but the ink had grown a margin where none was. In that pale, the city’s debts listed themselves and then crossed themselves out. A veteran wept because his hands forgot how to close; a monk laughed because his breath came back with music in it; a noble took off her ring and found a callus where a sword-hilt had never rested. We heard the Ember brothers murmuring that Mars and the Sun are two names for one burden, and then the water answered by lifting the bridge a thumb’s width and setting it down true. Someone—Faelar, I think—said, ‘A copy for a copy,’ and the light agreed by leaving us exactly what we could carry.",
+  "meta": {
+    "factions": ["Bonona", "Guild of Light and Ink", "Ember Vigil"],
+    "voices": ["Water", "Flame", "Silence"],
+    "date": "1589-05-10"
+  }
+},
+   {
+  "id": "letter-solarmars-treatise-margin",
+  "type": "letter",
+  "title": "Margins on Mars and the Sun",
+  "rarity": "ultrarare",
+  "body": "Found in the gutter of a singed folio. Mars is the fist that closes; the Sun is the eye that will not. I have held both in the same gauntlet. In daylight we swore to protect widows; at dusk we salted wells and called it winter. The Ember brothers say flame is neither good nor evil—only hungry—and that chivalry is its dish-cover, domed and shining, to hide what the kitchen does. I tested the doctrine on a field of barley, invoking Mars for discipline and the Sun for mercy. The stalks bowed as soldiers; the heads turned as penitents; and then a second noon rose behind my helmet rim. I saw the shadow of my own plume draw steel and step forward while my hands did not. The shadow asked what honor weighs when grain is ash, and I answered by falling to my knees. The Sun burned my answer until it ran clear. Mars drank what remained.",
+  "meta": {
+    "factions": ["Ember Vigil", "Bonona"],
+    "voices": ["Flame", "Silence"],
+    "date": "1589-04-26"
+  }
+},
+{
+  "id": "report-ash-plain-twinsuns",
+  "type": "letter",
+  "title": "Field Report: Two Suns over the Ash Plain",
+  "rarity": "rare",
+  "body": "To the Commandery. Our line advanced under standard discipline, psalms of the Sun in the mouth and Mars in the marrow. At tercia the light doubled—one sun fixed above the ridge, one smaller, nearer, beating like a heart just over the captain’s brow. When the smaller flared, helms grew hot enough to sweat inside, and the prayer beads on our wrists smoked. A boy cried that he saw banners of bone moving against the wind. I saw only dust, until the dust arrayed itself like infantry and took the shock of our charge without bodies. Blades struck air and came back nicked. We formed square and survived by counting—a harvest chant learned from the Free Cities—until the second sun set into the captain’s visor. He does not take orders now. He gives them with his teeth.",
+  "meta": {
+    "factions": ["Stoneward", "Ember Vigil"],
+    "voices": ["Flame", "Stone", "Wind"],
+    "date": "1589-04-27"
+  }
+},
+{
+  "id": "basilith-noon-epistle",
+  "type": "letter",
+  "title": "Under the Basilith at Noon",
+  "rarity": "ultrarare",
+  "body": "Master Hewe again, with apologies to any who set ear to stone. At perfect noon the seam of the Basilith hums to a pitch that looses mortar from joints no mason laid. I placed my palm along the curve and felt it arc toward a missing arch that the sky still remembers. The hymn of the Sun from the cathedral steps made the seam sing a fifth above, and the fifth drew blood from my lifeline in a line as straight as a campaign road. In the dark of my shop I tried to stanch it with chalk; the chalk wrote back in grit, enumerating weights owed: grain, sons, confessions unsaid. If the God of Stone is truly one, His heart is a locked room behind that seam; if I am wrong, then what answers in there has only borrowed the beat of a heart to make us listen.",
+  "meta": {
+    "factions": ["Stonewrights", "Monastery of Irenne"],
+    "voices": ["Stone", "Silence"],
+    "date": "1589-04-28"
+  }
+},
+{
+  "id": "confession-ember-standard",
+  "type": "letter",
+  "title": "Confession Beneath the Ember Standard",
+  "rarity": "rare",
+  "body": "I removed my spurs on the fifth day because they rang like cutlery in a kitchen that cooks only grief. We took a village at sundown and gave it back by dawn—houses unpegged, doors set upright like shields in a field, the well lidded with a millstone. The chaplain asked if I still believed in the Sun; I answered that I believe in dawn. He said Mars is necessary because mercy without force is a sermon to wolves. I said nothing and polished my visor until I could see the man I would have been if I had never learned to hold a line. He lifted a bucket. He poured something brighter than water into the coals. The fire thanked him with two tongues, one for blessing and one for—",
+  "meta": {
+    "factions": ["Ember Vigil"],
+    "voices": ["Flame", "Silence"],
+    "date": "1589-04-29"
+  }
+},
+{
+  "id": "windward-intercept-dancers",
+  "type": "letter",
+  "title": "Intercept from the Windward Dancers",
+  "rarity": "ultrarare",
+  "body": "Cipher broken from the eastern couriers. They cut cloth to prove doctrine. Their captains speak of wind as the true god because only wind writes the shapes of deserts. I watched a squad descend the lee of a dune without touching sand, each leap a punctuation, each cut an argument. Their sabres sang and the dune answered by erasing our tracks back to morning. Their priest carried a bell made of bone too light to be any animal here; when he rang it, our banners leaned as if ashamed. Do not meet them on ground that remembers your steps. Do not breathe in time with their drums. A dancer paused at the tent’s flap and asked me if I worshiped the Sun or its shadow. I said I kept both. He bowed and said that is how storms are born.",
+  "meta": {
+    "factions": ["Eastern Wind Empire", "Free Cities"],
+    "voices": ["Wind", "Silence"],
+    "date": "1589-04-30"
+  }
+},
+{
+  "id": "ledger-catafalque-weights",
+  "type": "letter",
+  "title": "Ledger from the Catafalque Guild",
+  "rarity": "reallyultrarare",
+  "body": "Entry redacted except for numbers and stains. We balanced the names of a hamlet against seven inches of iron and the last verse of a cradle-song. The scale remained jealous, demanding a rumor’s worth of breath. We paid. At compline the hall’s long table lengthened by a span with no carpenter near it. Candles guttered without consuming and the wax flowed back up the wick. A clerk tried to write the God of Death’s courtesy name and his quill split into a forked tongue that licked the page clean. From the western wall came marching at whisper-step: not soldiers, but the spaces between them, boots made of pause. We rang for Mars by striking helm to helm; we rang for the Sun by opening every shutter. The dark did not retreat; it merely stood at attention and waited to be given orders.",
+  "meta": {
+    "factions": ["Catafalque Guild", "Stoneward"],
+    "voices": ["Silence", "Flame", "Stone"],
+    "date": "1589-05-01"
+  }
+},
+{
+  "id": "lychenar-measure-sealed",
+  "type": "letter",
+  "title": "Lychenar’s Sealed Measure",
+  "rarity": "ultrarare",
+  "body": "To be opened only when a second noon is seen in a man’s eyes. Children, you were taught Wind for teaching, Water for trade, Stone for record, Flame for warning, and Silence for rest. You have heard whispers of a sixth and a seventh from mouths that mistake hunger for liturgy. Know this: War walks where Death has already set a table; Death dines wherever War has drawn a map. You will be tempted to play the march that wakes them both in the name of Right. Do not. If you must stand between Mars and the Sun, stand with your back to the Sun so its light falls forward into the shadow you cast; let Mars take your shadow as payment and leave your living body to mercy. If a page begins to bleed from the margins inward, turn the book and play the rests as notes until the blood becomes ink again.",
+  "meta": {
+    "factions": ["Guild of Light and Ink"],
+    "voices": ["Silence", "Flame", "Stone"],
+    "date": "1589-05-02"
+  }
+},
+{
+  "id": "eclipse-sermon-bonona",
+  "type": "letter",
+  "title": "Sermon at the Ember Eclipse",
+  "rarity": "rare",
+  "body": "Preached in Bonona when daylight went to iron. Hear me: the soldier is two men in one mail—Mars inside, the Sun above. The ember in the brazier burns scraps of testament and keeps orphans warm with the same mouth. We confess that peace and war are one rope braided, and we are pulled by both ends at once. When the shadow ate the disc, torches would not light, but the embers in our palms glowed as if fed by breath alone. Some fell to prayer, some to sharpening, and some to listening. What did we hear? The city’s heart counting, and under it a drum in the earth replying that every oath is also a wound and every wound an oath paid forward.",
+  "meta": {
+    "factions": ["Ember Vigil", "Bonona"],
+    "voices": ["Flame", "Silence"],
+    "date": "1589-05-03"
+  }
+},
+{
+  "id": "merryen-last-margin",
+  "type": "letter",
+  "title": "Merryen’s Last Margin",
+  "rarity": "ultrarare",
+  "body": "In Merryen’s hand, cramped into the gutter of a proof-sheet. Forgive the ink. The press caught my sleeve like a liar’s door. I have discovered that a diagram of measure, if drawn with noonlight and a wounded quill, becomes a map to where a man’s shadow is heaviest. Mine points not behind me but ahead, toward a corner where no wall meets. A friend says the Sun is chivalry, Mars necessity; I say the page is both—white field and iron type. When the cutpurse priest came for me, his blade was the absence of one word I refused to revise. He missed. The press did not. If I do not come to supper, bind the treatise with twine and carry it to the river at dusk. If the water reads it, it will either sing or—",
+  "meta": {
+    "factions": ["Maraisbourg Fechtschule", "Guilds"],
+    "voices": ["Wind", "Flame", "Silence"],
+    "date": "1589-05-04"
+  }
+},
+{
+  "id": "stoneward-nightwatch-opening",
+  "type": "letter",
+  "title": "Nightwatch at the Basilith",
+  "rarity": "reallyultrarare",
+  "body": "Third watch. The seam opened like a mouth deciding whether to speak. We posted six with shields together, Sun on the boss and Mars in the muscle. The hum inside the stone matched the pace of boots we did not wear. A draft issued with the smell of old rain under new earth. I ordered a prayer and my voice came back older, carrying names I have not yet learned to mourn. From the gap slid a hand of stone with a wrist of darkness. It touched the banner and left no mark on cloth, only on the pole, which straightened like a spine remembering how to stand. The younger sentry asked if this was a siege or a parley. I told him it was a recruitment.",
+  "meta": {
+    "factions": ["Stoneward"],
+    "voices": ["Stone", "Silence", "Flame"],
+    "date": "1589-05-05"
+  }
+},
   {
     "id": "letter-ashmark",
     "type": "letter",
