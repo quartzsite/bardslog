@@ -305,7 +305,7 @@
   "rarity": "common",
   "type": "note",
   "title": "From the Irenne Children’s Copybook",
-  "body": "Copy: "Measure is kindness." Copy again: "Noise is not courage." The little one asked if the letters could dance. I said yes, but only in the margins.",
+  "body": "Copy: Measure is kindness. Copy again: Noise is not courage. The little one asked if the letters could dance. I said yes, but only in the margins.",
   "meta": {
     "factions": ["Nobility","Guilds"],
     "voices": ["Stone","Wind"],
@@ -520,7 +520,7 @@
   "id": "cmn-city-broadside-mind-the-steps",
   "rarity": "common",
   "type": "broadside",
-  "title": "City Broadside: "Mind the Steps"",
+  "title": "City Broadside: Mind the Steps",
   "body": "Citizens! Keep markets clear for measure at the second bell. Bring a stick; leave your quarrels. Lost tempers to be claimed at the watch-house.",
   "meta": {
     "factions": ["Free Cities","Empire"],
