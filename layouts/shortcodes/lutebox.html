@@ -1,5 +1,4 @@
 <!-- Lutebox Shortcode -->
-<!-- Usage example in any .md:  {{< lutebox pool="letters" title="Open the Lutebox" hint="One sealed letter a day—unseal the intrigue." cooldown="24" >}} -->
 <div class="lutebox" data-pool='{{ .Get "pool" | default "letters" }}'
      data-title='{{ .Get "title" | default "Open the Lutebox" }}'
      data-hint='{{ .Get "hint"  | default "One sealed letter a day." }}'
