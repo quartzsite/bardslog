@@ -1,4 +1,4 @@
-<!-- Lutebox (fixed path, always-visible Burn, odds.noopen support) -->
+<!-- Lutebox (Hugo path, always-visible Burn, supports odds.noopen) -->
 <div class="lutebox">
   <button class="lutebox__btn">Open a Letter</button>
   <button class="lutebox__burn" title="Reset to a fresh page state">Burn</button>
@@ -42,8 +42,7 @@
   transition: 0.2s;
 }
 .lutebox__btn:hover,
-.lutebox__retry:hover,
-.lutebox__burn:hover { background: #e6c45f; }
+.lutebox__retry:hover { background: #e6c45f; }
 .lutebox__burn { margin-left: .5rem; background: #a33; color: #fff; }
 .lutebox__burn:hover { background: #c44; }
 
@@ -74,13 +73,22 @@
 .rarity--legendary        { color: #ffd700; }
 
 /* tiny shake for error vibe */
-@keyframes lute-shake { 0% {transform: translateX(0)} 25%{transform: translateX(-2px)} 50%{transform: translateX(2px)} 75%{transform: translateX(-1px)} 100%{transform: translateX(0)} }
+@keyframes lute-shake {
+  0% {transform: translateX(0)}
+  25%{transform: translateX(-2px)}
+  50%{transform: translateX(2px)}
+  75%{transform: translateX(-1px)}
+  100%{transform: translateX(0)}
+}
 .lutebox--err .lutebox__btn { animation: lute-shake 120ms ease-in-out 1; }
 </style>
 
 <script>
+// BaseURL-aware JSON path emitted by Hugo (file must live at static/lutebox/pools/letters.json)
+const POOL_URL = {{ "lutebox/pools/letters.json" | relURL | jsonify }};
+
 (() => {
-  // find the nearest .lutebox above this script
+  // Find the nearest .lutebox above this script (works with multiple on a page)
   let probe = document.currentScript?.previousElementSibling;
   while (probe && !probe.classList?.contains('lutebox')) probe = probe.previousElementSibling;
   const box = probe || document.querySelector('.lutebox');
@@ -96,9 +104,6 @@
   const TITLE   = box.querySelector('.lutebox__title');
   const META    = box.querySelector('.lutebox__meta');
   const BODY    = box.querySelector('.lutebox__body');
-
-  // YOUR exact path (as requested):
-  const POOL_URL = '/static/lutebox/pools/letters.json';
 
   const RARITY_META = {
     common:           { label: "Common",            stars: 1 },
@@ -150,8 +155,8 @@
     return res.json();
   }
 
+  // Supports odds.noopen in the JSON pool to simulate “letter won’t open”
   function pickWithNoOpen(items, odds){
-    // support odds.noopen
     const rarityKeys = Object.keys(RARITY_META);
     let total = 0, weights = [], buckets = {};
 
