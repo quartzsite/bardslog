@@ -1,13 +1,28 @@
 {
   "pool": "letters",
-  "cooldownHours": 24,
+  "cooldownHours": 0,
   "odds": {
-    "common": 0.72,
-    "uncommon": 0.20,
-    "rare": 0.07,
-    "legendary": 0.01
+    "common": 0.68,
+    "uncommon": 0.18,
+    "rare": 0.08,
+    "legendary": 0.04,
+    "ultrarare": 0.015,
+    "mythic": 0.004,
+    "apocryphal": 0.001
   },
   "items": [
+    {
+  "id": "lt-fb-to-ml-1589-03-22",
+  "rarity": "apocryphal",
+  "type": "letter",
+  "title": "FB to ML",
+  "body": "Master,\n\nThe market bells here ring on time even when the men do not. Merryen smiles too brightly. He measures courtyards with his eyes as if they were parade grounds and says the north wind will bring friends who knot their maps instead of drawing them. He will not speak the name of Rowen’s city without spitting first; Lynden lives rent-free in his jaw. I nod, take notes that look like scales for a sad song, and keep my counsel.\n\nThe Free Cities talk louder than they listen. In the guild we have not forgotten our fifth. We name it only as a folded page. We play Wind, Stone, Flame, and Water in the open, but the last we keep under the bridge of the lute, where the sound is felt and not heard. I can hear its tread in the courtyards—counting, counting. You taught me to hear it and then to put it away.\n\nOnce a trader offered silver for the whole manuscript-in-progress. I closed the cover and pushed it back to him. “You can have a copy,” I said, “if you leave a copy behind.” He left a page he did not understand and took away a page he never will. The bargain holds: knowledge breeds only when it travels both ways.\n\nI confess a weariness. Every tool finds a hand; even wrapped in cloth, a blade teaches the fingers by shape alone. The fifth is a stair and fools will climb it just to see who salutes. So I write the steps into chords and waystones, and I sing them wrong when company gathers. Let the wrong ears remember the wrong tune.\n\nIf you would have me leave this city, write a single dot under the third line of your reply. If not, I will linger and practice the long measure at dusk until the drilling drowns it. The stone by the river hums at the turn of tide. Either the gods are listening, or men are.\n\nYour student in poor spirits and plain ink,\nFB",
+  "meta": {
+    "factions": ["Guilds", "Free Cities", "Octs", "Pritenia"],
+    "voices": ["Silence", "Water", "Stone"],
+    "date": "1589-03-22"
+  }
+},
     {
       "id": "lt-abbey-01859",
       "rarity": "common",
@@ -236,9 +251,117 @@
         "date": "1589-05-01"
       }
     },
+        {
+      "id": "lt-soldier-home",
+      "rarity": "common",
+      "type": "letter",
+      "title": "A Soldier’s Letter Home",
+      "body": "Marta—\nThe little one coughs? Keep her by the hearth. We march slow; the Duke’s men argue more than they drill. I saw a man cross blades without anger—he sang under his breath. If I come home, I’ll ask him to teach me that.",
+      "meta": {
+        "factions": ["Dukes"],
+        "voices": ["Flame", "Wind"],
+        "date": "1588-11-03"
+      }
+    },
+    {
+      "id": "lt-printer-apprentice",
+      "rarity": "common",
+      "type": "letter",
+      "title": "Apprentice to His Mother",
+      "body": "Mother,\nThe master hides his formes in flour sacks. If soldiers come, I am to spill the meal and sneeze until they laugh. I press letters by day and copy by night. My fingers are black, but my heart is clean.",
+      "meta": {
+        "factions": ["Guilds", "Free Cities"],
+        "voices": ["Water"],
+        "date": "1587-12-19"
+      }
+    },
+    {
+      "id": "lt-quartermaster-memo",
+      "rarity": "common",
+      "type": "memo",
+      "title": "Quartermaster’s Memo",
+      "body": "To Captain Vess:\nSalt short. Vinegar gone. Men cut with rust for want of oil. Request wagon from East Gate. If refused, purchase from canal men at double. The Duke prefers speed to thrift.",
+      "meta": {
+        "factions": ["Dukes"],
+        "voices": ["Flame", "Stone"],
+        "date": "1588-10-12"
+      }
+    },
+    {
+      "id": "lt-tavern-chit",
+      "rarity": "common",
+      "type": "receipt",
+      "title": "Tavern Chit, Unpaid",
+      "body": "— 3 ales (thin)\n— 1 pie (mysterious)\n— 1 chair (broken, by singer)\nNote: The singer promised to pay in a rousing chorus. The chorus was rousing. The payment was theoretical.",
+      "meta": {
+        "factions": ["Free Cities"],
+        "voices": ["Wind"],
+        "date": "1588-06-08"
+      }
+    },
+    {
+      "id": "lt-oct-scout",
+      "rarity": "uncommon",
+      "type": "report",
+      "title": "Oct Scout’s Tie-Mark",
+      "body": "Birch peeled at the north bend. Three knots—safe water; one cut—watch the wind. We saw beacon smoke on the western headland. The stone there hums when the tide turns.",
+      "meta": {
+        "factions": ["Octs"],
+        "voices": ["Water", "Stone"],
+        "date": "1589-03-11"
+      }
+    },
+    {
+      "id": "lt-merryen-broadside",
+      "rarity": "uncommon",
+      "type": "broadside",
+      "title": "Handbill from Maraisbourg",
+      "body": "Citizens! Stand tall and learn the long measure! A people well-footed need no masters. Drill at dawn by the river stairs. Bring a stick; leave with a step.",
+      "meta": {
+        "factions": ["Free Cities"],
+        "voices": ["Flame", "Wind"],
+        "date": "1588-09-01"
+      }
+    },
+    {
+      "id": "lt-lynden-guild-note",
+      "rarity": "uncommon",
+      "type": "letter",
+      "title": "Guild Note to Lynden",
+      "body": "To Master Rowen of Lynden,\nYour last parcel arrived damp and argumentative. The diagrams, however, sang sense once dried. We decline your invitation to instruct your Duke’s levy. Our music is for roads, not thrones.",
+      "meta": {
+        "factions": ["Guilds", "Pritenia"],
+        "voices": ["Silence"],
+        "date": "1589-01-27"
+      }
+    },
+    {
+      "id": "lt-fb-copy-merchant",
+      "rarity": "rare",
+      "type": "letter",
+      "title": "Copyist’s Bargain",
+      "body": "Sir,\nYou may have a copy, if you leave a copy behind. This is the treaty of the road: knowledge breeds when it is not locked up like a hound. Leave a pup; take a pup.",
+      "meta": {
+        "factions": ["Guilds"],
+        "voices": ["Water", "Silence"],
+        "date": "1589-02-22"
+      }
+    },
+    {
+      "id": "lt-lychenar-marginalia",
+      "rarity": "legendary",
+      "type": "note",
+      "title": "Lychenar’s Marginalia (Folded Twice)",
+      "body": "Four are sung.\nThe fifth is kept.\nIf you must choose a god, choose the one that listens.\n—L.",
+      "meta": {
+        "factions": ["Guilds"],
+        "voices": ["Silence"],
+        "date": "1588-12-31"
+      }
+    },
     {
       "id": "lt-captain-vess-everspring",
-      "rarity": "ultrarare",
+      "rarity": "mythic",
       "type": "letter",
       "title": "Unmailed Letter from Captain Vess",
       "body": "To be opened by the Boatswain, or, failing him, by any man who still knows the taste of tar and wind,\n\nAboard the Everspring,\nthree leagues west of the Iron Shoals\n\nBosun—\n\nYou may think me drunk on sour rum or sunstroke, but I’ll swear this by the mizzenmast’s own creak: the stowaway was a blessing. Found him coiled among the sailcloth like a cat, thin as rope’s end and twice as frayed, clutching a lute as if it were scripture. I’d have had him whipped to the gunwale for hiding, but the tide was foul and the wind colder than law, so I kept him on to swab the deck. By second bell he’d made the planks shine, and by sunset he’d taught half the crew how to step to measure.\n\nCalls himself Faelar Brighton, a bard by trade, though I’ve seen few bards who keep such measure in the midst of a gale. When we were becalmed near the Shoals, he drew a star on the deck between main and mizzen—five points, broad and perfect—and began to teach the crew footwork as though he’d a school instead of a ship. I meant to have it holystoned off, but the men fought better for it, so I let it be.\n\nCome next dawn, raiders rose out of the fog—black sails, no colours shown. Faelar took the quarterdeck without leave and called the crew to measure. They fought not as killers but as craftsmen. The star on the deck became a compass, and the Everspring herself sang through the smoke.\n\nThat night, when all was done and our dead counted, he and I shared what little rum remained. He spoke of guilds where art and mercy were brothered, and I—fool that I am—believed we might found one of our own. “A seaward chapter,” I told him, “to teach measure before men learn blood.” He smiled and said the sea was too wide for a single compass, but his eyes said hope otherwise.\n\nNow the wind’s turned. Rations thin, casks lighter than they should be, and the hands whisper mutiny. They say I spare faith for a bard and none for sailors. They forget that the Everspring’s name was meant as a promise—new beginnings for us all. But promises rot faster than rope in damp hold.\n\nIf this reaches you, Bosun, tell Faelar that Captain Vess forgave the sea before it took him. Tell him the measure holds, even when the ship heels. Tell him to build the Guild on land, where no tide can claim it.\n\nI can hear them now on the ladderway. The mizzen groans like a soul that knows its end.\n\n— Captain T. Vess\nMaster and Commander, Everspring\nWestward Trader Line, in faith to no crown but the compass",
