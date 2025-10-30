@@ -12,6 +12,390 @@
 "noopen": 0.05
   },
   "items": [
+  {
+    "id": "letter-ashmark",
+    "type": "letter",
+    "title": "Ash on the Sill",
+    "rarity": "common",
+    "body": "The fire took the barn, the hens, the ledger. Not the inkpot. I write this with ash on the sill and the smell of rosemary still clinging to the beam.\nWhen the wind shifted, the ash on the table drew a line straight as a mason’s snap, then curved as if remembering a wrist that was not mine. The line pointed toward the old stones and I felt the weight of a gaze with no eyes.",
+    "meta": {
+      "factions": ["Free Cities"],
+      "voices": ["Flame", "Stone"],
+      "date": "1589-04-03"
+    }
+  },
+  {
+    "id": "letter-tavernnote",
+    "type": "letter",
+    "title": "Tavern Note",
+    "rarity": "common",
+    "body": "Tell the minstrel with the broken string: her tune reached the east gate before dawn.",
+    "meta": {
+      "factions": ["Bonona"],
+      "voices": ["Wind"],
+      "date": "1589-04-04"
+    }
+  },
+  {
+    "id": "letter-cobble",
+    "type": "letter",
+    "title": "Between Cobblestones",
+    "rarity": "common",
+    "body": "They dropped the key near the well. It sings when it rains.",
+    "meta": {
+      "factions": ["Irenne"],
+      "voices": ["Water", "Silence"],
+      "date": "1589-04-05"
+    }
+  },
+  {
+    "id": "letter-drift",
+    "type": "letter",
+    "title": "Message in Driftwood",
+    "rarity": "common",
+    "body": "If this reaches another shore, know that the river turned traitor first.",
+    "meta": {
+      "factions": ["Harbormastery"],
+      "voices": ["Water"],
+      "date": "1589-04-06"
+    }
+  },
+  {
+    "id": "letter-seafoam",
+    "type": "letter",
+    "title": "Seafoam Prayer",
+    "rarity": "uncommon",
+    "body": "Donbettir, bear the drowned kindly. Let their last breath ripple upward as pearls.",
+    "meta": {
+      "factions": ["Donbettir's Line"],
+      "voices": ["Water"],
+      "date": "1589-04-08"
+    }
+  },
+  {
+    "id": "letter-emberday",
+    "type": "letter",
+    "title": "Emberday Fragment",
+    "rarity": "common",
+    "body": "The candles refused to stay lit. We took it as a sign and ate in the dark.\nAfter, the walls held a red afterimage not cast by any flame, and the afterimage hummed until the bread cooled.",
+    "meta": {
+      "factions": ["Monastery of Irenne"],
+      "voices": ["Flame", "Silence"],
+      "date": "1589-04-09"
+    }
+  },
+  {
+    "id": "letter-marrow",
+    "type": "letter",
+    "title": "Bone Ink",
+    "rarity": "uncommon",
+    "body": "The master said every true word must cost something. I think I’ve paid enough to sign my name again.",
+    "meta": {
+      "factions": ["Guilds"],
+      "voices": ["Stone", "Silence"],
+      "date": "1589-04-10"
+    }
+  },
+  {
+    "id": "letter-avenue",
+    "type": "letter",
+    "title": "Avenue Leaf",
+    "rarity": "common",
+    "body": "He whistled a Bononan march backward until the pigeons landed in time.",
+    "meta": {
+      "factions": ["Bonona"],
+      "voices": ["Wind"],
+      "date": "1589-04-11"
+    }
+  },
+  {
+    "id": "letter-brokenseal",
+    "type": "letter",
+    "title": "Unsealed",
+    "rarity": "uncommon",
+    "body": "The wax was still warm. Whoever left it behind must have known I’d—",
+    "meta": {
+      "factions": ["Free Cities"],
+      "voices": ["Silence"],
+      "date": "1589-04-12"
+    }
+  },
+  {
+    "id": "letter-hollows",
+    "type": "letter",
+    "title": "Hollowsong",
+    "rarity": "common",
+    "body": "Do not follow the flute into the hollow. If you do, remember to hum the fifth rest—\nBecause beneath the note there is a weight, and beneath the weight a mouth, and the mouth knows the names of stones that have never seen light.",
+    "meta": {
+      "factions": ["Octs"],
+      "voices": ["Silence", "Stone"],
+      "date": "1589-04-13"
+    }
+  },
+  {
+    "id": "letter-waterclock",
+    "type": "letter",
+    "title": "Waterclock Note",
+    "rarity": "common",
+    "body": "The vessel leaks faster at night. I think it dreams of the sea.",
+    "meta": {
+      "factions": ["Harbormastery"],
+      "voices": ["Water"],
+      "date": "1589-04-14"
+    }
+  },
+  {
+    "id": "letter-saltmirror",
+    "type": "letter",
+    "title": "Salt Mirror",
+    "rarity": "uncommon",
+    "body": "I saw my face in the basin, and it blinked before I did.",
+    "meta": {
+      "factions": ["Donbettir's Line"],
+      "voices": ["Water", "Silence"],
+      "date": "1589-04-15"
+    }
+  },
+  {
+    "id": "letter-market",
+    "type": "letter",
+    "title": "Market Scrap",
+    "rarity": "common",
+    "body": "Three apples, one song, and half a truth — fair trade, if you ask me.",
+    "meta": {
+      "factions": ["Irenne"],
+      "voices": ["Wind"],
+      "date": "1589-04-16"
+    }
+  },
+  {
+    "id": "letter-pilgrimage",
+    "type": "letter",
+    "title": "Pilgrim’s Edge",
+    "rarity": "common",
+    "body": "Every mile I walk, the weight of my words grows lighter. Perhaps I am being read.",
+    "meta": {
+      "factions": ["Monastery of Irenne"],
+      "voices": ["Silence"],
+      "date": "1589-04-17"
+    }
+  },
+  {
+    "id": "letter-thread",
+    "type": "letter",
+    "title": "Threadbare",
+    "rarity": "common",
+    "body": "The needle broke on the hem of your sleeve. I left it there. It knows the shape of your name.",
+    "meta": {
+      "factions": ["Bonona"],
+      "voices": ["Stone"],
+      "date": "1589-04-18"
+    }
+  },
+  {
+    "id": "letter-inkdrop",
+    "type": "letter",
+    "title": "Inkdrop",
+    "rarity": "common",
+    "body": "The ink spread into a small continent, and for a moment I ruled it.",
+    "meta": {
+      "factions": ["Guilds"],
+      "voices": ["Water", "Silence"],
+      "date": "1589-04-19"
+    }
+  },
+  {
+    "id": "letter-bridgehum",
+    "type": "letter",
+    "title": "Bridge Hum",
+    "rarity": "common",
+    "body": "Under the Red Bridge, someone has carved a single word: \"copy\".",
+    "meta": {
+      "factions": ["Bonona"],
+      "voices": ["Stone", "Water"],
+      "date": "1589-04-20"
+    }
+  },
+  {
+    "id": "letter-lastvoice",
+    "type": "letter",
+    "title": "Last Voice",
+    "rarity": "uncommon",
+    "body": "The storm took the tower. Only the bell rope survived. It rings when—",
+    "meta": {
+      "factions": ["Free Cities"],
+      "voices": ["Wind", "Silence"],
+      "date": "1589-04-21"
+    }
+  },
+  {
+    "id": "letter-rainmark",
+    "type": "letter",
+    "title": "Rainmark",
+    "rarity": "common",
+    "body": "The page blurred before I could finish. Perhaps the water remembers better than I do.\nWhen the droplet dried, a tiny circle of letters remained, all vowels, as if the river tried to speak without teeth.",
+    "meta": {
+      "factions": ["Bonona"],
+      "voices": ["Water", "Silence"],
+      "date": "1589-04-22"
+    }
+  },
+  {
+    "id": "letter-mothlight",
+    "type": "letter",
+    "title": "Mothlight",
+    "rarity": "common",
+    "body": "If you find the candle still burning, know that I have not yet come back inside.",
+    "meta": {
+      "factions": ["Maraisbourg"],
+      "voices": ["Flame"],
+      "date": "1589-04-23"
+    }
+  },
+  {
+    "id": "letter-basilith-spandrel",
+    "type": "letter",
+    "title": "On the Basilith’s Seam",
+    "rarity": "uncommon",
+    "body": "From Master Hewe, Stonewright. The great monolith in Irenne bears a seam that is no flaw. Set a plumb and you’ll see it runs not true to any quarry face: it curves—ever so slight—toward the north arch of the old aqueduct. A spandrel, I say, for weight that was meant to rest on something that is gone now: an absent arch, a missing brace of air. If stone remembers its partners, then the Basilith remembers a roof of sky that once leaned on it. I tapped along the seam and heard a higher note, as if the block holds a hollow shaped like a vow.",
+    "meta": {
+      "factions": ["Stonewrights", "Stoneward"],
+      "voices": ["Stone", "Silence"],
+      "date": "1589-04-24"
+    }
+  },
+  {
+    "id": "letter-tempest-donbettir-faelar",
+    "type": "letter",
+    "title": "Storm Called in Donbettir’s Name",
+    "rarity": "rare",
+    "body": "Testimony taken at the quayhouse, Bonona. The old tide-singer lifted both hands and spoke Donbettir’s nine names in a hush that made the gulls forget to argue. Cloud stacked like slate; rain braided itself into cords. The captain who sold us to silence laughed once and then the laugh went under. I saw the mast turn to a finger pointing at nothing, and the deck turn to a sentence without a verb. There was a singer aboard—lute wrapped in oiled cloth—who looked back only once. When the wave unmade the ship, the water made room for him like a table set for a late guest.",
+    "meta": {
+      "factions": ["Donbettir's Line", "Harbormastery"],
+      "voices": ["Water", "Wind"],
+      "date": "1589-04-25"
+    }
+  },
+  {
+    "id": "ultra-basilith-ledger-irenne",
+    "rarity": "ultrarare",
+    "type": "letter",
+    "title": "Ledger at the Basilith of Irenne",
+    "body": "Account of night watch, kept by Sister Marcelline of the Stoneward, under a sky clear enough to taste frost. At the second hour after moonrise, the Basilith hummed in a register lower than the cisterns, three pulses then silence, then seven. We matched it with a tuning fork grounded against the plinth; the fork stilled without a shimmer, as if stone drank song. Prior Hubert would tell me not to name it miracle, so I call it measure. Chips taken from the fallen coping were set in a ring and heated: no crack, no sweat, only a smell like rain on mortar. A mason from the outer ward swears he has seen the same in old bridges that never learned to bow. Two pilgrims circled barefoot, whispering a grammar of the One God that uses only nouns: weight, rest, root, vow. When they finished, the monolith cast a rectangle of darkness on the ground that did not agree with the moon. I drew its edges on vellum; the lines run inward as if toward a well. News comes that the eastern empire teaches blades to skip like stones on wind. I will file that under weather until weather grows teeth. If the Basilith is a letter from the One, then what alphabet is cut into its grain, and who do we become when we learn to read without moving our lips.",
+    "meta": {
+      "factions": ["Stoneward", "Empire"],
+      "voices": ["Stone", "Silence"],
+      "date": "1589-04-12"
+    }
+  },
+  {
+    "id": "rare-eddying-blade",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "On the Eddying Blade",
+    "body": "From a wind-rider of the eastern marches, signed simply Sahi. Apprentice, you asked what it is to lunge when the ground is not there. First, you step as if the air were braided rope; second, you trust the breath to hold for the length of a name; third, you fall on purpose and make the fall a cut. Our sabres curve because our dunes do. A straight edge is a fine sermon on patience, but wind has few congregants willing to sit. We leap to touch the places the wind has already carved and borrow its proof. If you keep one foot for the earth, keep the other for the tale you will tell after. Remember: wind erodes empires exactly as it teaches children to fly kites. There is rumor your masters print what they once swore to whisper. We also print, but our ink dries while running. Meet me where the tamarisks bend like listening men. Bring water, not wine. Bring a question, not a challenge. Bring a song that knows how to end and how to stop before ending.",
+    "meta": {
+      "factions": ["Eastern Host"],
+      "voices": ["Wind", "Water"],
+      "date": "1589-06-03"
+    }
+  },
+  {
+    "id": "rare-skywheel-bonona",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "The Skywheel Over Bonona",
+    "body": "Observatory memorandum from Mistress Galla of the Upper Bridge. Last night the skywheel turned with a lag, as if a tooth had been filed from the gear that drags dawn uphill. I tracked the slow star the sailors call the Black Sail and found it kissing the rim of the fifth rest in the chart we pretend not to have. When Black Sail leans that way, wars write themselves in the margins before the page. Yet the river lay obedient as a stroked dog and the presses below clattered on like rain. Perhaps omens are only loud to those who already listen. Still, I warned the guild that a season of beginnings is coming, which is worse than endings; endings remember how to close. If you must travel, choose roads that have learned your name. If you must love, choose a voice you can hear in fog. If you must carry steel, put it to bed each night on a folded cloth and tell it what it is for.",
+    "meta": {
+      "factions": ["Guilds", "Bonona"],
+      "voices": ["Silence", "Flame"],
+      "date": "1589-05-28"
+    }
+  },
+  {
+    "id": "rare-donbettirs-spit",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "Salt Chronicle from Donbettir’s Spit",
+    "body": "Keeper’s log, third lamp, sea calm like hammered tin. The waterfolk brought a drowned man that was not drowned: lungs dry as driftwood, eyes full of tide-maps. They asked if I could read the routes in the iris, and I said yes because a lie in service of mercy is a harbor. The old woman with them sang the names of estuaries with a Donbettir lilt that makes every inlet sound like a cradle. She set shells on the pier in the shape of a hand; when a wave crossed the palm, it left a coin the size of a tear. They told me the eastern wind has learned to tack against prayer, and that if our empire prays to stone too hard, we will forget the trick of floating. I lit the third lamp anyway and wrote this on oilskin so the words would not swell when the truth comes in.",
+    "meta": {
+      "factions": ["Donbettir's Line", "Harbormastery"],
+      "voices": ["Water", "Wind"],
+      "date": "1589-07-09"
+    }
+  },
+  {
+    "id": "rare-alisouns-margin",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "Lady Alisoun’s Margin on Gardens and Wars",
+    "body": "A garden instructs more honestly than a treaty. The basil hums when the moon is tooth-thin, and the bees debate like lawyers only until the lavender rules against them. I have seen men carve monoliths in their hearts and call it faith; I have also seen a child forgive a broken wheel as if mercy were a trade good. My city sends me petitions braided with fear: appease the Stone, flatter the Wind, drown the West. Yet I think the world is larger than our choirs of obedience. If a sword must be raised, let it be for a neighbor’s harvest. If a press must be silenced, let it be to hear a widow count her bread. And if a covenant is to be kept, let it be kept under a bridge where the river writes it again each spring and the letters refuse to stay dry long enough to march.",
+    "meta": {
+      "factions": ["Irenne", "Bonona"],
+      "voices": ["Stone", "Water"],
+      "date": "1589-04-20"
+    }
+  },
+  {
+    "id": "ultra-perkins-shadow-map",
+    "rarity": "ultrarare",
+    "type": "letter",
+    "title": "Perkin’s Map of Shadows",
+    "body": "Made with lamp-smoke and chalk on river paper. I traced where light will not go: behind the Basilith, under the throat of the Red Bridge, in the arch of a veteran’s missing hand, in the pause between two notes Faelar says are neighbors. The map looks wrong because the wrongness is faithful. I found alleys that do not appear by day and a door that opens into more door. Some names wrote themselves backward as if ashamed. Where I marked the Guildhall, the chalk would not take; I tried spit, then wine, then blood in a thumb’s worth, and the paper drank until it was full of my face. There is a shape that repeats, a hooked line like the start of a letter we have not learned. If you follow it from quay to kiln to archive, it draws a scythe. I will burn this after copying, but the ash will know the turns, and if wind lifts the ash, the city will know them too. If I vanish, do not look for me along streets you can name. Look where the naming breaks and the paving stones—",
+    "meta": {
+      "factions": ["Guilds", "Octs"],
+      "voices": ["Silence", "Flame"],
+      "date": "1589-08-01"
+    }
+  },
+  {
+    "id": "rare-waryn-catechism",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "Catechism to a Recruit",
+    "body": "From Serjeant Waryn, written on the back of a pay chit. You asked how to stand your ground; I ask what you mean by stand. If stone is your teacher, it will show you how to take a blow without flinching and how to crack along a chosen vein rather than split at random. If wind is your teacher, it will show you how to be elsewhere without running. But both teachers forget the field that feeds them. Here are three answers and one question. First: a shield is a traveling wall; if you carry it long, it will start to ask for rent. Second: a song in marching time can turn a town into a drum; choose tunes that refuse to be beaten flat. Third: never trust a blade that has never been put away properly. The question is this: who are you guarding, and would they guard you when your pay lapses. If you cannot name them, learn a trade that leaves bread in its wake.",
+    "meta": {
+      "factions": ["Veterans"],
+      "voices": ["Stone", "Silence"],
+      "date": "1589-05-06"
+    }
+  },
+  {
+    "id": "rare-stair-of-hubert",
+    "rarity": "rare",
+    "type": "letter",
+    "title": "Prior Hubert’s Stair",
+    "body": "We found a stair that descends without arriving. The first landing tastes of chalk; the second smells of wet vellum; the third refuses sound like a proud cat. On the fourth, I heard my own name pronounced by someone who wished me well; that was hardest to walk past. At the fifth, the lamp grew brave. At the sixth, we turned the lamp out and saw better. The seventh has a draft that moves as if reading. A novice asked whether the stair is a trap. I told him a trap has a bait and a spring, but this stair has a lesson and a mercy: it teaches you how many steps you can take before the part of you that hungers for bottom gives up its hunger. We sealed it with a hymn that has no words, only rests. It held until—",
+    "meta": {
+      "factions": ["Monastery of Irenne"],
+      "voices": ["Silence"],
+      "date": "1589-03-30"
+    }
+  },
+  {
+    "id": "ultra-stonewrights-heartbeat",
+    "rarity": "ultrarare",
+    "type": "letter",
+    "title": "From the Stonewrights Beneath Maraisbourg",
+    "body": "Report smuggled in a loaf crust. We are tunneling under the Tanner’s Quarter to bow the new halls to the old. The ground here remembers hooves and flood and one night of singing that left mortar sweeter than grain. Three spans in, the picks began to ring in time with something that was not us. We tried silence; the ringing continued like a pulse felt through a wall. We pressed chisels to the clay and each chisel took a different note, which is a choir any sane mason flees. But we are stubborn, and stubbornness is our liturgy. We shaped a chamber with seven facets, each facet tuned to a hum. When we finished, the chamber breathed once and a curl of dust rose and did not fall. One of the boys set his ear to the floor and wept without shame. He said the earth under Maraisbourg has a heart and it is deciding whether to keep us. When we left, we bricked the way with a key known only to those who can hear the wrong stone in a wall. If the city above begins to walk in step, break the chamber and let the song escape.",
+    "meta": {
+      "factions": ["Stonewrights", "Maraisbourg"],
+      "voices": ["Stone"],
+      "date": "1589-06-21"
+    }
+  },
+  {
+    "id": "ultra-faelar-black-sail-mercy",
+    "rarity": "ultrarare",
+    "type": "letter",
+    "title": "Songdraft: Black Sail Mercy",
+    "body": "First stave written on sailcloth. Verse for the river that pretends to be tame until it remembers the sea. Chorus for the desert that pretends to be empty until you learn the grammar of shadows. Bridge for the press that runs hot at midnight when the constables forget how to count. This tune holds two times at once, a march that refuses a drum and a waltz with no one leading. Merryen would have laughed to see the leap in the middle, the one that lands on a rest and turns the floor to water. Alisoun will call it dangerous and then ask me to play it twice. Waryn will stand in a doorway and keep the wind from stealing the last note. Hubert will listen with his eyes closed so he can argue with God later in private. Perkin will copy the bar that should not fit on a page and it will fit because he wants it to. If you hear this on a night when the Black Sail star leans on the fifth rest, come quietly as if late to a kindness. Bring no steel that expects to be obeyed. If the lamps gutter in time, keep singing. If the bridge hums, step wider. If someone begins to run, finish the line that ends with the word mer—",
+    "meta": {
+      "factions": ["Guilds", "Free Cities"],
+      "voices": ["Water", "Wind", "Silence"],
+      "date": "1589-05-31"
+    }
+  },
    {
   "id": "lt-bonona-playbill",
   "rarity": "common",
