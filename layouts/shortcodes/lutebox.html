@@ -1,9 +1,9 @@
-<!-- Lutebox Shortcode -->
+<!-- Simple Lutebox -->
 <div class="lutebox" data-pool="{{ .Get "pool" | default "letters" }}">
-  <button class="lutebox__btn">Open the Lutebox</button>
-  <p class="lutebox__hint">One sealed letter a day.</p>
+  <button class="lutebox__btn">Open a Letter</button>
+  <p class="lutebox__hint">A sealed letter awaits you.</p>
   <div class="lutebox__result" hidden>
-    <strong class="lutebox__title"></strong>
+    <h3 class="lutebox__title"></h3>
     <p class="lutebox__meta"></p>
     <pre class="lutebox__body"></pre>
   </div>
@@ -12,40 +12,35 @@
 <style>
 .lutebox {
   text-align: center;
-  margin: 2rem auto;
-  max-width: 600px;
-  padding: 1.5rem;
-  background: #222;
-  border-radius: 12px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #1c1a17;
   color: #f7e9c1;
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  box-shadow: 0 0 20px rgba(0,0,0,.3);
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+  font-family: 'EB Garamond', serif;
 }
 .lutebox__btn {
   background: #d4af37;
+  border: none;
   color: #000;
   font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 0.6rem 1.2rem;
-  cursor: pointer;
-}
-.lutebox__btn:hover {
-  background: #e5c05f;
-}
-.lutebox__hint {
-  opacity: 0.85;
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-}
-.lutebox__result {
-  margin-top: 1rem;
-  background: #111;
-  border: 1px solid rgba(255,255,255,.1);
   border-radius: 8px;
-  padding: 1rem;
-  text-align: left;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  transition: 0.2s;
 }
+.lutebox__btn:hover { background: #e6c45f; }
+.lutebox__result {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #2a2622;
+  border-radius: 8px;
+}
+.lutebox__meta { opacity: 0.75; margin: 0.25rem 0; font-size: 0.9rem; }
+.lutebox__body { white-space: pre-wrap; }
 </style>
 
 <script>
@@ -58,27 +53,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const meta = box.querySelector('.lutebox__meta');
   const body = box.querySelector('.lutebox__body');
   const pool = box.dataset.pool || 'letters';
-  const lastKey = `lutebox:last:${pool}`;
 
   btn.addEventListener('click', async () => {
     btn.disabled = true;
     hint.textContent = 'Opening...';
 
     try {
-      const res = await fetch(`/lutebox/pools/${pool}.json`, { cache: 'no-store' });
-      const data = await res.json();
+      const response = await fetch(`/lutebox/pools/${pool}.json`);
+      const data = await response.json();
       const items = data.items || [];
       const item = items[Math.floor(Math.random() * items.length)];
 
       title.textContent = item.title || '(Untitled Letter)';
       meta.textContent = item.meta?.date || '';
       body.textContent = item.body?.trim() || '';
-
       result.hidden = false;
-      localStorage.setItem(lastKey, JSON.stringify(item));
 
-      hint.textContent = 'Come back tomorrow for another letter.';
-    } catch (e) {
+      hint.textContent = 'Open another?';
+    } catch (err) {
       hint.textContent = 'Could not load letters.';
     }
 
