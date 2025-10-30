@@ -12,6 +12,102 @@
 "noopen": 0.05
   },
   "items": [
+   {
+“id”: “lt-basilith-watch-brief-1589-03-08”,
+“rarity”: “rare”,
+“type”: “letter”,
+“title”: “Basilith Watch Brief”,
+“body”: “To the Stone-Prefect at Westgate,\nThe Basilith of Irenne throws its noon shadow due east for thirty-seven breaths before the bell—an adjustment from last winter’s measure. The court preachers call it a miracle of the One. The masons call it settling. I call it a compass.\nPatrols have doubled along the quay roads, but their eyes look past the Free Cities and their Oct banners, as if tin boats could not carry fire. The edicts are sermons about stone; the enemy in the east is wind, they say, and wind dies on rock. I have swept enough steps to know wind brings dust, and dust becomes mortar if you wet it.\nRecommendation: stop counting shadows; start counting printers.\n— Scribe Janna, Basilith Watch”,
+“meta”: {
+“factions”: [“Stone Empire”,“Free Cities”,“Octs”],
+“voices”: [“Stone”,“Wind”,“Silence”],
+“date”: “1589-03-08”
+}
+},
+{
+“id”: “lt-caravan-note-siroc-1589-03-12”,
+“rarity”: “rare”,
+“type”: “letter”,
+“title”: “Caravan Note from the Siroc Road”,
+“body”: “Master, we traded salt for silk at the third cistern east of Bonona. The eastern riders arrived like a storm that forgot its rain—cloth masks, crescent blades, and a dance that put their heels where their heads had been. I saw a man leap as if a dune lifted him and cut a sample-bale from its cord without nicking a single thread. They laugh at stone law. They listen to wind and say it remembers shapes better than chisels do.\nIf these are enemies, they will never push like our drill; they will pull, and we will follow.\n— Kesh, factor’s clerk”,
+“meta”: {
+“factions”: [“Wind Empire”,“Free Cities”],
+“voices”: [“Wind”,“Water”],
+“date”: “1589-03-12”
+}
+},
+{
+“id”: “lt-lychenar-margin-merryen-1589-03-17”,
+“rarity”: “ultrarare”,
+“type”: “letter”,
+“title”: “Lychenar’s Margin to Merryen (Unsent)”,
+“body”: “Merryen,\nYour wide steps teach citizens; keep teaching them. The wind-court’s leapers break measure with purpose; we must show our people how to break it without breaking each other. The One-God men carve Basiliths to steady hearts. The wind-priests carve air to loosen feet. Both speak true in their tongue.\nYou asked about the Fifth. Forget the word and remember the rest between words. We do not name that god; we make it wait. When rulers are afraid, they beat drums to wake it. We write rests so it sleeps.\nIf the Stone Court calls you for a parade, make them walk a tune that cannot be marched. If the Wind Court offers you silk, use it to bind a wound. If you must choose between stone and wind, choose the road.\n— L.”,
+“meta”: {
+“factions”: [“Guilds”,“Stone Empire”,“Wind Empire”],
+“voices”: [“Wind”,“Stone”,“Silence”],
+“date”: “1589-03-17”
+}
+},
+{
+“id”: “lt-foundation-log-basilith-1589-03-25”,
+“rarity”: “ultrarare”,
+“type”: “letter”,
+“title”: “Foundation Log: Basilith at North March”,
+“body”: “Entry VII: We set the seventh course and sealed the blessed box inside the heart of the Basilith, per canon. The priest intoned the One Name and the stone held its breath. A hairline opened from corner to corner when the desert wind rose at vespers. The master mason said wind only finds what was already there. The priest said wind blasphemes.\nEntry IX: Couriers from the east carried scimitars wrapped in prayer-cloth. Our wardens would not touch the cloth. The couriers smiled and stepped away without leaving footprints.\nEntry XI: An old veteran came at dusk and traced a rest in the dust at the site’s edge. The crack stopped growing.\n— Adept Maro, Mason’s Company”,
+“meta”: {
+“factions”: [“Stone Empire”,“Wind Empire”],
+“voices”: [“Stone”,“Wind”,“Silence”],
+“date”: “1589-03-25”
+}
+},
+{
+“id”: “lt-quiet-ashen-article-1589-04-02”,
+“rarity”: “reallyultrarare”,
+“type”: “letter”,
+“title”: “Article of the Quiet Ash (Seized)”,
+“body”: “We, the undersigned, make covenant in unlight: to read the rests between the Four; to name by breath that which the bards refuse to speak; to call the God-who-Answers-Only-to-War by the old cadence; to soothe the Unappeased by spilling lawfully and tidily until thirst breaks.\nMethod: steal the margin that Lychenar wrote, pry the hinge Merryen hid, threaten the singer until he sings the fifth note without breaking it.\nSign: a smear of cold ash where a seal should be.\nAddendum, scribe’s hand: the paper smells of funeral oil and vinegar-ink. One line reads backward unless held to a candle: “Summon Death to bargain for Peace.”\n— Confiscated by the Red Canal Guild, copied twice, burned once.”,
+“meta”: {
+“factions”: [“Hidden Orders”,“Guilds”],
+“voices”: [“Silence”,“Flame”,“Stone”],
+“date”: “1589-04-02”
+}
+},
+{
+“id”: “lt-siroc-courtyard-choreia-1589-04-06”,
+“rarity”: “reallyultrarare”,
+“type”: “letter”,
+“title”: “Choreia of the Courtyard, Rendered into Prose”,
+“body”: “At the Satrap’s court the duelists did not circle— they spiraled. A master in saffron leapt to the height of a man’s banner, cut downward through hanging carpet with a single crescent like he was cutting wind from cloth, and landed with both heels soft. Our Bononese dancers keep one foot courting earth; these unwed it and trusted air.\nTheir creed: wind remembers you if you fall through it bravely. Their heresy (to us): stone is a jailer, not a home. Their rumor: the Stone Emperor prays to a god that can be toppled, for every Basilith has a seam.\n— Observed by Magda of the Guild of Lenses”,
+“meta”: {
+“factions”: [“Wind Empire”,“Free Cities”],
+“voices”: [“Wind”,“Water”],
+“date”: “1589-04-06”
+}
+},
+{
+“id”: “lt-border-parley-oasis-1589-04-16”,
+“rarity”: “legendary”,
+“type”: “letter”,
+“title”: “Minutes of the Oasis Parley (Stone and Wind)”,
+“body”: “Held at the Broken Palm where the marchlands forget whose dust they are.\nAttendees: Envoy of the Stone Emperor beneath the Basilith standard; Emissary of the Wind Court beneath seven ribbons; three translators; one bard who tuned and pretended not to hear.\nThe Stone Envoy placed a cube of polished granite on the cloth. The Wind Emissary placed a length of silk so thin it made the stars ripple. They spoke of tariffs and maps while meaning soldiers and shrines. Stone said: hold. Wind said: move. Both said: peace, meaning wintering.\nWhen the translators rested their tongues, the bard struck a measure that limps if you try to march to it. The Wind Emissary’s foot almost followed; the Stone Envoy’s hand almost clenched. Almost is sometimes a victory.\nNotes:\n— Stone ignores the western nuisance (their phrase) of Free Cities and Oct banners; their eyes lean east like their shadows.\n— Wind names the western pact pagan and small; their riders know the river paths better than we guessed.\n— Both courts deny a fifth god; both fear the word for it. The Wind calls it Sandstorm. Stone calls it Siege. The bard wrote only a rest.\nAdjourned at moonrise. The cube and the silk were exchanged: a copy for a copy. Somewhere a printer will make sense of that.\n— Set down by an unnamed clerk who owes Faelar his life”,
+“meta”: {
+“factions”: [“Stone Empire”,“Wind Empire”,“Free Cities”,“Octs”],
+“voices”: [“Wind”,“Stone”,“Silence”],
+“date”: “1589-04-16”
+}
+},
+{
+“id”: “lt-alisoun-quiet-spies-1589-04-18”,
+“rarity”: “ultrarare”,
+“type”: “letter”,
+“title”: “Lady Alisoun on Quiet Spies”,
+“body”: “To Prior Hubert,\nYour candles gutter when a certain hymn is hummed near the stacks. That hymn is a door. I have word of a guild that wears ash and speaks peace like a ledger; they want the door’s key. Their doctrine crowns Death to hire War as a steward. It is tidy theology for murderers.\nThe Stone Court will not see them—stone is blind to smoke. The Wind Court will pretend they are fireside stories—wind is vain. Let us be neither. Keep the Fifth unspoken and taught only by rest, as Lychenar wrote and Merryen bled for.\nI will turn the Basilith’s shadow to the west one morning by mirrors and gossip, long enough for the Empire to remember we exist.\n— A.”,
+“meta”: {
+“factions”: [“Nobility”,“Abbey”,“Free Cities”],
+“voices”: [“Silence”,“Stone”,“Wind”],
+“date”: “1589-04-18”
+}
+},
 {
   "id": "lt-alisoun-margin-to-council-1589-04-15",
   "rarity": "rare",
