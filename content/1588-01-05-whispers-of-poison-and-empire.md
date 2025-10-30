@@ -19,5 +19,5 @@ It struck me that the art I loved was tangled in politics I did not understand.
 Bonona thrives in the Empire's shadow and yet claws for its own freedom; Maraisbourg swears loyalty to the Emperor yet teaches its own traditions; dukes and cities whisper of war while their swordsmen practise forms.  
 If I stayed, I would be drawn into their web.  
 That night, with the taste of sour wine still on my tongue, I decided to slip away.  
-I would find a ship heading west and hide among its crew as a common sailor.  
+I would find a ship heading west and hide aboard it.  
 Where it would carry me I could not know, only that my next steps would be taken far from Bonona's watchful eyes.
