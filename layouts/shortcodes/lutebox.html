@@ -1,4 +1,4 @@
-<!-- Lutebox (troubleshoot-ready: logs URL, tries both lutebox/ & lootbox/, supports odds.noopen) -->
+<!-- Lutebox — zero-fetch (Hugo inlines JSON from static/lutebox/pools/letters.json) -->
 <div class="lutebox">
   <button class="lutebox__btn">Open a Letter</button>
   <button class="lutebox__burn" title="Reset to a fresh page state">Burn</button>
@@ -30,37 +30,38 @@
 .lutebox--err .lutebox__btn{animation:lute-shake 120ms ease-in-out 1}
 </style>
 
-<script>
-// BaseURL-aware paths emitted by Hugo. Put the JSON at *one* of these:
-//   static/lutebox/pools/letters.json  -> {{ "lutebox/pools/letters.json" | relURL }}
-//   static/lootbox/pools/letters.json  -> {{ "lootbox/pools/letters.json" | relURL }}
-const CANDIDATE_URLS = [
-  {{ "lutebox/pools/letters.json" | relURL | jsonify }},
-  {{ "lootbox/pools/letters.json" | relURL | jsonify }}
-];
+{{/* Build-time load (no fetch). If the file is missing, Hugo will error, which is better than silent HTML fallbacks. */}}
+{{- $pool := readFile "static/lutebox/pools/letters.json" | transform.Unmarshal -}}
 
+<script>
 (() => {
+  // === Data inlined by Hugo at build time ===
+  const POOL = {{ $pool | jsonify }};
+  const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
+  const ODDS  = POOL.odds || {};
+
+  // === Minimal DOM refs ===
   let probe = document.currentScript?.previousElementSibling;
   while (probe && !probe.classList?.contains('lutebox')) probe = probe.previousElementSibling;
-  const box = probe || document.querySelector('.lutebox'); if (!box) return;
-
-  const BTN = box.querySelector('.lutebox__btn');
-  const BURN = box.querySelector('.lutebox__burn');
-  const HINT = box.querySelector('.lutebox__hint');
+  const box    = probe || document.querySelector('.lutebox'); if (!box) return;
+  const BTN    = box.querySelector('.lutebox__btn');
+  const BURN   = box.querySelector('.lutebox__burn');
+  const HINT   = box.querySelector('.lutebox__hint');
   const RESULT = box.querySelector('.lutebox__result');
-  const ACTIONS = box.querySelector('.lutebox__actions');
-  const RETRY = box.querySelector('.lutebox__retry');
+  const ACTIONS= box.querySelector('.lutebox__actions');
+  const RETRY  = box.querySelector('.lutebox__retry');
   const RARITY = box.querySelector('.lutebox__rarity');
-  const TITLE = box.querySelector('.lutebox__title');
-  const META = box.querySelector('.lutebox__meta');
-  const BODY = box.querySelector('.lutebox__body');
+  const TITLE  = box.querySelector('.lutebox__title');
+  const META   = box.querySelector('.lutebox__meta');
+  const BODY   = box.querySelector('.lutebox__body');
 
+  // === Rarity + simple UI helpers ===
   const RARITY_META = {
     common:{label:"Common",stars:1},uncommon:{label:"Uncommon",stars:2},reallyuncommon:{label:"Really Uncommon",stars:3},
     rare:{label:"Rare",stars:4},ultrarare:{label:"Ultrarare",stars:5},reallyultrarare:{label:"Really Ultrarare",stars:6},legendary:{label:"Legendary",stars:7}
   };
-  const normalize = r => (RARITY_META[(r||'common').toLowerCase()]? (r||'common').toLowerCase() : 'common');
-  const starLine = n => n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n)+` (${n}/5)` : '★'.repeat(n)+` (${n}/5)`;
+  const normalize = r => (RARITY_META[(r||'common').toLowerCase()] ? (r||'common').toLowerCase() : 'common');
+  const starLine  = n => n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n)+` (${n}/5)` : '★'.repeat(n)+` (${n}/5)`;
 
   function resetBox(){
     box.classList.remove('lutebox--err');
@@ -77,24 +78,7 @@ const CANDIDATE_URLS = [
     BTN.disabled = false;
   }
 
-  async function loadPool(){
-    let lastErr;
-    for (const url of CANDIDATE_URLS){
-      try{
-        console.log('[Lutebox] fetching', url);
-        const res = await fetch(url, { cache:'no-store' });
-        const ct = (res.headers.get('content-type')||'').toLowerCase();
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        if (!ct.includes('json')) {
-          const head = (await res.text()).slice(0,120);
-          throw new Error(`Bad response (${res.status}); content-type "${ct}" starts with: ${head}`);
-        }
-        return await res.json();
-      }catch(e){ lastErr = e; }
-    }
-    throw lastErr || new Error('No JSON pool found');
-  }
-
+  // === Weighted pick with odds.noopen support ===
   function pickWithNoOpen(items, odds){
     const keys = Object.keys(RARITY_META);
     let total = 0, weights=[], buckets={};
@@ -141,14 +125,12 @@ const CANDIDATE_URLS = [
     HINT.textContent = 'Open another?';
   }
 
-  async function openLetter(){
+  function openLetter(){
     BTN.disabled = true; ACTIONS.hidden = true; box.classList.remove('lutebox--err');
     HINT.textContent = 'Opening...';
     try{
-      const data = await loadPool();
-      const items = Array.isArray(data.items) ? data.items : [];
-      if (!items.length) throw new Error('Empty pool');
-      const pick = pickWithNoOpen(items, data.odds);
+      if (!ITEMS.length) throw new Error('Empty pool');
+      const pick = pickWithNoOpen(ITEMS, ODDS);
       if (pick.kind === 'noopen') { setError(); return; }
       renderItem(pick.item);
     }catch(e){
