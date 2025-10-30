@@ -1,6 +1,6 @@
 <div class="lutebox">
   <button class="lutebox__btn">Open a Letter</button>
-  <button class="lutebox__burn" title="Reset view">Reset</button>
+  <button class="lutebox__burn" title="Reset to a fresh page state">Burn</button>
   <p class="lutebox__hint" aria-live="polite">A sealed letter awaits you.</p>
 
   <div class="lutebox__result" hidden>
@@ -11,12 +11,12 @@
   </div>
 
   <div class="lutebox__actions" hidden>
-    <button class="lutebox__retry">Try again</button>
+    <button class="lutebox__retry">Use a letter-opener</button>
   </div>
 </div>
 
 <style>
-.lutebox{ text-align:center; margin:3rem auto; padding:2rem; background:#1c1a17; color:#f7e9c1; max-width:680px; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,.4); font-family:'EB Garamond',serif }
+.lutebox{ text-align:center; margin:3rem auto; padding:2rem; background:#1c1a17; color:#f7e9c1; max-width:640px; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,.4); font-family:'EB Garamond',serif }
 .lutebox__btn,.lutebox__retry,.lutebox__burn{ background:#d4af37; border:none; color:#000; font-weight:700; border-radius:8px; padding:.7rem 1.1rem; cursor:pointer }
 .lutebox__burn{ margin-left:.5rem; background:#a33; color:#fff }
 .lutebox__actions{ margin-top:.75rem; display:flex; gap:.5rem; justify-content:center }
@@ -26,12 +26,17 @@
 .rarity--common{color:#b7b7b7}.rarity--uncommon{color:#6ec27a}.rarity--reallyuncommon{color:#5dc0ba}.rarity--rare{color:#58a6ff}.rarity--ultrarare{color:#c084f5}.rarity--reallyultrarare{color:#f59e0b}.rarity--legendary{color:#ffd700}
 </style>
 
+{{/* Inline from data/lutebox/pools/letters.json (no fetch) */}}
+{{- $pool := site.Data.lutebox.pools.letters | default (dict "items" (slice) "odds" (dict)) -}}
+
 <script>
 (() => {
-  // No cooldown. Uses /static/lootbox/pools/letters.json at this URL:
-  const PATH = '/lootbox/pools/letters.json';
+  // JSON inlined at build time from data/lutebox/pools/letters.json
+  const POOL  = {{ $pool | jsonify | safeJS }};
+  const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
+  const ODDS  = POOL.odds || {};
 
-  // Find UI near this script
+  // Minimal DOM refs (script must be directly after the .lutebox block)
   let probe = document.currentScript?.previousElementSibling;
   while (probe && !probe.classList?.contains('lutebox')) probe = probe.previousElementSibling;
   const box    = probe || document.querySelector('.lutebox'); if (!box) return;
@@ -46,6 +51,7 @@
   const META   = box.querySelector('.lutebox__meta');
   const BODY   = box.querySelector('.lutebox__body');
 
+  // Rarity map (includes reallyultrarare)
   const RARITY_META = {
     common:{label:"Common",stars:1},
     uncommon:{label:"Uncommon",stars:2},
@@ -55,10 +61,11 @@
     reallyultrarare:{label:"Really Ultrarare",stars:6},
     legendary:{label:"Legendary",stars:7}
   };
-  const normalize = r => String(r||'').toLowerCase();
+  const normalize = r => {
+    const k = String(r || '').toLowerCase();
+    return Object.prototype.hasOwnProperty.call(RARITY_META, k) ? k : 'common';
+  };
   const starLine  = n => (n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n) : '★'.repeat(n)) + ` (${Math.min(n,5)}/5)`;
-
-  let ITEMS = [], ODDS = {};
 
   function resetBox(){
     HINT.textContent = 'A sealed letter awaits you.';
@@ -69,64 +76,46 @@
   }
   function setNoOpen(){
     HINT.textContent = 'Could not open letter.';
-    ACTIONS.hidden = false; BTN.disabled = false;
-  }
-  function setLoadError(){
-    HINT.textContent = 'Could not load letters.'; ACTIONS.hidden = false; BTN.disabled = false;
+    ACTIONS.hidden = false;
+    BTN.disabled = false;
   }
 
-  async function ensurePool(){
-    if (ITEMS.length) return true;
-    try{
-      const pool = await fetch(PATH, {cache:'no-store'}).then(r => r.json());
-      ITEMS = Array.isArray(pool.items) ? pool.items : [];
-      ODDS  = pool.odds || {};
-      return ITEMS.length > 0;
-    }catch(e){
-      console.error('[Lutebox] load error:', e);
-      return false;
-    }
-  }
-
+  // Weighted pick with odds.noopen support
   function pick(items, odds){
-    if (!items.length) return {kind:'empty'};
-
-    // Build buckets for known rarities
     const buckets = {};
-    let total = 0;
     const weights = [];
+    let total = 0;
 
     for (const key of Object.keys(RARITY_META)){
       const bucket = items.filter(i => normalize(i.rarity) === key);
       buckets[key] = bucket;
-      const w = Number(odds?.[key] || 0);
-      if (bucket.length && w > 0){ weights.push([key, w]); total += w; }
+      const w = bucket.length ? Number(odds?.[key] || 0) : 0;
+      if (w > 0){ weights.push([key, w]); total += w; }
     }
-
-    // Respect noopen probability if provided
     const noOpenW = Number(odds?.noopen || 0);
     if (noOpenW > 0){ weights.push(['__noopen__', noOpenW]); total += noOpenW; }
 
-    // If no weights configured, fall back to uniform from all items
     if (total <= 0){
-      return {kind:'item', item: items[Math.floor(Math.random()*items.length)]};
+      if (!items.length) return { kind:'noopen' };
+      return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
     }
 
     let roll = Math.random() * total;
     for (const [k,w] of weights){
       roll -= w;
       if (roll <= 0){
-        if (k === '__noopen__') return {kind:'noopen'};
+        if (k === '__noopen__') return { kind:'noopen' };
         const b = buckets[k].length ? buckets[k] : items;
-        return {kind:'item', item: b[Math.floor(Math.random()*b.length)]};
+        return { kind:'item', item: b[Math.floor(Math.random()*b.length)] };
       }
     }
-    return {kind:'item', item: items[Math.floor(Math.random()*items.length)]};
+    return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
   }
 
   function render(item){
-    const rk   = normalize(item.rarity);
-    const meta = RARITY_META[rk] || RARITY_META.common;
+    const rk = normalize(item.rarity);
+    const meta = RARITY_META[rk];
+
     TITLE.textContent = item.title || '(Untitled Letter)';
     const bits = [];
     if (item.meta?.date) bits.push(item.meta.date);
@@ -134,24 +123,22 @@
     if (item.meta?.voices?.length) bits.push('Voices: ' + item.meta.voices.join(', '));
     META.textContent = bits.join(' — ');
     BODY.textContent = (item.body || '').trim();
+
     RARITY.textContent = `${meta.label} — ${starLine(meta.stars)}`;
     RARITY.className = `lutebox__rarity rarity--${rk}`;
+
     RESULT.hidden = false; ACTIONS.hidden = true; HINT.textContent = 'Open another?';
   }
 
-  async function openLetter(){
-    BTN.disabled = true; ACTIONS.hidden = true; HINT.textContent = 'Opening...';
+  function openLetter(){
+    BTN.disabled = true; ACTIONS.hidden = true;
+    HINT.textContent = 'Opening...';
     try{
-      const ok = await ensurePool();
-      if (!ok) { setLoadError(); return; }
+      if (!ITEMS.length) { setNoOpen(); return; }
       const res = pick(ITEMS, ODDS);
       if (res.kind === 'noopen') { setNoOpen(); return; }
-      if (res.kind === 'empty' || !res.item) { setLoadError(); return; }
       render(res.item);
-    }catch(e){
-      console.error('[Lutebox] open error:', e);
-      setLoadError();
-    }finally{
+    } finally {
       BTN.disabled = false;
     }
   }
@@ -159,6 +146,7 @@
   BTN.addEventListener('click', openLetter);
   RETRY.addEventListener('click', openLetter);
   BURN.addEventListener('click', resetBox);
+
   resetBox();
 })();
 </script>
