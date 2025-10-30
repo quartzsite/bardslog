@@ -1,186 +1,60 @@
-<!-- Simple Lutebox (with rarity + 1–7 star scale) -->
-<div class="lutebox" data-pool='{{ .Get "pool" | default "letters" }}'>
-  <button class="lutebox__btn">Open a Letter</button>
-  <p class="lutebox__hint">A sealed letter awaits you.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Site.Title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+  <style>
+    body { margin: 0; padding: 2rem; font-family: 'EB Garamond', serif; background-color: var(--bg-color, #fdfaf6); color: var(--text-color, #2a1f16); }
+    h1 { text-align: center; margin-bottom: 2rem; }
+    ul { list-style: none; padding: 0; text-align: center; }
+    ul li { margin: 0.4rem 0; }
 
-  <div class="lutebox__result" hidden>
-    <p class="lutebox__rarity" aria-live="polite"></p>
-    <h3 class="lutebox__title"></h3>
-    <p class="lutebox__meta"></p>
-    <pre class="lutebox__body"></pre>
+    .footer-banner { position: relative; width: 100%; overflow: hidden; margin-top: 3rem; }
+    .footer-banner img { width: 100%; height: auto; display: block; object-fit: cover; filter: brightness(80%) contrast(95%); }
+    .footer-overlay { position: absolute; bottom: 0; width: 100%; height: 40%; background: linear-gradient(to top, rgba(15,13,12,.95), rgba(15,13,12,0)); }
+
+    /* Lute icon animation */
+    .lute-link { position: fixed; bottom: 1.2rem; right: 1.2rem; opacity: .9; transition: transform .4s ease, opacity .4s ease; z-index: 999; }
+    .lute-link:hover { transform: rotate(-6deg) scale(1.15); opacity: 1; }
+    .lute { width: 64px; height: 64px; animation: sway 4s ease-in-out infinite; display: block; }
+    @keyframes sway { 0%,100% { transform: rotate(0); } 50% { transform: rotate(5deg); } }
+
+    /* Optional wrapper so shortcode output has spacing */
+    .home-content { max-width: 820px; margin: 0 auto 2rem; }
+  </style>
+</head>
+<body>
+  <h1>{{ .Site.Title }}</h1>
+
+  <!-- Renders content from content/_index.md where the lutebox shortcode lives -->
+  {{ with .Content }}
+    <div class="home-content">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  <ul>
+    {{ range .Site.RegularPages.ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}</li>
+    {{ end }}
+  </ul>
+
+  <div class="footer-banner">
+    <img src="{{ "images/bardslog.png" | relURL }}" alt="Faelar writing by candlelight - Bardslog banner" loading="lazy">
+    <div class="footer-overlay"></div>
   </div>
-</div>
 
-<style>
-.lutebox {
-  text-align: center;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #1c1a17;
-  color: #f7e9c1;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,.4);
-  font-family: 'EB Garamond', serif;
-}
-.lutebox__btn {
-  background: #d4af37;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 0.7rem 1.4rem;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.lutebox__btn:hover { background: #e6c45f; }
-.lutebox__result {
-  text-align: left;
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #2a2622;
-  border-radius: 8px;
-}
-.lutebox__meta { opacity: 0.75; margin: 0.25rem 0; font-size: 0.9rem; }
-.lutebox__body { white-space: pre-wrap; }
-
-/* Rarity label styles */
-.lutebox__rarity {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  margin: 0 0 .5rem 0;
-}
-.rarity--common           { color: #b7b7b7; }
-.rarity--uncommon         { color: #6ec27a; }
-.rarity--reallyuncommon   { color: #5dc0ba; }
-.rarity--rare             { color: #58a6ff; }
-.rarity--ultrarare        { color: #c084f5; }
-.rarity--reallyultrarare  { color: #f59e0b; } /* hidden tier vibe */
-.rarity--legendary        { color: #ffd700; } /* hidden tier vibe */
-</style>
-
-<script>
-(() => {
-  // Scope to this shortcode instance only
-  const box = document.currentScript.previousElementSibling;
-  if (!box || !box.classList.contains('lutebox')) return;
-
-  const btn      = box.querySelector('.lutebox__btn');
-  const hint     = box.querySelector('.lutebox__hint');
-  const result   = box.querySelector('.lutebox__result');
-  const rarityEl = box.querySelector('.lutebox__rarity');
-  const titleEl  = box.querySelector('.lutebox__title');
-  const metaEl   = box.querySelector('.lutebox__meta');
-  const bodyEl   = box.querySelector('.lutebox__body');
-  const pool     = (box.dataset.pool || 'letters').trim();
-
-  // Your canonical rarity map + stars
-  const RARITY_META = {
-    common:           { label: "Common",            stars: 1 },
-    uncommon:         { label: "Uncommon",          stars: 2 },
-    reallyuncommon:   { label: "Really Uncommon",   stars: 3 },
-    rare:             { label: "Rare",              stars: 4 },
-    ultrarare:        { label: "Ultrarare",         stars: 5 },
-    reallyultrarare:  { label: "Really Ultrarare",  stars: 6 }, // hidden tier
-    legendary:        { label: "Legendary",         stars: 7 }  // hidden tier
-  };
-
-  // Helpful synonyms (in case your JSON uses different names)
-  const ALIASES = {
-    mythic:          'reallyultrarare',
-    apocryphal:      'legendary',
-    ultraultrarare:  'reallyultrarare'
-  };
-
-  // Build the star line exactly as requested:
-  // <=5 uses 5-symbol gauge with empties; >5 shows 6 or 7 solid stars.
-  function starLine(n) {
-    if (n <= 5) {
-      return '★'.repeat(n) + '☆'.repeat(5 - n) + ` (${n}/5)`;
-    }
-    return '★'.repeat(n) + ` (${n}/5)`;
-  }
-
-  function normalizeRarity(raw) {
-    const r = (raw || 'common').toString().trim().toLowerCase();
-    return RARITY_META[r] ? r : (ALIASES[r] || 'common');
-  }
-
-  function pickWeighted(items, odds) {
-    // If odds provided, honor them; else uniform pick
-    if (odds && typeof odds === 'object') {
-      const keys = Object.keys(RARITY_META);
-      const weights = [];
-      const buckets = {};
-      let total = 0;
-
-      for (const k of keys) {
-        const bucket = items.filter(i => normalizeRarity(i.rarity) === k);
-        buckets[k] = bucket;
-        const w = (bucket.length ? (odds[k] || 0) : 0);
-        weights.push([k, w]);
-        total += w;
-      }
-      // Fallback to uniform if total is zero
-      if (total <= 0) {
-        const all = items;
-        return all[Math.floor(Math.random() * all.length)];
-      }
-      // Roll
-      let roll = Math.random() * total;
-      for (const [k, w] of weights) {
-        if (w <= 0) continue;
-        if ((roll -= w) <= 0) {
-          const b = buckets[k].length ? buckets[k] : items;
-          return b[Math.floor(Math.random() * b.length)];
-        }
-      }
-      // Safety
-      return items[Math.floor(Math.random() * items.length)];
-    }
-    // Uniform
-    return items[Math.floor(Math.random() * items.length)];
-  }
-
-  btn.addEventListener('click', async () => {
-    btn.disabled = true;
-    hint.textContent = 'Opening...';
-
-    try {
-      const res = await fetch(`/lutebox/pools/${pool}.json`, { cache: 'no-store' });
-      if (!res.ok) throw new Error('Pool not found');
-      const data = await res.json();
-
-      const items = Array.isArray(data.items) ? data.items : [];
-      if (!items.length) throw new Error('Empty pool');
-
-      // Weighted by data.odds if present
-      const item = pickWeighted(items, data.odds);
-      const rarityKey = normalizeRarity(item.rarity);
-      const meta = RARITY_META[rarityKey];
-
-      // Fill fields
-      titleEl.textContent = item.title || '(Untitled Letter)';
-      const bits = [];
-      if (item.meta?.date) bits.push(item.meta.date);
-      if (item.meta?.factions?.length) bits.push(item.meta.factions.join(' · '));
-      if (item.meta?.voices?.length) bits.push('Voices: ' + item.meta.voices.join(', '));
-      metaEl.textContent = bits.join(' — ');
-      bodyEl.textContent = (item.body || '').trim();
-
-      // Rarity label + stars
-      rarityEl.textContent = `${meta.label} — ${starLine(meta.stars)}`;
-      rarityEl.className = `lutebox__rarity rarity--${rarityKey}`;
-
-      result.hidden = false;
-      hint.textContent = 'Open another?';
-    } catch (err) {
-      hint.textContent = 'Could not load letters.';
-      console.error(err);
-    } finally {
-      btn.disabled = false;
-    }
-  });
-})();
-</script>
+  <!-- Decorative animated lute / Lutebox link (optional, separate from the shortcode) -->
+  <div class="lute-link">
+    <a href="{{ "lutebox/" | relURL }}" target="_blank" title="Lutebox of Letters">
+      <svg class="lute" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50,10 C70,30 70,70 50,90 C30,70 30,30 50,10 Z" fill="goldenrod" stroke="saddlebrown" stroke-width="3" />
+        <circle cx="50" cy="50" r="6" fill="peru" />
+        <line x1="50" y1="10" x2="50" y2="90" stroke="sienna" stroke-width="1" />
+      </svg>
+    </a>
+  </div>
+</body>
+</html>
