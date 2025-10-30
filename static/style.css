@@ -48,6 +48,7 @@ article {
 nav.post-nav {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -70,28 +71,59 @@ a {
 a:hover {
   color: var(--link-color);
   text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  text-decoration: none;
+}
 
 /* Lute icon animation */
 .lute-link {
   position: fixed;
   bottom: 1.2rem;
   right: 1.2rem;
-  opacity: .9;
-  transition: transform .4s ease, opacity .4s ease;
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
   z-index: 999;
 }
+
 .lute-link:hover {
   transform: rotate(-6deg) scale(1.15);
   opacity: 1;
 }
+
 .lute {
   width: 64px;
   height: 64px;
-  animation: sway 4s ease-in-out infinite;
   display: block;
+  animation: sway 4s ease-in-out infinite;
 }
+
 @keyframes sway {
-  0%,100% { transform: rotate(0); }
-  50% { transform: rotate(5deg); }
+  0%, 100% { transform: rotate(0); }
+  50%      { transform: rotate(5deg); }
 }
+
+/* Mobile tweaks + safe-area */
+@media (max-width: 640px) {
+  body {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+  .lute { width: 48px; height: 48px; }
+  .lute-link {
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .lute, .lute-link {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
 }
