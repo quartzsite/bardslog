@@ -12,7 +12,6 @@
 "noopen": 0.05
   },
   "items": [
-   {
     {
   "id": "cmn-lady-ysabet-steward-audience",
   "rarity": "common",
@@ -372,7 +371,7 @@
     "voices": ["Wind","Stone"],
     "date": "1589-03-18"
   }
-}
+},
    {
   "id": "fb-ml-quiet-sigil",
   "rarity": "ultrarare",
