@@ -13,6 +13,78 @@
   },
   "items": [
    {
+"id": "lt-ember-vow-catechism-1589-04-20",
+"rarity": "rare",
+"type": "letter",
+"title": "Catechism of the Ember Vow (Excerpt)",
+"body": "Question: What is Fire?\nAnswer: Change that remembers its manners.\nQuestion: What do we burn?\nAnswer: Ourselves, but only the parts that cling.\nRule of Steps: Sweep the path; wake no crawling thing. Rule of Pots: Eat what the sun softened; kindle no hunger in the dark. Rule of Hands: Quench blades before they thirst.\nA mendicant asked if war makes exceptions. We answered: rest is hotter than drums. We cool the Fifth by keeping the ember small.\nSigned at Dawn-Fane by the Vowkeepers of Ashgate.",
+"meta": {
+"factions": ["Ember Vow","Abbey"],
+"voices": ["Flame","Silence"],
+"date": "1589-04-20"
+}
+},
+{
+"id": "lt-ashlan-vigil-1589-04-23",
+"rarity": "ultrarare",
+"type": "letter",
+"title": "Ashlan’s Vigil Over the Fifth",
+"body": "Faelar,\nYou sing rests better than we chant them. I kept the night-watch beside the hearth that never chars flesh—banked coals, low breath, palms above not in. A courier brought talk of ash-robed killers who crown Death to hire War. They mistake cleansing for erasure.\nOur discipline is not a bonfire; it is a lamp trimmed against pride. We scorch oaths, not enemies. When the Stone court bids us bless a Basilith, we burn incense of bread and straw; when the Wind court offers silk to light, we refuse and warm tea instead. The Fifth god listens for percussion; give it lullabies.\nTell your apprentice—Rook, is it?—that heat without harm is a stance. The wrist that can stop at skin can also stop a feud.\n— Ashlan of the Ember Vow",
+"meta": {
+"factions": ["Ember Vow","Guilds"],
+"voices": ["Flame","Silence","Stone","Wind"],
+"date": "1589-04-23"
+}
+},
+{
+"id": "lt-fireless-host-charter-1589-04-27",
+"rarity": "reallyultrarare",
+"type": "letter",
+"title": "Charter of the Fireless Host",
+"body": "We who travel with armies to keep them from becoming fires set our names:\n— Quartermasters who boil at dawn and douse by noon; smiths who temper edges and forbid torches in granaries; monks of the Ember Vow who walk ember-beds to show that flame obeys restraint.\nArticles: No burning fields. No brands on captives. Kitchens at the river’s bend, not the barn’s shadow. When siege drums begin, a bell answers between strikes—rest, rest, rest—so the Fifth sleeps.\nWitnessed by a veteran of the Red Canal who traced a cool palm over the ink and said, "This will save boys I have not met."\n— Entered in the Guild Ledger at Maraisbourg",
+"meta": {
+"factions": ["Ember Vow","Guilds","Free Cities"],
+"voices": ["Flame","Water","Silence"],
+"date": "1589-04-27"
+}
+},
+{
+"id": "lt-donbettir-knotsong-1589-04-22",
+"rarity": "rare",
+"type": "letter",
+"title": "Knotsong of Donbettir (Sung and Tied)",
+"body": "First knot: leave no island angry. Second: read the tide like a psalm—upstroke, downstroke, hush.\nWe are the Tidefolk who follow Donbettir, Lord of the Wide Waters. Our courts are rafts lashed for parley; our law is wake and return. We carry bone hooks, net-knives, boarding sabers that cut rope cleaner than skin. When we fight, we pull—roll, bind, drown the breath of anger—the sea teaches holds the land forgets.\nIf the Stone men ask our harbor-tax, we pay in salt and news. If the Wind riders ask our loyalty, we point to horizon and say we married that long ago.\n— Sung by Ena of the Outer Reeds; cords enclosed for those who can read a line by finger",
+"meta": {
+"factions": ["Donbettir Tidefolk","Free Cities"],
+"voices": ["Water","Wind","Silence"],
+"date": "1589-04-22"
+}
+},
+{
+"id": "lt-raft-court-seal-fall-1589-04-28",
+"rarity": "ultrarare",
+"type": "letter",
+"title": "Minutes of the Raft Court at Seal-Fall",
+"body": "Present: six clan-canoes, one Free City factor, two Guild scribes with vinegar-ink that refuses to run, and an old woman who speaks to currents like kin.\nPetitions heard: Oct boats seek shelter from Stone tithe-men—granted at neap tide only. Wind couriers want pilots through the kelp maze—denied unless they leave their scythes wrapped and their sandals off our deck.\nRuling: The Tidefolk will ferry books and bards before banners. We remember Merryen, who danced like surf over rock and taught that a step can be a wave. We remember Lychenar’s rest. We remember Faelar’s songs that sound like oars.\nWarning: A rumor of ash-priests who praise death and call it peace. We will not let them salt our wells.\nAdjourned when the moon tipped its bowl and spilled a path home.",
+"meta": {
+"factions": ["Donbettir Tidefolk","Free Cities","Octs"],
+"voices": ["Water","Silence","Wind"],
+"date": "1589-04-28"
+}
+},
+{
+"id": "lt-pact-two-currents-1589-05-03",
+"rarity": "legendary",
+"type": "letter",
+"title": "The Pact of Two Currents",
+"body": "Witnessed by star and sound at the Shoal of Seven Voices.\nA Bononese swordswoman stood on the gunwale and did not sway; a helmsman of Donbettir stood on a floating log and did not sink. She cut the air in circles until the sea clapped; he traced the river within the wave until the blade forgot to bite. They traded schools: she taught a guard that lets the knee soften like a swell; he taught a bind that feels for pulse as much as steel.\nArticles agreed:\n1) The Free Cities may anchor a library-barge among the Isles; in return, the Tidefolk may moor a court-raft at Bonona’s low quay.\n2) Any banner that beats a war-drum to wake the Fifth will find no pilot here.\n3) When the Stone and Wind empires look past us, we will look through them. Their cold war makes warm wreckage; we will tow the living from it first and the books second.\nAppendix: A copy for a copy—the helmsman’s knotted chart for the swordswoman’s annotated folio of steps. Whoever reads either learns to move without drowning.\n— Set down by Faelar, who tuned the sea to keep the ink dry",
+"meta": {
+"factions": ["Donbettir Tidefolk","Free Cities","Guilds"],
+"voices": ["Water","Wind","Stone","Silence"],
+"date": "1589-05-03"
+}
+},
+   {
 "id": "lt-basilith-watch-brief-1589-03-08",
 "rarity": "rare",
 "type": "letter",
