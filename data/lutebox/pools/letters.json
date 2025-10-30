@@ -12,6 +12,270 @@
 "noopen": 0.05
   },
   "items": [
+{
+  "id": "lt-stone-catechism-slate",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Catechism Scratched on Slate",
+  "body": "Question: What stands when all else shifts?\nAnswer: The One that bears weight.\nAddendum in a child's hand: But the river moves stones if it sings long enough.\n— Found beneath a Basilith step, West Gate",
+  "meta": {
+    "factions": ["Stone Empire","Basilith Collegium"],
+    "voices": ["Stone","Silence"],
+    "date": "1588-12-11"
+  }
+},
+{
+  "id": "lt-wind-ballet-cipher",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Court Ballet in Ciphered Steps",
+  "body": "First measure: toe brush, heel cut, rise with the sirocco. Second: feint the lunge, leap the drum, land only when the law blinks.\nMargin: 'If the step is read aloud, it becomes a charge. If danced, a door.'\n— Choreographer of the Eastern Pavilions",
+  "meta": {
+    "factions": ["Wind Empire"],
+    "voices": ["Wind","Silence"],
+    "date": "1589-02-03"
+  }
+},
+{
+  "id": "lt-octs-hill-vow",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Vow Stitched in Hill-Ribbon",
+  "body": "We tie Wind to warn, Stone to remember, Water to barter, Flame to wake. We leave Silence for the fifth we do not name.\n— The Octs of Grey Barrow",
+  "meta": {
+    "factions": ["Octs"],
+    "voices": ["Wind","Stone","Water","Flame"],
+    "date": "1589-04-09"
+  }
+},
+{
+  "id": "lt-ashfast-rule",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Rule of the Ashfast",
+  "body": "Step barefoot where fire has been, that you know its temper. Feed no drum with breath. Warm the pot for others; eat last. When anger rises, lay a coal on the tongue of your thought and wait until it cools.\n— Written at the House of Quiet Coals",
+  "meta": {
+    "factions": ["Ashfast (Fire Devotees)","Abbey"],
+    "voices": ["Flame","Silence"],
+    "date": "1589-01-28"
+  }
+},
+{
+  "id": "lt-donbettir-current-chart",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Donbettir Current Chart, Sung",
+  "body": "North set, then ease when the gulls wheel twice. Trade the kelp-kiss for a jug of rain at Broadshoal. If the moon shows both teeth, reef and hum the old verse of the Wide Waters till the swell forgets you.\n— Tacked inside a tide-cottage",
+  "meta": {
+    "factions": ["Donbettir Waterfolk"],
+    "voices": ["Water","Wind"],
+    "date": "1588-08-14"
+  }
+},
+{
+  "id": "lt-censor-red-ink",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Memorandum of an Imperial Censor",
+  "body": "Strike 'neighbors' where it appears in handbills; substitute 'subjects.' Replace 'rests' with 'pauses' (less musical). Where presses mention Basiliths as symbols, append: \"of unity under Stone\". Do not seize lutes in public; seize tunings.\n— Office of Harmonious Order",
+  "meta": {
+    "factions": ["Stone Empire","Guilds"],
+    "voices": ["Stone","Flame"],
+    "date": "1589-03-02"
+  }
+},
+{
+  "id": "lt-quarry-foreman-chip",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Chip-Tally from the Basilith Quarry",
+  "body": "Seams true, grain straight, but the night shift reports a hum when the chisel pauses. Not the wind. Stays in the bone after the bell. I told them to cut with a song on the off-beat; the humming left.\n— Foreman Roke",
+  "meta": {
+    "factions": ["Basilith Collegium"],
+    "voices": ["Stone","Silence"],
+    "date": "1588-11-06"
+  }
+},   
+   {
+  "id": "lt-alms-house-whisper",
+  "rarity": "common",
+  "type": "letter",
+  "title": "A Whisper at the Alms House",
+  "body": "Sister Merewyn,\nThe veteran with the scar across both palms came again. He does not touch bread with his right hand. Says he learned a step that makes anger forget itself. He sleeps without the drum now. I set Water to boil and Stone to the ledger, as you taught me.\nIf he returns, I will ask his name.\n— Novice Aelith",
+  "meta": {
+    "factions": ["Abbey","Free Cities"],
+    "voices": ["Water","Stone"],
+    "date": "1589-03-26"
+  }
+},
+{
+  "id": "lt-canal-ledger-scrape",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Scrape on a Canal Ledger",
+  "body": "Item: two crates of paper marked vinegar.\nItem: one lute in a sack of flour.\nNote: the boy Perkin paid in map-songs again; I drew the bends from his humming and it proved true.\n— Ferryman Jarre",
+  "meta": {
+    "factions": ["Free Cities","Guilds"],
+    "voices": ["Water","Wind"],
+    "date": "1589-03-17"
+  }
+},
+{
+  "id": "lt-watch-note-stairs",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Watch Note from the River Stairs",
+  "body": "To Sergeant Waryn,\nYour order was kept. We split drunks from drillers at first bell. The handbill man shouted 'neighbors not soldiers' till his voice went. No knives drawn; only sticks.\n— Corbet, Watch",
+  "meta": {
+    "factions": ["Dukes","Free Cities"],
+    "voices": ["Stone","Wind"],
+    "date": "1588-09-02"
+  }
+},
+{
+  "id": "lt-apprentice-inkshift",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Apprentice's Inkshift",
+  "body": "Mother,\nMaster hid the formes again but I can smell the oiled oak even through the flour. A lady in plain wool brought verses with rests large enough to breathe through. She paid not in coin but in a correction. Master called it 'a copy for a copy' and bowed.\nI think I am learning to bow at the right times.\n— Tibb, Printer's Apprentice",
+  "meta": {
+    "factions": ["Guilds","Nobility"],
+    "voices": ["Water","Silence"],
+    "date": "1589-04-04"
+  }
+},
+{
+  "id": "lt-noble-hand-alms",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Lady Alisoun's Note to the Prior",
+  "body": "Prior Hubert,\nSend your novice with the plain hand. The city reads signatures louder than intent. I will come in wool and leave in wool. Bring a page fit to be weighed against mercy.\n— Alisoun of Irenne",
+  "meta": {
+    "factions": ["Nobility","Abbey"],
+    "voices": ["Silence","Stone"],
+    "date": "1589-03-20"
+  }
+},
+{
+  "id": "lt-veteran-bridge-sun",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Veteran on the Bridge at Sunfall",
+  "body": "Waryn,\nYou asked why I count the boards between lanterns. It is how I keep step with nothing. When the wind tries to march me, I step off and let it pass. If the boy with the lute returns, I owe him both my hands.\n— Edric",
+  "meta": {
+    "factions": ["Dukes","Free Cities"],
+    "voices": ["Wind","Stone"],
+    "date": "1589-03-28"
+  }
+},
+{
+  "id": "lt-monk-marginalia-rests",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Marginalia on Rests",
+  "body": "Note to self: rest is law where law becomes drum. Write it thus on every third page: 'Leave breath or you will leave blood.'\n— Hubert",
+  "meta": {
+    "factions": ["Abbey"],
+    "voices": ["Silence","Stone"],
+    "date": "1589-03-23"
+  }
+},
+{
+  "id": "lt-oct-ribbon-knots",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Oct Ribbon with Knots",
+  "body": "Three knots for safe water, one for watch the wind. Tied it to the Red Bridge rail for the bard who listens before he plays.\n— Bren of the Hills",
+  "meta": {
+    "factions": ["Octs","Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1589-03-22"
+  }
+},
+{
+  "id": "lt-prior-to-alisoun-copy",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "A Page Weighed Against Mercy",
+  "body": "Lady Alisoun,\nWe bring a confession unsealed and a map corrected by a ferryman's humming. If law must see a seal, let it see four hands instead: noble, monk, veteran, and minstrel. A copy for a copy; a rest for a life.\n— Prior Hubert of St. Eber",
+  "meta": {
+    "factions": ["Abbey","Nobility","Free Cities"],
+    "voices": ["Silence","Water","Stone"],
+    "date": "1589-04-06"
+  }
+},
+{
+  "id": "lt-faelar-string-blood",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "On the String That Cuts",
+  "body": "Master,\nA boy begged me to teach him the seventh string in a crowded room. I tuned nothing and poured ale. When the crowd forgot to march, I taught him how to listen. He cried because he wanted noise and I offered measure. Perhaps he will live now.\n— Faelar",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Silence","Wind"],
+    "date": "1589-04-01"
+  }
+},
+{
+  "id": "lt-waryn-edge-order",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Order Kept at the Edge",
+  "body": "To the Council Clerk,\nYou will hear that men drilled by the river stairs. True. You will hear there were no blades. True. You will hear a noblewoman passed in wool. True. I add only this: the air itself kept time and no one knew to be afraid.\n— Waryn, Sergeant of Watch",
+  "meta": {
+    "factions": ["Dukes","Nobility"],
+    "voices": ["Stone","Silence","Wind"],
+    "date": "1589-03-21"
+  }
+},
+{
+  "id": "lt-merryen-note-in-ink",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Merryen's Last Instruction in Ink",
+  "body": "To any who would print steps:\nSet your type wide enough that a man can change his mind between letters. Teach the long measure to tame blood, the rests to keep it. If my name becomes a banner, turn the page and do not march.\n— Merryen of Maraisbourg",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Wind","Silence","Stone"],
+    "date": "1588-09-05"
+  }
+},
+{
+  "id": "lt-perkin-blot-midword",
+  "rarity": "uncommon",
+  "type": "letter",
+  "title": "Perkin's Blotted Note",
+  "body": "Master Tibb,\nThe lady said to keep the page dry and the song slower than soldiers. I tried, but the canal rose and the ink went into the...\n— Perkin",
+  "meta": {
+    "factions": ["Guilds","Free Cities"],
+    "voices": ["Water","Silence"],
+    "date": "1589-04-03"
+  }
+},
+{
+  "id": "lt-canalman-cutoff",
+  "rarity": "common",
+  "type": "letter",
+  "title": "Canalman's Cut-Off Message",
+  "body": "Jarre,\nTell the bard the bend after the willow runs shallow and to watch for the—",
+  "meta": {
+    "factions": ["Free Cities"],
+    "voices": ["Water","Wind"],
+    "date": "1589-03-19"
+  }
+},
+{
+  "id": "lt-abbey-scorched-margin",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Scorched Margin from the Scriptorium",
+  "body": "Inventory: one page singed where a candle fell; one novice in tears; one lesson learned about breath and flame.\nAddendum: the line that burned ends thus— 'We will not mint sol—'\n— Archivist Pell",
+  "meta": {
+    "factions": ["Abbey"],
+    "voices": ["Flame","Silence","Stone"],
+    "date": "1589-03-30"
+  }
+},
    {
 "id": "lt-ember-vow-catechism-1589-04-20",
 "rarity": "rare",
