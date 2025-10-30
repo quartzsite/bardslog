@@ -1,5 +1,5 @@
-<!-- Lutebox — zero-fetch (Hugo inlines JSON from static/lutebox/pools/letters.json) -->
-<div class="lutebox" data-src='{{ "lutebox/pools/letters.json" | relURL }}'>
+<!-- layouts/shortcodes/lutebox.html -->
+<div class="lutebox">
   <button class="lutebox__btn">Open a Letter</button>
   <button class="lutebox__burn" title="Reset to a fresh page state">Burn</button>
   <p class="lutebox__hint" aria-live="polite">A sealed letter awaits you.</p>
@@ -30,18 +30,18 @@
 .lutebox--err .lutebox__btn{animation:lute-shake 120ms ease-in-out 1}
 </style>
 
-{{/* Build-time load (no fetch). If the file is missing, Hugo will error, which is better than silent HTML fallbacks. */}}
-{{- $pool := readFile "static/lutebox/pools/letters.json" | transform.Unmarshal -}}
+{{- /* Build-time load (no fetch). Put JSON at data/lutebox/pools/<name>.json */ -}}
+{{- $poolName := .Get "pool" | default "letters" -}}
+{{- $p := index site.Data.lutebox.pools $poolName -}}
+{{- if not $p -}}{{- $p = dict "items" (slice) "odds" (dict) -}}{{- end -}}
 
 <script>
 (() => {
-  // Expect $pool to be set in the shortcode/template, e.g.:
-  // {{ $pool := getJSON "lutebox/pools/letters.json" }}
-  const POOL  = {{ $pool | jsonify }};
+  const POOL  = {{ $p | jsonify }};
   const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
   const ODDS  = POOL.odds || {};
 
-  // === Minimal DOM refs ===
+  // Minimal DOM refs
   let probe = document.currentScript?.previousElementSibling;
   while (probe && !probe.classList?.contains('lutebox')) probe = probe.previousElementSibling;
   const box    = probe || document.querySelector('.lutebox'); if (!box) return;
@@ -56,7 +56,7 @@
   const META   = box.querySelector('.lutebox__meta');
   const BODY   = box.querySelector('.lutebox__body');
 
-  // === Rarity + simple UI helpers ===
+  // Rarity + helpers
   const RARITY_META = {
     common:{label:"Common",stars:1},
     uncommon:{label:"Uncommon",stars:2},
@@ -84,7 +84,7 @@
     BTN.disabled = false;
   }
 
-  // === Weighted pick with odds.noopen support ===
+  // Weighted pick with optional odds.noopen
   function pickWithNoOpen(items, odds){
     const buckets = {};
     let weights = [];
@@ -114,7 +114,6 @@
         return { kind:'item', item: b[Math.floor(Math.random()*b.length)] };
       }
     }
-    // Fallback
     return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
   }
 
@@ -154,12 +153,9 @@
     }
   }
 
-  // Wire up
   BTN.addEventListener('click', openLetter);
   RETRY.addEventListener('click', openLetter);
   BURN.addEventListener('click', resetBox);
-
-  // Initial state
   resetBox();
 })();
 </script>
