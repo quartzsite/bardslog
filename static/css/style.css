@@ -92,6 +92,11 @@ a:hover {
   animation: sway 4s ease-in-out infinite;
 }
 
+/* extra rarity glow tints */
+.lute-rarity--legendary  .lutebox__glow { filter:hue-rotate(260deg) saturate(140%) }
+.lute-rarity--mythic     .lutebox__glow { filter:hue-rotate(340deg) saturate(180%) brightness(1.08) }
+.lute-rarity--apocryphal .lutebox__glow { filter:hue-rotate(120deg) saturate(220%) brightness(1.12) }
+
 @keyframes sway {
   0%, 100% { transform: rotate(0deg); }
   50% { transform: rotate(5deg); }
