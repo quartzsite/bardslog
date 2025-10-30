@@ -12,6 +12,80 @@
 "noopen": 0.05
   },
   "items": [
+   Here are comma-separated drop-in items (paste into your items array). They skew rare+ and scale longer with rarity:
+
+{
+  "id": "lt-alisoun-margin-to-council-1589-04-15",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Lady Alisoun’s Margin to the Council",
+  "body": "To the Twelve of Irenne—\nYou asked whether Merryen’s wide steps make rebels. I answer: they make citizens who do not stumble. On the river stairs this morning a fishmonger steadied a porter with a turn any knight would envy; no trumpet sounded, and yet the city kept its footing. If drill must exist, let it be the kind that leaves no corpse.\nThe guild’s road-treaty—this “copy for a copy”—offends merchants who prefer locks. Let them be offended. Locks breed thieves, but shared books breed witnesses. I will not bid the presses silent; I will bid them wise.\nAs for the Fifth, call it by its true name: Silence. It is not for parades, nor for my household guard. Keep it coded in song and margin. Give the young four voices to sing in the square; let the last be a rest marked only between friends.\nIf the Empire asks for patents on breath, send them my seal and my laughter.\n— Lady Alisoun of Irenne",
+  "meta": {
+    "factions": ["Nobility","Free Cities","Guilds"],
+    "voices": ["Stone","Flame","Silence"],
+    "date": "1589-04-15"
+  }
+},
+{
+  "id": "lt-waryn-to-edith-1589-02-09",
+  "rarity": "rare",
+  "type": "letter",
+  "title": "Serjeant Waryn’s Letter to His Daughter",
+  "body": "Edith—\nI dreamed the old field again: mud to the knee and orders like hail. Woke standing in the lane, blade in hand that wasn’t there. A boy with a broom asked if I was dancing. I told him I had forgotten how.\nA bard named Faelar showed me a turn that leaves both men alive. He said a tune can catch a blade if the foot is honest. I have known honest feet only on long roads.\nIf I come by Bonona, I will bring ribbons for your hair and a story with no killing in it. Keep your mother’s letter by the hearth; read it when the wind is hard. Tell little Thom that a serjeant once learned to step softer.\n— Waryn",
+  "meta": {
+    "factions": ["Free Cities","Dukes"],
+    "voices": ["Wind","Stone"],
+    "date": "1589-02-09"
+  }
+},
+{
+  "id": "lt-perkin-night-ledger-1589-03-06",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Perkin the Pressboy: Night Ledger (Unsent)",
+  "body": "Account of Perkin, apprentice to Master Jory the Printer, set down after Compline and before dawn.\n— Two formes locked true; the quoins bit like good teeth. I inked with vinegar that isn’t vinegar and laid the sheet by the stove. The letters sweated. Master says that is the sign of living type.\n— A merchant came with coin for a forbidden copy. Master said, as always, \"You may have a copy if you leave a copy behind.\" The man left a map with the corners ripped and took away a sermon with the teeth filed. I swept up the filings.\n— A woman in velvet (the Lady Alisoun herself? I did not stare) spoke quietly with a guildsman who smelled of rope and rain. They traded a page for a page without touching hands. It was like watching two rivers change beds.\n— After midnight a boy from the tannery brought a handbill from Merryen—\"Drill at dawn by the river stairs\"—and asked if we would strike more. Master said yes, then set his finger on a blank space and said, \"Leave a rest there. Silence reads faster than words.\"\n— I set my own letters at last: P-E-R-K-I-N. I hid them in the gutter of a broadsheet so that when a man smooths the fold he will feel my name and not know why.\n— The monks came just before cockcrow with a parcel that warmed my palms through the paper. Prior Hubert would not name what was inside. I named it myself: the Fifth, wrapped like a sleeping coal.\nI am small, but the press is large. When I pull the bar, the city breathes.\n— Perkin",
+  "meta": {
+    "factions": ["Guilds","Free Cities","Abbey"],
+    "voices": ["Water","Wind","Silence"],
+    "date": "1589-03-06"
+  }
+},
+{
+  "id": "lt-prior-hubert-confession-1589-03-19",
+  "rarity": "ultrarare",
+  "type": "letter",
+  "title": "Prior Hubert’s Confession Regarding the Fifth",
+  "body": "To the Abbot of St. Eber (for your eye and God’s, not the Chapter’s),\nI said we kept the lower stacks dry. I lied. The river kissed the stones last week and the diagrams breathed as the old marginalium warns. Brother Ansel took a gloss to the palm that will not wash; he says it hums to the rhythm of marching and asks to be set to copying until the music passes. I set him instead to ringing the small bell until his hand remembers other measures.\nThe city wants its steps in straight lines. Merryen and his kind use ink like trumpets; I use it like water on a hot blade—hiss, cool, temper. The guild’s rule of reciprocity is a mercy disguised as a nuisance; the Empire will call it sedition because sedition is easier to spell than mercy.\nAs for the Fifth, I have written it in rests and given it to a boy who cannot yet read but knows when a room changes breath. If this is heresy, then I prefer this heresy to any tidy obedience.\nWhen I was young I believed Stone was God’s voice; now I know God has many registers. Let us keep the loud ones for feast days and the quiet for saving lives.\nI commend my untruths to your judgment.\n— Prior Hubert",
+  "meta": {
+    "factions": ["Abbey","Guilds","Free Cities"],
+    "voices": ["Silence","Water","Stone"],
+    "date": "1589-03-19"
+  }
+},
+{
+  "id": "lt-waryn-deposition-guild-1589-04-04",
+  "rarity": "reallyultrarare",
+  "type": "letter",
+  "title": "Deposition of Serjeant Waryn Before the Red Canal Guild",
+  "body": "Taken down by Guild-scribe Marla on the fourth day of April, in the hall by the red stairs.\nQuestion: \"State your trade.\"\nAnswer: \"Soldiering, until I learned a better one.\"\nHe stood crooked, as men do who have taught their bones to remember blows. He named three dukes he’d served and none he’d loved. When asked what turned him from pay, he said a stowaway with a lute drew a five-pointed star on a ship’s deck and made tired hands move like craftsmen. \"I thought then,\" he said, \"that measure could unteach killing.\"\nHe described the Fifth as you would describe a winter that lives under the floorboards. \"It is not a note,\" he said, \"but the hush that keeps notes from becoming orders. You can hear it when boys start whispering instead of shouting.\"\nOf Merryen he spoke without hatred. \"He wants a parade that does not end,\" Waryn said. \"Parades end in walls. The road has no walls.\"\nHe told of a levy drilled to a hymn until the hymn grew teeth. He stepped a simple turn on the hall’s stones and showed how a man can give a stranger his life back with a palm instead of a point. Two journeymen tried the turn and failed twice, then laughed when they caught it. The room loosened.\nAsked what he wanted in payment for his testimony, he said: \"Paper for the printer’s boy, and a rope for the canal men that won’t rot, and a ribbon for my Edith. If you owe me more than that, pay it forward in rests.\"\n— Attested, Marla of Bonona",
+  "meta": {
+    "factions": ["Guilds","Free Cities","Dukes"],
+    "voices": ["Stone","Wind","Silence"],
+    "date": "1589-04-04"
+  }
+},
+{
+  "id": "lt-covenant-bridge-bonona-1589-04-20",
+  "rarity": "legendary",
+  "type": "letter",
+  "title": "The Covenant of the Bridge at Bonona",
+  "body": "On the twentieth day of April the river ran low enough to bare the old stones. There, at dusk, four hands set seals to a page that was more promise than law.\nLady Alisoun of Irenne came in plain wool, her ring turned inward. Prior Hubert brought a parchment whose back was a child’s practice hand. Serjeant Waryn leaned on the rail and counted the boards between lanterns. Faelar Brighton tuned his lute until the bridge itself seemed to listen.\nThe Covenant spoke first of copies: that any man or woman may take a page of the Art if they leave a page of equal weight—witness, correction, map, song, mercy done and written down. Second, it named the Four Voices as public: Wind for teaching, Water for trade, Stone for record, Flame for warning. Third, it bound the Fifth—Silence—to margins and music, to be taught as rest and never as march.\n\"We will not mint soldiers,\" said Alisoun, \"but neighbors.\" Hubert added, \"Where we cannot write safely, we will breathe wisely.\" Waryn swore a soldier’s oath in reverse: \"I will step first for life.\" Faelar wrote a bar of music on the bottom edge, a measure that breaks if you try to march to it.\nA boy in the shadows—Perkin—held the ink. A canal man tied the covenant to the under-beam with tarred thread. Someone, years from now, will find it when the river forgets itself again.\nThere were no trumpets. The city did not change at once. But a press pulled smoother that night; a monk slept without hearing drums; a veteran woke with both hands open.\nAt the end Faelar said softly, \"A copy for a copy,\" and Alisoun answered, \"And a rest for a life.\"\n— Witnessed at the Red Bridge, Bonona",
+  "meta": {
+    "factions": ["Nobility","Guilds","Abbey","Free Cities"],
+    "voices": ["Wind","Water","Stone","Flame","Silence"],
+    "date": "1589-04-20"
+  }
+},
     {
   "id": "cmn-lady-ysabet-steward-audience",
   "rarity": "common",
