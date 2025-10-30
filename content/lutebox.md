@@ -3,4 +3,4 @@ title: "Lutebox"
 layout: none
 ---
 
-{{< lutebox pool="letters" cooldown="0" >}}
+{{ $pool := .Site.Data.lutebox.pools.letters }}
