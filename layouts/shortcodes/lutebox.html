@@ -31,7 +31,7 @@
 
 <script>
 (() => {
-  const POOL = {"cooldownHours":0, ... };
+  const POOL = JSON.parse(`{"cooldownHours":0, ... }`);
   const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
   const ODDS  = POOL.odds || {};
 
