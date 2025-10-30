@@ -1,5 +1,5 @@
 <!-- Lutebox — zero-fetch (Hugo inlines JSON from static/lutebox/pools/letters.json) -->
-<div class="lutebox">
+<div class="lutebox" data-src='{{ "lutebox/pools/letters.json" | relURL }}'>
   <button class="lutebox__btn">Open a Letter</button>
   <button class="lutebox__burn" title="Reset to a fresh page state">Burn</button>
   <p class="lutebox__hint" aria-live="polite">A sealed letter awaits you.</p>
@@ -35,8 +35,9 @@
 
 <script>
 (() => {
-  // === Data inlined by Hugo at build time ===
-  const POOL = {{ $pool | jsonify }};
+  // Expect $pool to be set in the shortcode/template, e.g.:
+  // {{ $pool := getJSON "lutebox/pools/letters.json" }}
+  const POOL  = {{ $pool | jsonify }};
   const ITEMS = Array.isArray(POOL.items) ? POOL.items : [];
   const ODDS  = POOL.odds || {};
 
@@ -57,11 +58,16 @@
 
   // === Rarity + simple UI helpers ===
   const RARITY_META = {
-    common:{label:"Common",stars:1},uncommon:{label:"Uncommon",stars:2},reallyuncommon:{label:"Really Uncommon",stars:3},
-    rare:{label:"Rare",stars:4},ultrarare:{label:"Ultrarare",stars:5},reallyultrarare:{label:"Really Ultrarare",stars:6},legendary:{label:"Legendary",stars:7}
+    common:{label:"Common",stars:1},
+    uncommon:{label:"Uncommon",stars:2},
+    reallyuncommon:{label:"Really Uncommon",stars:3},
+    rare:{label:"Rare",stars:4},
+    ultrarare:{label:"Ultrarare",stars:5},
+    reallyultrarare:{label:"Really Ultrarare",stars:6},
+    legendary:{label:"Legendary",stars:7}
   };
   const normalize = r => (RARITY_META[(r||'common').toLowerCase()] ? (r||'common').toLowerCase() : 'common');
-  const starLine  = n => n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n)+` (${n}/5)` : '★'.repeat(n)+` (${n}/5)`;
+  const starLine  = n => (n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n) : '★'.repeat(n)) + ` (${n}/5)`;
 
   function resetBox(){
     box.classList.remove('lutebox--err');
@@ -80,33 +86,40 @@
 
   // === Weighted pick with odds.noopen support ===
   function pickWithNoOpen(items, odds){
-    const keys = Object.keys(RARITY_META);
-    let total = 0, weights=[], buckets={};
-    for (const k of keys){
-      const bucket = items.filter(i => normalize(i.rarity)===k);
-      buckets[k]=bucket;
-      const w = bucket.length ? Number(odds?.[k]||0) : 0;
-      if (w>0){ weights.push([k,w]); total+=w; }
-    }
-    const noOpenW = Number(odds?.noopen||0);
-    if (noOpenW>0){ weights.push(['__noopen__', noOpenW]); total+=noOpenW; }
+    const buckets = {};
+    let weights = [];
+    let total = 0;
 
-    if (total<=0) return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
+    Object.keys(RARITY_META).forEach(k => {
+      const b = items.filter(i => normalize(i.rarity) === k);
+      buckets[k] = b;
+      const w = b.length ? Number(odds?.[k] || 0) : 0;
+      if (w > 0){ weights.push([k, w]); total += w; }
+    });
+
+    const noOpenW = Number(odds?.noopen || 0);
+    if (noOpenW > 0){ weights.push(['__noopen__', noOpenW]); total += noOpenW; }
+
+    if (total <= 0){
+      if (!items.length) return { kind:'noopen' };
+      return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
+    }
 
     let roll = Math.random()*total;
     for (const [k,w] of weights){
       roll -= w;
-      if (roll<=0){
-        if (k==='__noopen__') return { kind:'noopen' };
-        const b = (buckets[k].length? buckets[k] : items);
+      if (roll <= 0){
+        if (k === '__noopen__') return { kind:'noopen' };
+        const b = buckets[k].length ? buckets[k] : items;
         return { kind:'item', item: b[Math.floor(Math.random()*b.length)] };
       }
     }
+    // Fallback
     return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
   }
 
   function renderItem(item){
-    const rk = normalize(item.rarity);
+    const rk   = normalize(item.rarity);
     const meta = RARITY_META[rk];
 
     TITLE.textContent = item.title || '(Untitled Letter)';
@@ -118,7 +131,7 @@
     BODY.textContent = (item.body || '').trim();
 
     RARITY.textContent = `${meta.label} — ${starLine(meta.stars)}`;
-    RARITY.className = `lutebox__rarity rarity--${rk}`;
+    RARITY.className   = `lutebox__rarity rarity--${rk}`;
 
     RESULT.hidden = false;
     ACTIONS.hidden = true;
@@ -141,10 +154,12 @@
     }
   }
 
+  // Wire up
   BTN.addEventListener('click', openLetter);
   RETRY.addEventListener('click', openLetter);
   BURN.addEventListener('click', resetBox);
 
+  // Initial state
   resetBox();
 })();
 </script>
