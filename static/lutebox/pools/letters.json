@@ -8,7 +8,8 @@
     "rare": 0.04,
     "ultrarare": 0.015,
     "reallyultrarare": 0.004,
-    "legendary": 0.001
+    "legendary": 0.001,
+"noopen": 0.05
   },
   "items": [
    {
