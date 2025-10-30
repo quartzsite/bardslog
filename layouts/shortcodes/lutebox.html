@@ -98,7 +98,9 @@
 
 <script>
 (function(){
-  const root = document.currentScript.previousElementSibling.closest('.lutebox');
+const script = document.currentScript;
+  const root = script.closest('.lutebox') || script.previousElementSibling?.closest('.lutebox');
+  if (!root) return; // no box found, abort
   const wrap = root.querySelector('.lutebox__wrap');
   const chest = root.querySelector('.lutebox__chest');
   const btn   = root.querySelector('.lutebox__btn');
