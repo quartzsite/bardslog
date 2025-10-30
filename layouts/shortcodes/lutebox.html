@@ -1,5 +1,5 @@
-<!-- Simple Lutebox (with rarity) -->
-<div class="lutebox" data-pool="{{ .Get "pool" | default "letters" }}">
+<!-- Simple Lutebox (with rarity + 1–7 star scale) -->
+<div class="lutebox" data-pool='{{ .Get "pool" | default "letters" }}'>
   <button class="lutebox__btn">Open a Letter</button>
   <p class="lutebox__hint">A sealed letter awaits you.</p>
 
@@ -51,25 +51,97 @@
   letter-spacing: 0.06em;
   margin: 0 0 .5rem 0;
 }
-.rarity--common    { color: #b7b7b7; }
-.rarity--uncommon  { color: #6ec27a; }
-.rarity--rare      { color: #58a6ff; }
-.rarity--ultrarare { color: #c084f5; }
+.rarity--common           { color: #b7b7b7; }
+.rarity--uncommon         { color: #6ec27a; }
+.rarity--reallyuncommon   { color: #5dc0ba; }
+.rarity--rare             { color: #58a6ff; }
+.rarity--ultrarare        { color: #c084f5; }
+.rarity--reallyultrarare  { color: #f59e0b; } /* hidden tier vibe */
+.rarity--legendary        { color: #ffd700; } /* hidden tier vibe */
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const box   = document.querySelector('.lutebox');
-  if (!box) return;
+(() => {
+  // Scope to this shortcode instance only
+  const box = document.currentScript.previousElementSibling;
+  if (!box || !box.classList.contains('lutebox')) return;
 
-  const btn   = box.querySelector('.lutebox__btn');
-  const hint  = box.querySelector('.lutebox__hint');
-  const result= box.querySelector('.lutebox__result');
+  const btn      = box.querySelector('.lutebox__btn');
+  const hint     = box.querySelector('.lutebox__hint');
+  const result   = box.querySelector('.lutebox__result');
   const rarityEl = box.querySelector('.lutebox__rarity');
-  const title = box.querySelector('.lutebox__title');
-  const meta  = box.querySelector('.lutebox__meta');
-  const body  = box.querySelector('.lutebox__body');
-  const pool  = box.dataset.pool || 'letters';
+  const titleEl  = box.querySelector('.lutebox__title');
+  const metaEl   = box.querySelector('.lutebox__meta');
+  const bodyEl   = box.querySelector('.lutebox__body');
+  const pool     = (box.dataset.pool || 'letters').trim();
+
+  // Your canonical rarity map + stars
+  const RARITY_META = {
+    common:           { label: "Common",            stars: 1 },
+    uncommon:         { label: "Uncommon",          stars: 2 },
+    reallyuncommon:   { label: "Really Uncommon",   stars: 3 },
+    rare:             { label: "Rare",              stars: 4 },
+    ultrarare:        { label: "Ultrarare",         stars: 5 },
+    reallyultrarare:  { label: "Really Ultrarare",  stars: 6 }, // hidden tier
+    legendary:        { label: "Legendary",         stars: 7 }  // hidden tier
+  };
+
+  // Helpful synonyms (in case your JSON uses different names)
+  const ALIASES = {
+    mythic:          'reallyultrarare',
+    apocryphal:      'legendary',
+    ultraultrarare:  'reallyultrarare'
+  };
+
+  // Build the star line exactly as requested:
+  // <=5 uses 5-symbol gauge with empties; >5 shows 6 or 7 solid stars.
+  function starLine(n) {
+    if (n <= 5) {
+      return '★'.repeat(n) + '☆'.repeat(5 - n) + ` (${n}/5)`;
+    }
+    return '★'.repeat(n) + ` (${n}/5)`;
+  }
+
+  function normalizeRarity(raw) {
+    const r = (raw || 'common').toString().trim().toLowerCase();
+    return RARITY_META[r] ? r : (ALIASES[r] || 'common');
+  }
+
+  function pickWeighted(items, odds) {
+    // If odds provided, honor them; else uniform pick
+    if (odds && typeof odds === 'object') {
+      const keys = Object.keys(RARITY_META);
+      const weights = [];
+      const buckets = {};
+      let total = 0;
+
+      for (const k of keys) {
+        const bucket = items.filter(i => normalizeRarity(i.rarity) === k);
+        buckets[k] = bucket;
+        const w = (bucket.length ? (odds[k] || 0) : 0);
+        weights.push([k, w]);
+        total += w;
+      }
+      // Fallback to uniform if total is zero
+      if (total <= 0) {
+        const all = items;
+        return all[Math.floor(Math.random() * all.length)];
+      }
+      // Roll
+      let roll = Math.random() * total;
+      for (const [k, w] of weights) {
+        if (w <= 0) continue;
+        if ((roll -= w) <= 0) {
+          const b = buckets[k].length ? buckets[k] : items;
+          return b[Math.floor(Math.random() * b.length)];
+        }
+      }
+      // Safety
+      return items[Math.floor(Math.random() * items.length)];
+    }
+    // Uniform
+    return items[Math.floor(Math.random() * items.length)];
+  }
 
   btn.addEventListener('click', async () => {
     btn.disabled = true;
@@ -83,21 +155,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) throw new Error('Empty pool');
 
-      const item = items[Math.floor(Math.random() * items.length)];
+      // Weighted by data.odds if present
+      const item = pickWeighted(items, data.odds);
+      const rarityKey = normalizeRarity(item.rarity);
+      const meta = RARITY_META[rarityKey];
 
       // Fill fields
-      title.textContent = item.title || '(Untitled Letter)';
+      titleEl.textContent = item.title || '(Untitled Letter)';
       const bits = [];
       if (item.meta?.date) bits.push(item.meta.date);
       if (item.meta?.factions?.length) bits.push(item.meta.factions.join(' · '));
       if (item.meta?.voices?.length) bits.push('Voices: ' + item.meta.voices.join(', '));
-      meta.textContent = bits.join(' — ');
-      body.textContent = (item.body || '').trim();
+      metaEl.textContent = bits.join(' — ');
+      bodyEl.textContent = (item.body || '').trim();
 
-      // Rarity label
-      const rarity = (item.rarity || 'common').toLowerCase();
-      rarityEl.textContent = rarity.toUpperCase();
-      rarityEl.className = `lutebox__rarity rarity--${rarity}`;
+      // Rarity label + stars
+      rarityEl.textContent = `${meta.label} — ${starLine(meta.stars)}`;
+      rarityEl.className = `lutebox__rarity rarity--${rarityKey}`;
 
       result.hidden = false;
       hint.textContent = 'Open another?';
@@ -108,5 +182,5 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = false;
     }
   });
-});
+})();
 </script>
