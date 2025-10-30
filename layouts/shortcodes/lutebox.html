@@ -1,8 +1,9 @@
-<!-- Simple Lutebox (scoped + baseURL-safe) -->
+<!-- Simple Lutebox (scoped + baseURL-safe, with error retries) -->
 <div class="lutebox"
      data-pool='{{ .Get "pool" | default "letters" }}'
-     data-base='{{ "/" | relURL }}'>
+     data-base='{{ "lootbox/pools/" | relURL }}'>
   <button class="lutebox__btn">Open a Letter</button>
+  <button class="lutebox__retry lutebox__retry--burn" hidden>Burn</button>
   <p class="lutebox__hint">A sealed letter awaits you.</p>
 
   <div class="lutebox__result" hidden>
@@ -14,22 +15,42 @@
 </div>
 
 <style>
-.lutebox{ text-align:center; margin:3rem auto; padding:2rem; background:#1c1a17; color:#f7e9c1;
-  max-width:600px; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,.4); font-family:'EB Garamond',serif }
-.lutebox__btn{ background:#d4af37; border:none; color:#000; font-weight:700; border-radius:8px; padding:.7rem 1.4rem; cursor:pointer; transition:.2s }
-.lutebox__btn:hover{ background:#e6c45f }
-.lutebox__result{ text-align:left; margin-top:1.5rem; padding:1rem; background:#2a2622; border-radius:8px }
+.lutebox{
+  text-align:center; margin:3rem auto; padding:2rem; background:#1c1a17; color:#f7e9c1;
+  max-width:600px; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,.4);
+  font-family:'EB Garamond',serif
+}
+.lutebox__btn,
+.lutebox__retry{
+  background:#d4af37; border:none; color:#000; font-weight:700; border-radius:8px;
+  padding:.7rem 1.1rem; cursor:pointer; transition:.2s; margin:.25rem .25rem 0
+}
+.lutebox__btn:hover,
+.lutebox__retry:hover{ background:#e6c45f }
+.lutebox__retry--burn{
+  background:#7a2e2e; color:#fff;
+}
+.lutebox__retry--burn:hover{
+  background:#9b3a3a;
+}
+.lutebox__result{
+  text-align:left; margin-top:1.5rem; padding:1rem; background:#2a2622; border-radius:8px
+}
 .lutebox__meta{ opacity:.75; margin:.25rem 0; font-size:.9rem }
 .lutebox__body{ white-space:pre-wrap }
 .lutebox__rarity{ text-transform:uppercase; font-weight:800; letter-spacing:.06em; margin:0 0 .5rem 0 }
-.rarity--common{color:#b7b7b7} .rarity--uncommon{color:#6ec27a} .rarity--reallyuncommon{color:#5dc0ba}
-.rarity--rare{color:#58a6ff} .rarity--ultrarare{color:#c084f5} .rarity--reallyultrarare{color:#f59e0b}
+.rarity--common{color:#b7b7b7}
+.rarity--uncommon{color:#6ec27a}
+.rarity--reallyuncommon{color:#5dc0ba}
+.rarity--rare{color:#58a6ff}
+.rarity--ultrarare{color:#c084f5}
+.rarity--reallyultrarare{color:#f59e0b}
 .rarity--legendary{color:#ffd700}
 </style>
 
 <script>
 (() => {
-  // Find the .lutebox that directly precedes this script (skips over the <style>)
+  // Find the .lutebox that precedes this <script> (skipping over the <style>)
   const script = document.currentScript;
   let box = script.previousElementSibling;
   while (box && !(box.classList && box.classList.contains('lutebox'))) {
@@ -38,6 +59,7 @@
   if (!box) return;
 
   const btn      = box.querySelector('.lutebox__btn');
+  const retryBurn= box.querySelector('.lutebox__retry--burn');
   const hint     = box.querySelector('.lutebox__hint');
   const result   = box.querySelector('.lutebox__result');
   const rarityEl = box.querySelector('.lutebox__rarity');
@@ -45,21 +67,23 @@
   const metaEl   = box.querySelector('.lutebox__meta');
   const bodyEl   = box.querySelector('.lutebox__body');
 
-  const pool = (box.dataset.pool || 'letters').trim();
-  const base = (box.dataset.base || '/').replace(/\/+$/,'/') ; // e.g. "/bardslog/"
+  const pool     = (box.dataset.pool || 'letters').trim();
+  // Base URL to JSON directory, e.g. "/bardslog/lootbox/pools/" or "/lootbox/pools/"
+  const baseDir  = (box.dataset.base || 'lootbox/pools/').replace(/^\/+/, '').replace(/\/+$/,'') + '/';
 
   const RARITY_META = {
-    common:           { label: "Common",            stars: 1 },
-    uncommon:         { label: "Uncommon",          stars: 2 },
-    reallyuncommon:   { label: "Really Uncommon",   stars: 3 },
-    rare:             { label: "Rare",              stars: 4 },
-    ultrarare:        { label: "Ultrarare",         stars: 5 },
-    reallyultrarare:  { label: "Really Ultrarare",  stars: 6 },
-    legendary:        { label: "Legendary",         stars: 7 }
+    common:           { label:"Common",            stars:1 },
+    uncommon:         { label:"Uncommon",          stars:2 },
+    reallyuncommon:   { label:"Really Uncommon",   stars:3 },
+    rare:             { label:"Rare",              stars:4 },
+    ultrarare:        { label:"Ultrarare",         stars:5 },
+    reallyultrarare:  { label:"Really Ultrarare",  stars:6 },
+    legendary:        { label:"Legendary",         stars:7 }
   };
-
-  function starLine(n){ return n<=5 ? '★'.repeat(n)+'☆'.repeat(5-n)+` (${n}/5)` : '★'.repeat(n)+` (${n}/5)`; }
-  const norm = r => (r||'common').toLowerCase();
+  const norm = r => (r || 'common').toLowerCase();
+  const starLine = n => n <= 5
+    ? '★'.repeat(n) + '☆'.repeat(5-n) + ` (${n}/5)`
+    : '★'.repeat(n) + ` (${n}/5)`;
 
   function pickWeighted(items, odds){
     const keys = Object.keys(RARITY_META);
@@ -72,19 +96,27 @@
     if (total <= 0) return items[Math.floor(Math.random()*items.length)];
     let roll = Math.random()*total;
     let chosen = keys[0];
-    for (const [k,w] of weights){ if (w>0 && (roll-=w) <= 0){ chosen = k; break; } }
+    for (const [k,w] of weights){ if (w>0 && (roll-=w)<=0){ chosen = k; break; } }
     const bucket = buckets[chosen].length ? buckets[chosen] : items;
     return bucket[Math.floor(Math.random()*bucket.length)];
   }
 
-  btn.addEventListener('click', async () => {
+  async function openLetter(){
     btn.disabled = true;
+    retryBurn.hidden = true;
     hint.textContent = 'Opening...';
     try {
-      const url = `${base}lootbox/pools/${encodeURIComponent(pool)}.json`;
-      const res = await fetch(url, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`Pool not found: ${url}`);
-      const data = await res.json();
+      // Build a site-relative URL that respects baseURL. Leading "/" keeps it absolute to site root.
+      const url = '/' + baseDir + encodeURIComponent(pool) + '.json';
+      const res = await fetch(url, { cache:'no-store' });
+
+      // Guard against HTML error pages that cause JSON parse failures.
+      const ct = (res.headers.get('content-type') || '').toLowerCase();
+      const text = await res.text();
+      if (!res.ok || !ct.includes('application/json')) {
+        throw new Error(`Bad response (${res.status}) for ${url}; got content-type "${ct}" and starts with: ${text.slice(0,60)}`);
+      }
+      const data = JSON.parse(text);
 
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) throw new Error('Empty pool');
@@ -93,7 +125,6 @@
       const rk = norm(item.rarity);
       const meta = RARITY_META[rk] || RARITY_META.common;
 
-      // Fill fields
       titleEl.textContent = item.title || '(Untitled Letter)';
       const bits = [];
       if (item.meta?.date) bits.push(item.meta.date);
@@ -102,18 +133,24 @@
       metaEl.textContent = bits.join(' — ');
       bodyEl.textContent = (item.body || '').trim();
 
-      // Rarity label
       rarityEl.textContent = `${meta.label} — ${starLine(meta.stars)}`;
       rarityEl.className = `lutebox__rarity rarity--${rk}`;
 
       result.hidden = false;
       hint.textContent = 'Open another?';
-    } catch (e) {
-      console.error(e);
-      hint.textContent = 'Could not load letters.';
+      btn.textContent = 'Open a Letter';
+    } catch (err) {
+      console.error(err);
+      hint.textContent = 'Could not open letter.';
+      // Swap primary button label and reveal the alternate retry
+      btn.textContent = 'Use a letter-opener';
+      retryBurn.hidden = false;
     } finally {
       btn.disabled = false;
     }
-  });
+  }
+
+  btn.addEventListener('click', openLetter);
+  retryBurn.addEventListener('click', openLetter);
 })();
 </script>
