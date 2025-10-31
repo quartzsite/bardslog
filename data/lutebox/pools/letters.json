@@ -12,6 +12,138 @@
   "noopen": 0.005
   },
   "items": [
+   {
+  "id": "backstory-common-towerdoor",
+  "title": "Notice Pinned to a Red Tower Door",
+  "rarity": "common",
+  "body": "'By order of the Stone court, this fire-post is to be capped and measured. All pitch, resin, and wicker withdrawn to the yard. Caretakers may stay as readers of hums only. If your key is the old roundmouth, keep it as a keepsake; the new mouth will be cut in granite.'",
+  "meta": {
+    "date": "1588-08-30",
+    "factions": ["Stone Empire", "Free Cities"],
+    "voices": ["Flame", "Stone"]
+  }
+},
+{
+  "id": "backstory-common-lastcard",
+  "title": "Messenger’s Last Route Card",
+  "rarity": "common",
+  "body": "'Turned in my bell and bag at dawn. Stayed at the print instead. The press has a rhythm like a quiet heart and the foreman counts in the old way: three pulls, one breath, no speech. He says this is copying and also a kind of prayer.'",
+  "meta": {
+    "date": "1589-02-04",
+    "factions": ["Guild Messengers", "Guild of Light and Ink"],
+    "voices": ["Wind", "Silence"]
+  }
+},
+{
+  "id": "backstory-common-marginrule",
+  "title": "Margin Rule, Guild of Light and Ink",
+  "rarity": "common",
+  "body": "'Readers keep the lane: hands clean, lamplight low, tongues still. If the floor hums from the river tower, lay the quoin and wait one hundred counts. Words do not swim well in war-water.'",
+  "meta": {
+    "date": "1589-03-15",
+    "factions": ["Guild of Light and Ink"],
+    "voices": ["Silence", "Water"]
+  }
+},
+{
+  "id": "backstory-uncommon-resignation",
+  "title": "Resignation of an Apprentice Stonewright",
+  "rarity": "uncommon",
+  "body": "'Master, I cannot sing the empire’s measure into stone. I learned the seam on wood and mud, the roundmouth that took heat like a friend. Your liturgical key bites clean but the song it asks is marching. I go to the copyhouse where the only striking is type to bed and the only bell is for rest.'",
+  "meta": {
+    "date": "1588-11-19",
+    "factions": ["Basilica of Measures", "Guild of Light and Ink"],
+    "voices": ["Stone", "Silence"]
+  }
+},
+{
+  "id": "backstory-uncommon-bononablackout",
+  "title": "Compositor’s Ledger: Blackout Day",
+  "rarity": "uncommon",
+  "body": "'At noon a low second note came through the joists, the Red Tower’s old tremor under the basilith line. We killed lamps and let the room cool. After fifty counts the hum passed and the formes read sweeter, like the page remembered its first thought.'",
+  "meta": {
+    "date": "1589-04-22",
+    "factions": ["Guild of Light and Ink", "Stone Empire"],
+    "voices": ["Stone", "Silence"]
+  }
+},
+{
+  "id": "backstory-uncommon-riverwatch",
+  "title": "River Watch at a Short Tower",
+  "rarity": "uncommon",
+  "body": "'The Red Tower never did mirrors worth a fig. We kept coals in a clay throat and listened with our teeth. Orders came as a tremble through the plank. When the empire took the hill, they laughed at our mud; then they built on the same ground and told us it was progress.'",
+  "meta": {
+    "date": "1588-10-07",
+    "factions": ["Free Cities", "Stone Empire"],
+    "voices": ["Flame", "Stone"]
+  }
+},
+{
+  "id": "backstory-reallyuncommon-ashnote",
+  "title": "Ashfast Note to a Runaway",
+  "rarity": "reallyuncommon",
+  "body": "'If you quit the line, cool your hands in flour and say nothing for a day. The world will try to hire your anger. Let silence bid first. Then work where words are weighed, not thrown.'",
+  "meta": {
+    "date": "1589-01-26",
+    "factions": ["Ashfast Devotees", "Guild of Light and Ink"],
+    "voices": ["Silence", "Flame"]
+  }
+},
+{
+  "id": "backstory-reallyuncommon-redkey",
+  "title": "The Old Keyhole",
+  "rarity": "reallyuncommon",
+  "body": "'Roundmouth seam, iron lip, soot in the threads. You hummed a vowel into it and the tower answered in the boards. I kept the key after the granite came, not to open anything, but to remember that messages used to be warm.'",
+  "meta": {
+    "date": "1589-03-09",
+    "factions": ["Free Cities"],
+    "voices": ["Flame", "Stone"]
+  }
+},
+{
+  "id": "backstory-rare-masonsconfession",
+  "title": "Lutefechten Mason’s Confession",
+  "rarity": "rare",
+  "body": "'I learned the basilith hymn and wore the cloth until I heard the cadence tie itself to war. The cut withheld is a stronger cut. I left the measure and kept the craft. Now I tune presses, not towers, and teach apprentices to breathe between strikes until the strike dissolves.'",
+  "meta": {
+    "date": "1589-02-18",
+    "factions": ["Lutefechten", "Basilica of Measures", "Guild of Light and Ink"],
+    "voices": ["Silence", "Stone"]
+  }
+},
+{
+  "id": "backstory-rare-pressmetronome",
+  "title": "Pressman’s Whisper",
+  "rarity": "rare",
+  "body": "'War drums count straight; peace counts crooked. Listen to the frisket swing and the tympan sigh. There is a rest in there that no commander can march through. We hide in that rest and come out with pages instead of wounds.'",
+  "meta": {
+    "date": "1589-04-01",
+    "factions": ["Guild of Light and Ink"],
+    "voices": ["Silence", "War"]
+  }
+},
+{
+  "id": "backstory-ultrarare-unlittower",
+  "title": "The Day We Unlit the Tower",
+  "rarity": "ultrarare",
+  "body": "'Two companies groped for each other by the river and the Red Tower throat began to glow. We smothered it with wet sacks and beat the plank until the tremor broke. In the sudden dark the skirmish never found its cue. Next morning there were only bootprints and dew.'",
+  "meta": {
+    "date": "1588-12-02",
+    "factions": ["Free Cities", "Guild of Light and Ink"],
+    "voices": ["Flame", "Silence"]
+  }
+},
+{
+  "id": "backstory-legendary-copyofpeace",
+  "title": "Copy of Peace, One Night Only",
+  "rarity": "legendary",
+  "body": "'We set the formes with nothing but blank sorts and pulled a whole run of empty sheets. The room filled with the soft talk of paper and breath. When the basilith sang for muster, the blanks answered with quiet and the quiet carried farther than the note. Some call that cowardice. I call it typesetting the world we want, if only for an hour.'",
+  "meta": {
+    "date": "1589-05-11",
+    "factions": ["Guild of Light and Ink", "Lutefechten"],
+    "voices": ["Silence"]
+  }
+},
   {
     "id": "ashfast-common-pantrycoal",
     "title": "Pantry Coal Tally",
