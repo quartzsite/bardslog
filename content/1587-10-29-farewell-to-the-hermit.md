@@ -1,15 +1,39 @@
----  
-title: "Farewell to the Hermit"  
-date: 1587-10-29  
-place: "Hermit's Clearing, Blackwood"  
-mood: "Grateful"  
-lesson: "Parting is also part of training"  
----  
+---
+title: "Farewell to the Hermit"
+date: "1587-10-29"
+slug: "farewell-to-the-hermit"
+place: "Hermit's Clearing, Blackwood"
+mood: "grateful"
+arc: "Road to Maraisbourg"
+lesson: "Parting is also part of training"
+chronology:
+  index: 8
+  prev: "1587-10-27-master-strikes-and-hidden-lore"
+  next: "1587-11-03-arrival-at-maraisbourg"
+tags: ["departure", "measure", "discipline", "guilds"]
+factions: ["Free Cities"]
+voices: ["Silence", "Wind"]
+foreshadow:
+  - "A young master in Maraisbourg will open new pages"
+  - "Forest rests give way to city bells and tower notes"
+  - "Old red towers on the river road changing their song"
+lutebox:
+  pool: "letters"
+  suggest_ids: ["basilith-common-sunmiss","basilith-uncommon-newswitch"]
+  cooldown_hours: 0
+draft: false
+---
 
-The morning was crisp and brittle when the Great Grandmaster von Lychenar told me it was time to leave. After a week in his hidden glade, the very air had begun to smell of pine and steel. My body was bruised, my mind sharpened. He had taught me the master strikes until they were stitched into my muscles, correcting my stance with a stick and a smile that rarely showed his teeth. When I faltered he spoke in parables: of birds that do not force their song, of rivers that find the sea no matter how many rocks bar the way.  
+# Farewell to the Hermit  
+**1587-10-29**  
+*Hermit's Clearing, Blackwood*
 
-“You are not meant to be a hermit,” he said, handing back my mended lute. “Go where there are people. Go where there are masters who still teach in halls, not in shadows.” He mentioned a name I had heard in whispers: Master Merryen of Maraisbourg, a young man said to have revived the old guild and written a book of cuts both old and new. “He was my student once,” the hermit added, eyes distant, “but he surpassed me in ambition. He will show you strikes that are still being born.”  
+The air was cold and clean when the master others call von Lychenar said it was time for me to go. A week of cuts had settled into the joints. Bruises mapped where I had argued with timing and lost. He corrected me with a stick and a small, flat smile. When I stood right, he said nothing. That was the praise.
 
-I bowed low and thanked him, a gratitude deeper than words. In return he placed his rough hand on my shoulder and told me to remember my songs. “The world will try to make you choose between being bard and fighter,” he said. “Let them. You know better now.”  
+He pressed my mended lute into my hands. “You are not for trees and stumps,” he said. “Go where people crowd each other’s edges. Learn where halls echo and clocks keep time.” He named a city I had sung about and never seen. He named a teacher I had heard only in rumor. “Merryen of Maraisbourg,” he said. “Ambition will hurry you. Use structure to slow it.”
 
-As I left the clearing, I looked back only once. The hermit had already vanished into the trees, a ghost among the trunks. The Blackwood seemed to close behind me. I walked with a staff and my lute strapped across my back, feeling oddly whole. Ahead lay miles of road and the promise of a city where sword and song were both respected. I hummed an old tune as I walked, marking time with each step, feeling the rhythm of the cuts within it.
+I bowed. He set a hand on my shoulder. “Do not let the world split you,” he said. “Keep the library you carry and the craft you are learning in one spine.”
+
+I stepped out of the clearing with staff and lute and the new weight of a waster across my back. I looked once over my shoulder and saw only spruce. The path down was damp with needles. Far off, a bell counted the hour. I matched it with my feet and kept the measure.
+
+{{< lutebox pool="letters" title="Open a Letter from the Blackwood Road" hint="On parting, a name: seek Merryen in Maraisbourg." cooldown="0" >}}
