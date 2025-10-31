@@ -1,11 +1,32 @@
 ---
 title: "A Duel of Honour"
-date: 1587-12-22
+date: "1587-12-22"
+slug: "a-duel-of-honour"
 place: "Bonona"
 mood: "Inspired"
 lesson: "Elegance and honour can coexist in the blade"
+arc: "Bononese Apprenticeship"
+chronology:
+  index: 24
+  prev: "1587-12-21-city-of-red-towers"
+  next: "1587-12-23-meeting-master-aquil-maros"
+tags: ["duel", "rapier", "measure", "pavane", "honour"]
+factions: ["Bonona Guilds", "Noble Houses", "City Watch"]
+voices: ["Bell", "Steel"]
+foreshadow:
+  - "Aquil Maros becomes the path set by Merryen's last wish"
+  - "Noble houses test the city’s dueling codes under watchful guild eyes"
+  - "Printed treatises named in the crowd as if they were scriptures"
 ---
 
-After weeks of travel and trials, Bonona greeted me with more than just its towers. In the heart of a wide piazza, I witnessed a duel unlike any fight I had seen. A silver‑haired master in a dark doublet faced a brash young noble. They saluted with grace, measuring distance with a practiced ease. Their footwork traced circles on the flagstones, their blades sang like lutes in counterpoint. In the end the master disarmed his opponent without drawing blood, a flourish that spoke of respect rather than contempt.
+# A Duel of Honour  
+**1587-12-22**  
+*Bonona*
 
-The crowd whispered his name – Aquil Maros – a master from these lands, trained in a refined art. I knew this must be the old friend my dying master had spoken of. I vowed to present myself to him not as a beggar but as a student who had travelled far and learned much. In the morning I would seek him out and deliver Merryen's wish.
+Bonona taught with a piazza before it offered a hall. In the wide square a silver-haired master faced a young noble who wore pride like polish. They saluted, set measure, and let the distance breathe. Their feet drew circles on the stone. The blades spoke in clear notes, thrust answering cut, parry answering feint. When the moment came the master took the noble’s sword with a turn of the wrist and a small step that looked like courtesy. No blood, no shout. Respect held the air still.
+
+The name passed through the crowd as a whisper that everyone knew. Aquil Maros. The refinement was not softness. It was control, line, and timing arranged so cleanly that anger had nowhere to stand.
+
+I stood among tradesmen and clerks and felt the lesson settle. If this city had a dance, he was its choreographer. In the morning I would seek him and carry Merryen’s wish as a pledge, not a plea.
+
+{{< lutebox pool="letters" title="Open a Letter from Bonona" hint="On the piazza, Aquil Maros disarms without drawing blood." cooldown="0" >}}
