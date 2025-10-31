@@ -1219,18 +1219,94 @@
 "date": "1589-04-20"
 }
 },
-{
-"id": "lt-ashlan-vigil-1589-04-23",
-"rarity": "ultrarare",
-"type": "letter",
-"title": "Ashlan’s Vigil Over the Fifth",
-"body": "Faelar,\nYou sing rests better than we chant them. I kept the night-watch beside the hearth that never chars flesh—banked coals, low breath, palms above not in. A courier brought talk of ash-robed killers who crown Death to hire War. They mistake cleansing for erasure.\nOur discipline is not a bonfire; it is a lamp trimmed against pride. We scorch oaths, not enemies. When the Stone court bids us bless a Basilith, we burn incense of bread and straw; when the Wind court offers silk to light, we refuse and warm tea instead. The Fifth god listens for percussion; give it lullabies.\nTell your apprentice—Rook, is it?—that heat without harm is a stance. The wrist that can stop at skin can also stop a feud.\n— Ashlan of the Ember Vow",
-"meta": {
-"factions": ["Ember Vow","Guilds"],
-"voices": ["Flame","Silence","Stone","Wind"],
-"date": "1589-04-23"
-}
-},
+  {
+    "id": "wicker-common-basketdrill",
+    "title": "Basket Drill at Dawn",
+    "rarity": "common",
+    "body": "We ran the lane with coals swinging low so sparks traced our footwork. Sergeant Prynn said, 'If your basket gutters, your courage gutters.' I kept mine singing until the straw went white at the rim.",
+    "meta": {
+      "date": "1589-03-19",
+      "factions": ["Wickers"],
+      "voices": ["Flame", "War", "Wind"]
+    }
+  },
+  {
+    "id": "wicker-common-pitchthread",
+    "title": "Pitch Thread",
+    "rarity": "common",
+    "body": "Wrap the wire tight, oil the fuller, kiss the edge with resin. A sword is a wick if you teach it. Captain said, 'You are the flame. The steel is just a sentence.'",
+    "meta": {
+      "date": "1588-12-08",
+      "factions": ["Wickers"],
+      "voices": ["Flame", "Stone", "War"]
+    }
+  },
+  {
+    "id": "wicker-uncommon-emberbrand",
+    "title": "Branding Rite",
+    "rarity": "uncommon",
+    "body": "Ashlan set the iron on my palm and said, 'Hold the heat, or it will hold you.' I smelled straw, salt, and something like rain. The mark cooled to a mouth. It will speak when I lift a torch.",
+    "meta": {
+      "date": "1589-04-27",
+      "factions": ["Wickers", "Ember Vow"],
+      "voices": ["Flame", "War"]
+    }
+  },
+  {
+    "id": "wicker-uncommon-fireflight",
+    "title": "Fireflight Arrows",
+    "rarity": "uncommon",
+    "body": "We dipped the fletchless shafts and lit them from the basket mouth. They left lines like veins across the night. The lieutenant laughed and said, 'Write them a letter they can read from their roofs.'",
+    "meta": {
+      "date": "1589-01-30",
+      "factions": ["Wickers"],
+      "voices": ["Flame", "War", "Wind"]
+    }
+  },
+  {
+    "id": "wicker-rare-wickduel",
+    "title": "Duel by the Kiln",
+    "rarity": "rare",
+    "body": "Two vows entered the chalk ring with blades already wet with lamp oil. The judge hummed the rests, but the crowd hummed the blaze. Ashlan raised a coal in a wicker cradle and said, 'Mercy is a lower draft, not a different fire.'",
+    "meta": {
+      "date": "1589-05-02",
+      "factions": ["Wickers", "Ember Vow"],
+      "voices": ["Flame", "Stone", "War"]
+    }
+  },
+  {
+    "id": "wicker-ultrarare-ashlanletter",
+    "title": "Ashlan to Faelar",
+    "rarity": "ultrarare",
+    "body": "Faelar, you keep trying to sing the Fifth to sleep. It does not sleep; it banks itself to watch you. War breathes through all throats. Teach wrists to spare if you must, but know this: every spar is an ember on leave. The Four will bow to War and then to Death; we are the ushers. Walk with us—see that kindness is fire lowered, not water. Set your songs to a hotter key.",
+    "meta": {
+      "date": "1589-05-11",
+      "factions": ["Wickers", "Ember Vow"],
+      "voices": ["Flame", "War"]
+    }
+  },
+  {
+    "id": "wicker-reallyultrarare-wickerjudgment",
+    "title": "Wicker Judgment",
+    "rarity": "reallyultrarare",
+    "body": "They brought the traitor bound to a wicker chair packed with green reeds. The Ember Vow lit the basket from beneath so the smoke spoke first. The condemned said, 'I am not tinder.' Ashlan answered, 'All vows are.' The chair did not scream; the crowd did.",
+    "meta": {
+      "date": "1589-06-03",
+      "factions": ["Wickers", "Ember Vow"],
+      "voices": ["Flame", "War", "Water"]
+    }
+  },
+  {
+    "id": "wicker-legendary-bononaburn",
+    "title": "The Night of Seven Wicks",
+    "rarity": "legendary",
+    "body": "Bonona slept under a red moon while seven wicker braziers marched the avenues. Each brazier bore a vow and a song. The basiliths clicked in their stone throats, but the city answered with shutters and breath. Ashlan lifted the cap of his basket and said, 'We are not here to beg War. We are here to admit it.' When the coals brightened, even the statues leaned a fraction toward the heat.",
+    "meta": {
+      "date": "1589-06-21",
+      "factions": ["Wickers", "Ember Vow"],
+      "voices": ["Flame", "War", "Sun"]
+    }
+  },
 {
 "id": "lt-fireless-host-charter-1589-04-27",
 "rarity": "reallyultrarare",
