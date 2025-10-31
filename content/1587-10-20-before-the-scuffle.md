@@ -32,4 +32,4 @@ The red towers came up in murmurs. Old signal fires between Bonona and Maraisbou
 
 Nights blurred. Three songs for stew. Four for nothing. When a table asked for silence I gave them silence and the room swelled to cover it. My lute felt heavier with every empty verse, but my hands still kept time.
   
-{{< lutebox pool="letters" title="Open a Letter from the Road" hint="One sealed letter a day." cooldown="0" >}}
+{{< lutebox pool="letters" title="Open a Letter from Mulecrest" hint="Rumors of red towers retuned by Mason-Priests." cooldown="0" >}}
