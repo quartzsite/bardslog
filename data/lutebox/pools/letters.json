@@ -12,6 +12,160 @@
   "noopen": 0.005
   },
   "items": [
+   {
+“id”: “ashfast-common-pantrycoal”,
+“title”: “Pantry Coal Tally”,
+“rarity”: “common”,
+“body”: “Two coals for stew, one for lye, none for pride. Sister Mel blurts that a bright pot makes a bright soul; I remind her that every spark is borrowed from a room not ours. Bank, breathe, bless, then shut the lid.”,
+“meta”: {
+“date”: “1589-02-11”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ashfast-common-roadsidehomily”,
+“title”: “Roadside Homily”,
+“rarity”: “common”,
+“body”: “Traveller, warm thy hands but count to six between them. Fire is a loan across thresholds; pay it back with stillness or it will collect in ash and debt.”,
+“meta”: {
+“date”: “1588-10-03”,
+“factions”: [“Ashfast Devotees”, “Free Cities”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ashfast-common-kettlemark”,
+“title”: “Mark on the Kettle”,
+“rarity”: “common”,
+“body”: “Do not let the copper sing past dusk. When it sings alone the sound leaks inward and something listens back.”,
+“meta”: {
+“date”: “1589-05-19”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”]
+}
+},
+{
+“id”: “ashfast-uncommon-lampdiscipline”,
+“title”: “Lamp Discipline Leaf”,
+“rarity”: “uncommon”,
+“body”: “Ashfast Rule, verse seven: a wick is a treaty. Nip the flame to a nail’s height; if the light grows lively, cup it with the left palm and count breaths. If it leans toward no wind, you are pulling too much from where no doors are built.”,
+“meta”: {
+“date”: “1589-03-21”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ashfast-uncommon-cinderledger”,
+“title”: “Cinder Ledger, Monastery of Grey Salt”,
+“rarity”: “uncommon”,
+“body”: “Account of heat spent on bread, linen, salves; heat saved from gossip, banners, and boasts. The column of saving runs longer than the column of spending. We sleep under the quietest roof in three valleys.”,
+“meta”: {
+“date”: “1588-12-14”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Silence”]
+}
+},
+{
+“id”: “wickers-uncommon-broadsidescorn”,
+“title”: “Broadsheet: Wickers Mock the Ashfast”,
+“rarity”: “uncommon”,
+“body”: “Ash men count cinders; we count gates fallen. They whisper to embers; we speak in pillars. When plague comes, who scours the streets clean, the cupper with a ladle or the Brandmaster with a wicker and song”,
+“meta”: {
+“date”: “1589-01-09”,
+“factions”: [“Wickers”, “Ember Vow”],
+“voices”: [“Flame”, “War”]
+}
+},
+{
+“id”: “basilica-reallyuncommon-humreport”,
+“title”: “Mason-Priest Report: Heat Hum at Red Tower”,
+“rarity”: “reallyuncommon”,
+“body”: “An Ashfast cook set three braziers within the measured radius during fast rain. The stone began a second tone, low and behind the civil channel. We dispersed the heat; the phantom tone lagged five heartbeats, as if the granite held breath.”,
+“meta”: {
+“date”: “1589-04-08”,
+“factions”: [“Basilica of Measures”, “Ashfast Devotees”],
+“voices”: [“Stone”, “Flame”]
+}
+},
+{
+“id”: “ember-rare-disciplinarycut”,
+“title”: “Disciplinary Cut: Ember Vow”,
+“rarity”: “rare”,
+“body”: “Brother Halven is bound from bearing pitch for forty days. He sang the burn-song in a barn to test its honesty. The roof answered with truth and ten families learned hunger. Lamp-discipline is not a toy; we brand to remember and to be remembered.”,
+“meta”: {
+“date”: “1589-02-02”,
+“factions”: [“Ember Vow”, “Wickers”],
+“voices”: [“Flame”, “War”]
+}
+},
+{
+“id”: “ashfast-rare-embersermon”,
+“title”: “Sermon of the Borrowed Hearth”,
+“rarity”: “rare”,
+“body”: “I laid my ear to a coal gone dull and heard a tide that was not water. Each breath we feed a flame is a rope we throw into rooms we cannot walk. Pull gently, children, for something may pull back with joy or hunger; either will take your hand.”,
+“meta”: {
+“date”: “1589-06-01”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ashfast-ultrarare-kilnvision”,
+“title”: “Kiln Vision at Bonona”,
+“rarity”: “ultrarare”,
+“body”: “We damped the kiln by thirds to spare the night air. The bricks exhaled names in heat you could not see, only feel. A red geometry hung between us like a net we had not cast. I understood then why the Wickers call fire a tongue and we call it a debt.”,
+“meta”: {
+“date”: “1589-05-27”,
+“factions”: [“Ashfast Devotees”, “Free Cities”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ashfast-reallyultrarare-ashfastmanifest”,
+“title”: “Ashfast Manifest: The Narrow Door”,
+“rarity”: “reallyultrarare”,
+“body”: “Do not mistake austerity for fear. We esteem flame higher than any craft, for it eats what is false and what is true with equal grace. We vow to feed it little, that it may remain rare and holy, a visitor that chooses, not a master that claims. When it chooses, we bow. When it claims, we bar the door with our own bodies.”,
+“meta”: {
+“date”: “1589-04-30”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”, “Silence”]
+}
+},
+{
+“id”: “ember-reallyultrarare-schismwhisper”,
+“title”: “Whisper Before a Schism”,
+“rarity”: “reallyultrarare”,
+“body”: “A Brandmaster told me that patience is ash wearing a crown. He said the Fifth eats all the others in the end and called it mercy. I asked him what he had ever loved that he did not burn a little. He smiled as if that answered everything.”,
+“meta”: {
+“date”: “1589-03-29”,
+“factions”: [“Ember Vow”, “Wickers”],
+“voices”: [“War”, “Flame”]
+}
+},
+{
+“id”: “ashfast-legendary-unlithour”,
+“title”: “The Unlit Hour”,
+“rarity”: “legendary”,
+“body”: “At the deepest watch, we gathered around an empty brazier and named the fires we would not summon: banners, vengeance, songs that taste of iron. The room cooled until our teeth clicked in time. Then a warmth rose from the floor, no spark, no smoke, only a hush that pressed our palms together. We knew the god had passed by and chosen not to stay, and that this too was worship.”,
+“meta”: {
+“date”: “1589-04-12”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Silence”]
+}
+},
+{
+“id”: “ashfast-legendary-seamofembers”,
+“title”: “Letter Found in a Cold Hearth”,
+“rarity”: “legendary”,
+“body”: “Child of coals, if you ever hear a candle answer your breath with a breath of its own, bow and close the snuffer. There is a seam between rooms and we have lived too long pressing our ears to it. Leave a crumb of bread, a drop of oil, and a promise to return with empty hands. The greatest flame we ever tended was the one we did not wake.”,
+“meta”: {
+“date”: “1589-06-20”,
+“factions”: [“Ashfast Devotees”],
+“voices”: [“Flame”, “Silence”]
+}
+},
   {
     "id": "basilith-common-noonchime",
     "title": "Tower Log: Noon Chime",
