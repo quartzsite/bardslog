@@ -1,15 +1,51 @@
----  
-title: "Master Strikes and Hidden Lore"  
-date: 1587-10-27  
-place: "Hermit's Clearing, Blackwood"  
-mood: "Enlightened"  
-lesson: "Strike with intention, not with anger"  
----  
+---
+title: "Master Strikes and Hidden Lore"
+date: "1587-10-27"
+slug: "master-strikes-and-hidden-lore"
+place: "Hermit's Clearing, Blackwood"
+mood: "enlightened"
+arc: "Road to Maraisbourg"
+lesson: "Strike with intention, not with anger"
+chronology:
+  index: 7
+  prev: "1587-10-25-learning-the-oberhau"
+  next: "1587-10-29-farewell-to-the-hermit"
+tags: ["meisterhau", "structure", "tempo", "craft", "measure"]
+factions: ["Free Cities"]
+voices: ["Silence", "Wind", "Stone"]
+foreshadow:
+  - "Names shift with cities; the verse remains"
+  - "Guild politics bleed into how a blade is taught"
+  - "Old towers learn new notes while the forest holds its rest"
+---
 
-The hermit known as the Great Grandmaster von Lychenar led me deeper into the Blackwood, to a clearing strewn with weathered stumps and carved posts. For three days we practised the Oberhau until my arms sang like strings drawn too tight. Only when he was satisfied did he reveal that there were *other* cuts, secretive and strange – the master strikes of legend.  
+# Master Strikes and Hidden Lore  
+**1587-10-27**  
+*Hermit's Clearing, Blackwood*
 
-Master Merryen might call them something else in Maraisbourg, but here in the silence of the forest the old man gave each its proper name. The *Zornhau* taught me to meet fury with fury, not by force but by structure. The *Krumphau* curved like a question mark around a shield. The *Zwerchhau* taught me to cut across the line, to use my body like a windmill. The *Schielhau* looked at my opponent askance, striking where they least expected. The *Scheitelhau* cut straight down the centre, splitting doubt in two.  
+Three days of the over-hew until my shoulders hummed with fatigue. Only then did the hermit open the next pages, not from a book but from his posture.
 
-Between each strike he told me of battles long past, of duels fought in rain‑slick streets and of guild politics that pitted master against master in the cities of the empire. His tales were veiled but I knew the names from my songs: Fechtmeister of Nuremberg, ruffians from Vienna, Italian bravos from beyond the mountains. With every story he pressed the point that a cut is born not out of rage but out of intent – that even a killing stroke is a thing of craft.  
+He never spoke the famous name. He did not need to. The phrases were the same I had carried in memory, now set in bone and breath.
 
-At night I wrote by candlelight, fingers blistered, mind buzzing. I realised that my memory of ballads was not wasted; it was a library from which to draw metaphors for each technique. The Zwerchhau was a turning chorus, the Zornhau a defiant refrain. The hermit would sometimes hum along as I practised, a ghost of a tune I could not place. Perhaps he once played a lute too.
+We worked them one by one:
+
+- **Zornhau** — meet fury with form; take the center, take the bind, take the line.  
+- **Krumphau** — turn the question; short edge, crooked path, long steel made small.  
+- **Zwerchhau** — cross the staff; hips carry the cut, arms stay honest.  
+- **Schielhau** — look sideways; invite the high hand, answer the eye.  
+- **Scheitelhau** — split the doubt; straight down, recovered clean.
+
+Between sets he spoke of rain-slick streets and halls where guild votes weighed more than truth. In one city the same stroke bore another name and was sold as a novelty. In another the masters agreed on nothing but the fee. I knew the stories; I had sung them. Hearing the politics while feeling the timing made both plainer.
+
+“Anger is noise,” he said at last. “Intention is time.” He let that sit. The trees kept still. Far off, a tower bell counted the hour and I matched its beat in the guard.
+
+By candlelight I copied what mattered:
+
+- begin with the hips, end with the point  
+- structure beats strength  
+- take what is offered, not what is imagined  
+- rage rushes; craft arrives
+
+The forest gave no applause. The cuts felt truer for it.
+
+{{< lutebox pool="letters" title="Open a Letter from the Blackwood" hint="Five answers, not outbursts; form before fury." cooldown="0" >}}
