@@ -1,19 +1,36 @@
 ---
 title: "The Guild's Farewell"
-date: 1587-11-23
+date: "1587-11-23"
+slug: "the-guilds-farewell"
 place: "Fechtschule Courtyard, Maraisbourg"
 mood: "Solemn"
 lesson: "Honour the fallen, honour the art"
+arc: "Road to Bonona"
+chronology:
+  index: 17
+  prev: "1587-11-22-a-final-wish"
+  next: "1587-11-25-on-the-road-south"
+tags: ["funeral", "oath", "guild", "master-strikes", "ritual"]
+factions: ["Guilds of Maraisbourg", "Free Cities"]
+voices: ["Ash", "Silence"]
+foreshadow:
+  - "A young oak planted over Merryen’s grave, roots set toward the south"
+  - "Students speak of a journey to the red towers"
+  - "Masons mark out a corner of the yard for future foundations"
 ---
 
-The morning after Merryen passed, the bells tolled low and long. The guildmasters and students gathered in the courtyard beneath a grey sky, each wearing their best doublets and their swords at their sides.  
+# The Guild's Farewell  
+**1587-11-23**  
+*Fechtschule Courtyard, Maraisbourg*
 
-Master Merryen's coffin, draped in cloth embroidered with the guild's emblem, was carried by four of his senior pupils. As they walked, the men and women of the guild saluted with their blades.  
+The bells tolled low. We gathered under a grey sky with our best doublets and our blades at our sides. Four seniors carried Merryen’s coffin, the guild device stitched in black thread across the pall.
 
-The salute was not a flourish but a sequence of cuts: Zornhau, Krumphau, Zwerchhau, Schielhau, Scheitelhau — the master strikes he had taught us, each performed slowly, deliberately, like prayers.  
+The salute was a sequence, not a flourish. Zornhau. Krumphau. Zwerchhau. Schielhau. Scheitelhau. Each cut taken slow, each recovery clean, each guard held long enough to remember who taught us to stand.
 
-I stood at the front with my lute. When the coffin reached the center of the yard, I began to play. The melody was one he loved, a song of river journeys and returning home. The notes mingled with the whisper of steel.  
+I stood to the fore with the lute and played the river air he favored. The melody threaded the courtyard while steel whispered its replies. There were tears, and there were set jaws.
 
-There were tears, and there were set jaws. We buried him in a corner of the yard beneath a young oak. We each placed our right hand on the earth above him, swearing to honour the art he had shared with us.  
+We buried him in the northeast corner, beside a young oak the color of new coin. Right hands to the earth, left hands to the hilts, we swore to keep the craft honest and the measure true.
 
-Honouring the fallen honours the art. The courtyard felt emptier, but the sound of our salutes lingered in the air, a promise to carry his lessons onward. 
+The yard felt wider when we were done. The sound of the salute lingered like breath in winter, a promise to carry his teaching onward.
+
+{{< lutebox pool="letters" title="Open a Letter from Maraisbourg" hint="Steel salutes and a young oak keep watch." cooldown="0" >}}
