@@ -68,10 +68,15 @@
 
   // === Stars: fixed /5 display; still shows 6/5 and 7/5 ===
 const RARITY_MAX = Math.max(...Object.values(RARITY_META).map(x => x.stars));
-const starLine = n => {
-  const filled = Math.min(n, RARITY_MAX);
-  const empty  = Math.max(0, RARITY_MAX - filled);
-  return '★'.repeat(filled) + '☆'.repeat(empty) + ` (${filled}/${RARITY_MAX})`;
+const starLine = (n) => {
+  const filled = Math.max(0, Math.min(Number(n) || 0, 7)); // clamp 0..7
+  if (filled >= 5) {
+    // Hidden tiers (and 5/5): no hollow stars
+    return '★'.repeat(filled) + ` (${filled}/5)`;
+  } else {
+    // Show hollows up to 5 only
+    return '★'.repeat(filled) + '☆'.repeat(5 - filled) + ` (${filled}/5)`;
+  }
 };
 
   // Minimal confetti for top tiers (no CSS deps, self-removing)
