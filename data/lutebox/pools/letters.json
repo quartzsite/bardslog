@@ -12,6 +12,193 @@
   "noopen": 0.005
   },
   "items": [
+  {
+    "id": "basilith-common-noonchime",
+    "title": "Tower Log: Noon Chime",
+    "rarity": "common",
+    "body": "Noon test complete. Cadence for Maraisbourg remains long short short. Stone took the note clean after rain. Clerk Remy reports a faint rattle in the seam when the bell cart passed; Mason-Priest says it is harmless and calls it the bone settling.",
+    "meta": {
+      "date": "1589-03-12",
+      "factions": ["Stone Empire", "Basilica of Measures"],
+      "voices": ["Stone"]
+    }
+  },
+  {
+    "id": "basilith-common-chalkbase",
+    "title": "Chalk at the Base",
+    "rarity": "common",
+    "body": "Someone scratched a lesson where the water drips: long long rest short is the river route, not the city route. Do not sing the river when the mills are grinding. The stone hates a muddled mouth.",
+    "meta": {
+      "date": "1588-11-06",
+      "factions": ["Guild Messengers", "Basilica of Measures"],
+      "voices": ["Stone", "Water"]
+    }
+  },
+  {
+    "id": "basilith-common-sunmiss",
+    "title": "Sunflash Miss",
+    "rarity": "common",
+    "body": "We tried the capstone mirror at fourth hour and lost the line on the haze. The far tower answered with a handkerchief from the parapet, which is not in the book but felt like mercy.",
+    "meta": {
+      "date": "1589-04-03",
+      "factions": ["Stone Empire"],
+      "voices": ["Stone", "Wind"]
+    }
+  },
+  {
+    "id": "basilith-common-thumbprint",
+    "title": "Errand Runner’s Thumb",
+    "rarity": "common",
+    "body": "Courier trick from Old Tanner: press your thumb into the copper tongue key before you run. If the priest says the seam was never opened, show the smudge in the whorl and ask him whose heat that is.",
+    "meta": {
+      "date": "1588-09-18",
+      "factions": ["Guild Messengers", "Basilica of Measures"],
+      "voices": ["Stone"]
+    }
+  },
+  {
+    "id": "basilith-uncommon-seamticket",
+    "title": "Seam Ticket",
+    "rarity": "uncommon",
+    "body": "Issued to Brother Caldus for nocturnal retune. Purpose: shift the civil channel one finger lower so the harvest bells stop waking the military watch. Instruction: sing soft into the seam, answer only when the stone answers itself.",
+    "meta": {
+      "date": "1589-07-01",
+      "factions": ["Basilica of Measures"],
+      "voices": ["Stone", "Silence"]
+    }
+  },
+  {
+    "id": "basilith-uncommon-riverfoot",
+    "title": "Mud Note from Riverfoot",
+    "rarity": "uncommon",
+    "body": "The towpath caved and the base is damp. Messages come through like a drunk with a hymn. We strung canvas skirts and read with our cheeks pressed to the granite. The words are there if you listen with the bones.",
+    "meta": {
+      "date": "1589-02-28",
+      "factions": ["Stone Empire"],
+      "voices": ["Water", "Stone"]
+    }
+  },
+  {
+    "id": "basilith-uncommon-newswitch",
+    "title": "Stone Learns a New Song",
+    "rarity": "uncommon",
+    "body": "Today the tower took a new pitch without complaint. The mason called it a good ear day. We fed it barley dust and wiped the cap with vinegar. The road wardens say the orders tasted faster.",
+    "meta": {
+      "date": "1589-05-14",
+      "factions": ["Basilica of Measures", "Stone Empire"],
+      "voices": ["Stone", "Wind"]
+    }
+  },
+  {
+    "id": "redtower-common-ledgerleaf",
+    "title": "Red Tower Ledger Leaf",
+    "rarity": "common",
+    "body": "Entry from the old ledger at Bonona: the prototype tower spoke in bells and flags before it learned stone. Three boys ran the stairs with colored cloth and a drum. The drum did not keep up with the sun.",
+    "meta": {
+      "date": "1587-12-21",
+      "factions": ["Bonona Red Towers"],
+      "voices": ["Wind", "Stone"]
+    }
+  },
+  {
+    "id": "basilith-common-keywayblessing",
+    "title": "Keyway Blessing",
+    "rarity": "common",
+    "body": "We oil the seam with vinegar and honey, and the Mason-Priest traces a square in the air. He says the stone is a throat and the keyway is its lip, and one should never shout into a mouth one hopes will sing.",
+    "meta": {
+      "date": "1589-01-09",
+      "factions": ["Basilica of Measures"],
+      "voices": ["Stone", "Silence"]
+    }
+  },
+  {
+    "id": "basilith-rare-nightsevenflashes",
+    "title": "Night of Seven Flashes",
+    "rarity": "rare",
+    "body": "Over Bonona the capstones winked like a string of saints. Seven clean heliograph cuts walked from hill to hill while the valley slept. The last flash kissed the river and the barges turned as one.",
+    "meta": {
+      "date": "1589-08-03",
+      "factions": ["Stone Empire", "Guild Messengers"],
+      "voices": ["Sun", "Wind", "Water"]
+    }
+  },
+  {
+    "id": "basilith-rare-spandrelnote",
+    "title": "Spandrel Note",
+    "rarity": "rare",
+    "body": "Exam of the Bononan seam: it bears no weight and carries no load, yet without it the harmonics sulk. The spandrel sings so the arch may ignore its own echo. This is how a whisper crosses a nation.",
+    "meta": {
+      "date": "1589-06-18",
+      "factions": ["Basilica of Measures"],
+      "voices": ["Stone", "Silence"]
+    }
+  },
+  {
+    "id": "basilith-rare-civilmilskew",
+    "title": "Skew Between Civil and War",
+    "rarity": "rare",
+    "body": "We set the civil channel half a breath above the war. In fog the gap narrows and the two hum against each other like quarrelling kettles. On such mornings we speak only in rests and let the road decide.",
+    "meta": {
+      "date": "1589-10-02",
+      "factions": ["Stone Empire"],
+      "voices": ["Stone", "Silence", "Flame"]
+    }
+  },
+  {
+    "id": "redtower-ultrarare-fieldrepair",
+    "title": "Prototype Field Repair",
+    "rarity": "ultrarare",
+    "body": "Under the Red Tower we replaced three flag bolts with copper tongues and taught the brick to carry a low song. When the first answer came, it shivered the dust in the mortar and wrote our names in grit.",
+    "meta": {
+      "date": "1588-03-29",
+      "factions": ["Bonona Red Towers", "Basilica of Measures"],
+      "voices": ["Stone", "Wind"]
+    }
+  },
+  {
+    "id": "basilith-ultrarare-engineerslament",
+    "title": "Engineer’s Lament",
+    "rarity": "ultrarare",
+    "body": "I am sorry to the grain-barge that turned on a war word meant for the garrison. The stone was hot from sun and bled the channels together. I have tuned the seam a finger wider. I will carry this in my chest forever.",
+    "meta": {
+      "date": "1589-08-09",
+      "factions": ["Basilica of Measures", "Guild Messengers"],
+      "voices": ["Stone", "Water", "Silence"]
+    }
+  },
+  {
+    "id": "basilith-ultrarare-capstonemap",
+    "title": "Capstone Alignment",
+    "rarity": "ultrarare",
+    "body": "Diagram left in chalk: two towers, one hill, one river bend, one city gate. The sun-lines cross at a baker’s roof at third bell. The note says only this: bake early and watch the shingles for light.",
+    "meta": {
+      "date": "1589-04-25",
+      "factions": ["Stone Empire"],
+      "voices": ["Sun", "Wind", "Stone"]
+    }
+  },
+  {
+    "id": "redtower-reallyultrarare-waking",
+    "title": "When the Red Towers Woke",
+    "rarity": "reallyultrarare",
+    "body": "We rang them all at once to see if the city would sing. It did. Dogs howled in fifths and the river made a standing wrinkle. My teeth buzzed and a sparrow fell asleep on the ledger. Then the stone said hush and we did.",
+    "meta": {
+      "date": "1588-05-07",
+      "factions": ["Bonona Red Towers"],
+      "voices": ["Stone", "Water", "Silence"]
+    }
+  },
+  {
+    "id": "basilith-legendary-foundersrite",
+    "title": "Founders’ Rite of the Basilith",
+    "rarity": "legendary",
+    "body": "At Bonona the first true tower took its breath from four hands: a mason, a singer, a barge captain, a soldier. Each pressed an ear to the seam and gave up one secret word. The stone keeps those words as its spine. Speak near and the city hears.",
+    "meta": {
+      "date": "1587-12-24",
+      "factions": ["Stone Empire", "Basilica of Measures", "Guild Messengers", "Free Cities"],
+      "voices": ["Stone", "Wind", "Water", "Flame", "Silence"]
+    }
+  },
    {
   "id": "basilith-spandrel-gospel",
   "type": "letter",
