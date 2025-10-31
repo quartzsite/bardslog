@@ -12,6 +12,259 @@
   "noopen": 0.005
   },
   "items": [
+  {
+    "id": "host-common-ablution",
+    "title": "Morning Ablution",
+    "rarity": "common",
+    "body": "Bucket, wick, breath. We wet the torch-heads till they drink and glisten, then lift them to the little coals. Sergeant says: 'Water is elder to fire; let the elder escort the younger.' We carry light that will obey a shout and a splash.",
+    "meta": {
+      "date": "1589-03-09",
+      "factions": ["Fireless Host (Ashfast)", "Free Cities"],
+      "voices": ["Water", "Flame", "Silence"]
+    }
+  },
+  {
+    "id": "host-common-coldcamp-rite",
+    "title": "Cold-Camp Rite",
+    "rarity": "common",
+    "body": "We circle the kettle with wet palms out. The chant is a whisper-count of drips from the lid. When the count ends, we eat. A boy asked why we bless with water not flame. Quartermaster said: 'Because we want tomorrow to look back and still find us here.'",
+    "meta": {
+      "date": "1589-01-22",
+      "factions": ["Fireless Host (Ashfast)"],
+      "voices": ["Water", "Silence"]
+    }
+  },
+  {
+    "id": "host-common-hushline",
+    "title": "Hush-Line Between Fires",
+    "rarity": "common",
+    "body": "Two braziers only, and a rope soaked in river brine strung between. No one steps the hush-line with a spark. The rope steams at dusk and looks like a ghost road. We call it the river made into a rule.",
+    "meta": {
+      "date": "1589-04-06",
+      "factions": ["Fireless Host (Ashfast)"],
+      "voices": ["Water", "Flame"]
+    }
+  },
+  {
+    "id": "host-common-wickerwarning",
+    "title": "Wicker Warning",
+    "rarity": "common",
+    "body": "Scouts say Wickers set rush-baskets to smoulder and walk calm as saints. Our sappers flooded the ditch and laid wet sailcloth in the reeds. The baskets hissed like cats and went to sleep. A Wicker bowed to us across the mud; I bowed back and felt wrong about it all day.",
+    "meta": {
+      "date": "1589-05-03",
+      "factions": ["Fireless Host (Ashfast)", "Wickers"],
+      "voices": ["Water", "Flame", "Wind"]
+    }
+  },
+  {
+    "id": "host-uncommon-waterfast",
+    "title": "Water-Fast Vigil",
+    "rarity": "uncommon",
+    "body": "Ashfast rule for the equinox: one day without fire, three without complaint. We kept watch by a bowl of river water and a single coal inside a spoon. The coal glowed like a heart under a thin rib. Chaplain said: 'This is how the worlds share. Mind your asking.'",
+    "meta": {
+      "date": "1589-03-20",
+      "factions": ["Fireless Host (Ashfast)"],
+      "voices": ["Water", "Silence", "Flame"]
+    }
+  },
+  {
+    "id": "host-uncommon-embertemplars-pass",
+    "title": "Templar’s Passing",
+    "rarity": "uncommon",
+    "body": "An Ember Vow rider crossed our line at dusk, brand on the palm, soot in the lashes. She asked for our river, not our food. We held the rope for her horse while she filled a skin and did not meet our eyes. When she left she said: 'Keep your buckets near.' I think it was a prayer in their tongue.",
+    "meta": {
+      "date": "1589-04-28",
+      "factions": ["Ember Vow", "Fireless Host (Ashfast)"],
+      "voices": ["Flame", "Water"]
+    }
+  },
+  {
+    "id": "host-uncommon-redbluecatechism",
+    "title": "Red-Blue Catechism",
+    "rarity": "uncommon",
+    "body": "Question: 'What is fire?' Answer: 'A guest from the other room.' Question: 'What is water?' Answer: 'The door the guest used.' Question: 'What are we?' Answer: 'The latch.' The recruit wrote it on his scabbard and stopped staring at the braziers like they were wolves.",
+    "meta": {
+      "date": "1589-02-11",
+      "factions": ["Fireless Host (Ashfast)"],
+      "voices": ["Water", "Flame", "Silence"]
+    }
+  },
+  {
+    "id": "host-rare-rivercordon",
+    "title": "River Cordon",
+    "rarity": "rare",
+    "body": "Orders for a night of Wicker raids: sink casks upriver, braid wet ropes across alleys, soak the hay-lofts till they weep. Archers to tip shafts in brine before pitch. Surgeon notes fewer hand-burns when the brine-buckets stand at knee height. The city slept hard and woke damp but unburned.",
+    "meta": {
+      "date": "1589-06-17",
+      "factions": ["Fireless Host (Ashfast)", "Free Cities"],
+      "voices": ["Water", "Flame", "Stone"]
+    }
+  },
+  {
+    "id": "host-rare-treatise-sharedfire",
+    "title": "Treatise on Shared Fire (Excerpt)",
+    "rarity": "rare",
+    "body": "Assertion: 'Every flame borrows from a common well that does not begin here.' Corollary: 'Water returns what we took if we ask properly.' Proofs offered: 'Steam that speaks in pipes, candles that gutter when prayed at, coals that brighten when named.' The Empire scoffed until their granary learned humility one wet spring.",
+    "meta": {
+      "date": "1589-05-22",
+      "factions": ["Fireless Host (Ashfast)", "Academy of Bonona"],
+      "voices": ["Water", "Flame", "Silence"]
+    }
+  },
+  {
+    "id": "host-reallyultrarare-ashfastmanifest",
+    "title": "Ashfast Manifest: Red and Blue",
+    "rarity": "reallyultrarare",
+    "body": "We hold that fire is holy because it is hungry, and water is holy because it remembers. We will not starve one god to feed the other. We will lean the sword toward the bucket, and the bucket toward the sword. Where Wickers crown the blaze and call it judgment, we lay it back in the river and call it paid. Where the Ember Vow brands palms to prove courage, we cool those brands with patience and call that courage too.",
+    "meta": {
+      "date": "1589-07-02",
+      "factions": ["Fireless Host (Ashfast)"],
+      "voices": ["Water", "Flame", "Silence"]
+    }
+  },
+  {
+    "id": "host-legendary-nightof-twoaltars",
+    "title": "The Night of Two Altars",
+    "rarity": "legendary",
+    "body": "In the siege of South Gate the Wickers came singing with their baskets lit and swords the color of noon. We answered with a river we had built in the streets: casks burst, linens lifted, every alley a throat speaking 'no'. Their fire bowed to our water and lay down. Then we lit one lamp per street, each wick pinched between wet fingers, and walked the survivors home. Some say both gods stood in the same doorway and nodded to each other.",
+    "meta": {
+      "date": "1589-08-14",
+      "factions": ["Fireless Host (Ashfast)", "Wickers", "Free Cities"],
+      "voices": ["Water", "Flame", "Silence", "Wind"]
+    }
+  },
+  {
+    "id": "fence-common-merryen-wheel",
+    "title": "Drill Card: Merryen’s Wheel",
+    "rarity": "common",
+    "body": "'Circle the pell with eight cuts as taught at Merryen’s hall: wrath, crooked, traverse, squint, and crown the line with a parting stroke. Feet wide as a miller’s, hands soft as a player’s. If the wrist sings too soon, the wheel wobbles.'",
+    "meta": {
+      "date": "1588-11-18",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel", "Wind"]
+    }
+  },
+  {
+    "id": "fence-common-bonona-guard",
+    "title": "Bonona Note: Coda Lunga",
+    "rarity": "common",
+    "body": "'Stand long to the right and let the point accuse. From the long tail, tease with a small circle; if he swats at air, write him a short letter with the stoccata and seal it with your left step.'",
+    "meta": {
+      "date": "1589-01-09",
+      "factions": ["Bonona Circle"],
+      "voices": ["Steel", "Silence"]
+    }
+  },
+  {
+    "id": "fence-common-pell-wrath",
+    "title": "Pell Record: Wrath Rises",
+    "rarity": "common",
+    "body": "'At dawn we fed the post fifty wrath-cuts. Elbow low, edge true, step through like crossing a stream. The post answered in splinters; the wrist answered in heat. Both answers were correct.'",
+    "meta": {
+      "date": "1589-02-02",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel"]
+    }
+  },
+  {
+    "id": "fence-reallyuncommon-winding",
+    "title": "Margin Leaf: The Winding",
+    "rarity": "reallyuncommon",
+    "body": "'When blades meet, listen. If he grows heavy, wind under; if he grows hollow, wind over. The turn is small enough to hide in a heartbeat. Merryen says the quietest inches win the loudest quarrels.'",
+    "meta": {
+      "date": "1588-12-14",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel", "Silence"]
+    }
+  },
+  {
+    "id": "fence-uncommon-bonona-molinello",
+    "title": "Kitchen Molinello",
+    "rarity": "uncommon",
+    "body": "'Bonona cooks stir with the wrist: a small circle for the mandritto, a smaller for the riverso. Keep the pot close to the body lest the stew spill. Serve with a thrust when the spoon comes home.'",
+    "meta": {
+      "date": "1589-03-03",
+      "factions": ["Bonona Circle"],
+      "voices": ["Steel", "Wind"]
+    }
+  },
+  {
+    "id": "fence-uncommon-zwerch-song",
+    "title": "Crosswind over the Brows",
+    "rarity": "uncommon",
+    "body": "'If he lifts a high parting stroke, send the crosswind through his hat. Step to his strong side and let the short edge speak level with the world. Hats are dear; brows are dearer.'",
+    "meta": {
+      "date": "1589-03-27",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel", "Wind"]
+    }
+  },
+  {
+    "id": "fence-reallyuncommon-schiel",
+    "title": "Squint at the Heart",
+    "rarity": "reallyuncommon",
+    "body": "'From the bind, turn the short edge like a key and look past your own point as if bored of living. The squint troubles brave men; their courage turns its head and leaves their chest at home.'",
+    "meta": {
+      "date": "1589-01-28",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel", "Silence"]
+    }
+  },
+  {
+    "id": "fence-rare-bonona-measure",
+    "title": "Two Measures in Bonona",
+    "rarity": "rare",
+    "body": "'Wide measure is for promises, narrow for confessions. In the first you court with molinelli and words; in the second you marry with the point. Change partners only when the feet agree.'",
+    "meta": {
+      "date": "1589-04-19",
+      "factions": ["Bonona Circle"],
+      "voices": ["Steel", "Wind", "Silence"]
+    }
+  },
+  {
+    "id": "fence-rare-four-voices",
+    "title": "The Four Voices of Lutefechten",
+    "rarity": "rare",
+    "body": "'Time hums, Measure counts, Intention prays, Edge speaks. If one voice shouts, the song is spoiled. If all four whisper, even a dull blade says something clever.'",
+    "meta": {
+      "date": "1589-05-01",
+      "factions": ["Lutefechten"],
+      "voices": ["Steel", "Wind", "Silence"]
+    }
+  },
+  {
+    "id": "fence-ultrarare-merryen-lid",
+    "title": "Merryen’s Lid",
+    "rarity": "ultrarare",
+    "body": "'He showed a cut like closing a chest: the lid fell and the thief’s hands were inside before they knew to be outside. The trick was not force but hinge—spine, shoulder, wrist in one polite bow.'",
+    "meta": {
+      "date": "1589-06-09",
+      "factions": ["Fechtschule of Maraisbourg"],
+      "voices": ["Steel", "Silence"]
+    }
+  },
+  {
+    "id": "fence-reallyultrarare-bonona-serpentina",
+    "title": "Carta Serpentina",
+    "rarity": "reallyultrarare",
+    "body": "'The letter from Bonona says: tempt with the long tail, then write a serpent in the air—feint low, coil to the head, bite the heart. The serpent’s secret is that it is a straight line wearing a curve.'",
+    "meta": {
+      "date": "1589-06-27",
+      "factions": ["Bonona Circle", "Guild of Letters"],
+      "voices": ["Steel", "Wind", "Silence"]
+    }
+  },
+  {
+    "id": "fence-legendary-red-tower-duel",
+    "title": "Duel on the Red Tower Stairs",
+    "rarity": "legendary",
+    "body": "'Steps slick with fog, walls warm from old messages. One fought Merryen’s wide dance, one bore Bonona’s long tail. The dance stole the line and the tail stole it back. In the last breath both men chose the point and arrived together. Only one remembered to leave their heel behind.'",
+    "meta": {
+      "date": "1588-12-31",
+      "factions": ["Fechtschule of Maraisbourg", "Bonona Circle"],
+      "voices": ["Steel", "Wind", "Stone", "Silence"]
+    }
+  },
    {
   "id": "backstory-common-towerdoor",
   "title": "Notice Pinned to a Red Tower Door",
