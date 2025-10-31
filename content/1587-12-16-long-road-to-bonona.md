@@ -1,15 +1,36 @@
 ---
 title: "The Long Road to Bonona"
-date: 1587-12-16
+date: "1587-12-16"
+slug: "long-road-to-bonona"
 place: "Road to Bonona"
 mood: "Weary but Resolute"
 lesson: "Endurance forges the spirit"
+arc: "Road to Bonona"
+chronology:
+  index: 22
+  prev: "1587-12-13-strings-turned-to-steel"
+  next: "1587-12-21-city-of-red-towers"
+tags: ["journey", "endurance", "measure", "road", "basiliths"]
+factions: ["Free Cities"]
+voices: ["Road", "Dust"]
+foreshadow:
+  - "First glimpse of Bonona’s red towers, rumored to be tuned into basiliths"
+  - "Wayfarers speak of mason-priests who weigh craft and conduct at the gates"
+  - "Ashfast watchers seen at hill shrines along the southern approach"
 ---
 
-The road to Bonona stretched on like an endless ribbon over hills and valleys.  Each day I rose with the sun and walked until the stars came out, my pack light and my limbs heavy.  The cold of the north gave way to damp mists and then to mild breezes, but the distance weighed on me more than the weather.  
+# The Long Road to Bonona  
+**1587-12-16**  
+*Road to Bonona*
 
-Bandits and hungry wolves stalked the roads.  I remembered the hermit's lessons and Merryen's developing cuts when a pair of brigands rushed me with spears.  A fallen branch became my polearm and I thrust and cut with it as if it were a halberd.  When the branch splintered under a blow, I did not despair; I gripped the shorter piece and used it as a dussack, striking with short, sharp cuts that sent the bandits fleeing.  Adaptation was my saving grace.  
+The road did not end so much as thin into distance. I rose with the sun, walked until stars stitched a seam above the hills, and learned what patience feels like in the bones. Weather turned from knife to mist to mild breath, yet weight belonged to miles, not sky.
 
-Another time, a mounted rider thought to trample me.  With no stick at hand, I unslung my battered lute.  Its neck became a rapier and its body a guard as I slipped under the horse's head and thrust up, not to kill but to startle.  The stringed instrument rang with a discordant note as it tapped the rider's vambrace, and he reined in, more shocked at my audacity than any injury.  He laughed and let me pass; in his eyes I was both bard and swordsman.  
+Trouble traveled too. Wolves kept to shadow. Men with quick eyes and slow scruples took the measure of my stride and then thought better of it when I set my stance. I saved my strength for the path and let small storms pass.
 
-There were nights I thought my legs would buckle and my resolve falter.  I recalled the guild's salute, the hermit's patient gaze and Merryen's last wish.  My songs were still within me, but now they were joined by the memory of master strikes, of developing cuts and of the feel of wood and steel in my hands.  By the time the towers of Bonona appeared on the horizon, red against the winter sky, I felt as if I had walked not just a road but a lifetime.  Relief washed over me, and with it a quiet pride: I had arrived in one piece, forged by the long road itself. 
+Villages traded news as if it were salt. At one wayside a miller’s boy swore the red towers ahead were being taught new harmonies by stone-church men. On a ridge at dusk I heard a chant carry from a shrine and saw three figures keep a stillness that did not belong to prayer. The road holds more than dust.
+
+I kept my notes in the margins of sleep. Zornhau for the first light, Krumphau when a gust cut across my line, a quiet guard when the day asked for nothing at all. The lute rode my shoulder, scarred and steady. Its creak matched the pull of the pack. Its silence matched my breath.
+
+When the horizon finally lifted and the towers of Bonona showed red against winter, I stopped and let the sight arrive twice. Once to the eyes. Once to the will. The long road had tempered more than stride.
+
+{{< lutebox pool="letters" title="Open a Letter from the Road to Bonona" hint="Basilith shadows lengthen over the southern approaches." cooldown="0" >}}
