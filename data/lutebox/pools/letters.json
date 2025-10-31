@@ -2,13 +2,14 @@
  "pool": "letters",
   "cooldownHours": 0,
   "odds": {
-    "common": 0.68,
-    "uncommon": 0.18,
-    "reallyuncommon": 0.08,
-    "rare": 0.04,
-    "ultrarare": 0.015,
-    "reallyultrarare": 0.004,
-    "legendary": 0.001,
+"common": 0.37,
+  "uncommon": 0.23,
+  "reallyuncommon": 0.18,
+  "rare": 0.13,
+  "ultrarare": 0.065,
+  "reallyultrarare": 0.020,
+  "legendary": 0.005,
+  "noopen": 0.005
 "noopen": 0.05
   },
   "items": [
