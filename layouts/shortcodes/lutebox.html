@@ -67,8 +67,12 @@
   };
 
   // === Stars: fixed /5 display; still shows 6/5 and 7/5 ===
-  const starLine = n =>
-    '★'.repeat(n) + (n < 5 ? '☆'.repeat(5 - n) : '') + ` (${n}/5)`;
+const RARITY_MAX = Math.max(...Object.values(RARITY_META).map(x => x.stars));
+const starLine = n => {
+  const filled = Math.min(n, RARITY_MAX);
+  const empty  = Math.max(0, RARITY_MAX - filled);
+  return '★'.repeat(filled) + '☆'.repeat(empty) + ` (${filled}/${RARITY_MAX})`;
+};
 
   // Minimal confetti for top tiers (no CSS deps, self-removing)
   function confettiBurst(){
@@ -152,26 +156,26 @@
     return { kind:'item', item: items[Math.floor(Math.random()*items.length)] };
   }
 
-  function render(item){
-    const rk   = normalize(item.rarity);
-    const meta = RARITY_META[rk];
+function render(item){
+  const rk   = normalize(item.rarity);
+  const meta = RARITY_META[rk];
 
-    TITLE.textContent = item.title || '(Untitled Letter)';
-    const bits = [];
-    if (item.meta?.date) bits.push(item.meta.date);
-    if (item.meta?.factions?.length) bits.push(item.meta.factions.join(' · '));
-    if (item.meta?.voices?.length) bits.push('Voices: ' + item.meta.voices.join(', '));
-    META.textContent = bits.join(' — ');
-    BODY.textContent = (item.body || '').trim();
+  TITLE.textContent = item.title || '(Untitled Letter)';
 
-    // Hide label for reallyultrarare & legendary; still show stars
-    const HIDDEN_TOP = new Set(['reallyultrarare','legendary']);
-    const labelPart  = HIDDEN_TOP.has(rk) ? '' : (meta.label + ' — ');
-    RARITY.textContent = `${labelPart}${starLine(meta.stars)}`;
-    RARITY.className   = `lutebox__rarity rarity--${rk}`;
+  const bits = [];
+  if (item.meta?.date) bits.push(item.meta.date);
+  if (item.meta?.factions?.length) bits.push(item.meta.factions.join(' · '));
+  if (item.meta?.voices?.length) bits.push('Voices: ' + item.meta.voices.join(', '));
+  META.textContent = bits.join(' — ');
 
-    RESULT.hidden = false; ACTIONS.hidden = true; HINT.textContent = 'Open another?';
+  BODY.textContent = (item.body || '').trim();
 
+  // ALWAYS show the label + stars
+  RARITY.innerHTML = `<span class="rarity__label">${meta.label}</span> — <span class="rarity__stars">${starLine(meta.stars)}</span>`;
+  RARITY.className = `lutebox__rarity rarity--${rk}`;
+
+  RESULT.hidden = false; ACTIONS.hidden = true; HINT.textContent = 'Open another?';
+  
     // Tiny confetti for 6/5 and 7/5
     if (meta.stars >= 6) confettiBurst();
   }
