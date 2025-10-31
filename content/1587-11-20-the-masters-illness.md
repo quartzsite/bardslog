@@ -1,17 +1,34 @@
 ---
 title: "The Master's Illness"
-date: 1587-11-20
-place: "Maraisbourg Fechtschule"
+date: "1587-11-20"
+slug: "the-masters-illness"
+place: "Fechtschule, Maraisbourg"
 mood: "Uneasy"
 lesson: "Even masters are mortal"
+arc: "Road to Maraisbourg"
+chronology:
+  index: 15
+  prev: "1587-11-14-visions-of-battle"
+  next: "1587-11-22-a-final-wish"
+tags: ["fever", "guild", "mortality", "discipline", "apprentices"]
+factions: ["Guilds of Maraisbourg"]
+voices: ["Ash", "Silence"]
+foreshadow:
+  - "Ashfast remedies burn low in a brazier by the dais"
+  - "An empty stool at the cutting floor where a lesson should begin"
+  - "A red-stamped note from the basilith quarter reads: attendance delayed"
 ---
 
-For days Master Merryen had been growing pale. At first we thought it was the strain of training us all, but soon his coughs echoed between the pillars of the hall and his hand trembled when he lifted the waster.  
+# The Master's Illness  
+**1587-11-20**  
+*Fechtschule, Maraisbourg*
 
-He laughed it off, making jokes about too much study and not enough wine, but there were moments when I saw sweat bead on his brow during a simple demonstration. His pupils whispered behind his back, worrying yet not daring to speak.  
+For days Master Merryen grew pale. At first we blamed the weight of pupils and printwork, then the cough began to ring between the pillars. His hand shook when he lifted the waster. He laughed and asked for more wine. The laugh did not steady the blade.
 
-I had never imagined that a man who moved with such grace could be fallible, yet each of us is made of flesh. It was not the thrusts of a rival or the cut of a blade that threatened him, but an unseen fever that none of us could parry.  
+He would set a drill, then lean against the wall as if listening for a cue that did not come. Sweat stood on his brow during a simple bind. We traded worried looks and fixed our stances harder than usual, as if good structure could prop a failing body.
 
-In the evenings I sat by the window of the Fechtschule and played songs about long winters and fading fires. My fingers were calloused from both strings and steel. I tried to believe that the tunes would chase away whatever ailment clung to him.  
+I had never thought a man who moved like that could be touched by anything but steel. No rival cut him. No thrust marked him. It was an illness without edge, an attack you could not parry.
 
-Unease settled over us like November mist. I began to understand that there are battles we cannot fight for those we love, only watch and wait. Even masters are mortal. 
+In the evenings I sat by the Fechtschule window and played quiet winter tunes. The ashfast brazier glowed with a thin, clean flame. Someone murmured a prayer that did not belong to any guild. We could only watch and wait. The hall felt larger when he left it to rest. Even masters are mortal.
+
+{{< lutebox pool="letters" title="Open a Letter from Maraisbourg" hint="Ashfast cures and a teacher’s empty stool." cooldown="0" >}}
