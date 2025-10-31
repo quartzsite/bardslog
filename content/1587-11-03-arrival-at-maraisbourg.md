@@ -1,15 +1,34 @@
----  
-title: "Arrival at Maraisbourg"  
-date: 1587-11-03  
-place: "Gate of Maraisbourg"  
-mood: "Awed"  
-lesson: "A new city holds new songs"  
----  
+---
+title: "Arrival at Maraisbourg"
+date: "1587-11-03"
+slug: "arrival-at-maraisbourg"
+place: "Gate of Maraisbourg"
+mood: "Awed"
+lesson: "A new city holds new songs"
+arc: "Road to Maraisbourg"
+chronology:
+  index: 10
+  prev: "1587-11-02-the-ferry-at-darkskein"
+  next: "1587-11-05-lessons-with-master-merryen"
+tags: ["journey", "city", "guilds", "arrival", "merryen"]
+factions: ["Free Cities", "Guilds of Maraisbourg"]
+voices: ["Stone", "Wind"]
+foreshadow:
+  - "Young Master Merryen at the Fechtschule in the Tanner's Quarter"
+  - "Red towers along the river marked for conversion by Mason-Priests"
+  - "Councils swap law for steel while a cold war breathes at the gates"
+---
 
-The road from the Blackwood to Maraisbourg was longer than any path I had walked alone. Villages gave way to vineyards and then to the broad, flat fields where mercenaries drilled and farmers harvested side by side. At each inn I earned my supper by singing, and each night I practised the strikes the hermit had taught me behind barns and under starlight. Word of a bard carrying a practice sword preceded me; some scoffed, others listened.  
+# Arrival at Maraisbourg  
+**1587-11-03**  
+*Gate of Maraisbourg*
 
-When the towers of Maraisbourg finally rose before me on 3 November 1587, my breath caught. The city walls bristled with cannon and banners, the gates thronged with merchants, soldiers and pilgrims. Above it all the cathedral spire pierced the grey sky like a blade. I felt suddenly small and exhilarated. Inside these walls lived masters of the sword and masters of words, guilds that controlled trade routes, and councils that argued about more than bread and taxes.  
+The road from the Blackwood ran through vineyards and drill fields, then widened into the approach where carts and pilgrims stacked in patient ranks. At night inns bought my supper for quiet ballads, and after the rooms slept I stepped cuts behind barns until dew climbed my boots. Word of a bard with a practice blade walked ahead of me. Some laughed. Some listened.
 
-As I crossed the stone bridge and entered through the gate, I could hear a dozen languages mingling. A cart rolled past carrying barrels of wine labelled from the Rhineland. A group of burghers argued about tolls, while a pair of Landsknechte in slashed sleeves laughed and compared bruises. I asked a boy selling apples if he knew of a fencing master named Merryen. “The young master at the Fechtschule near the Tanner's Quarter?” he replied, eyes widening. “Everyone knows him. He's rewriting the books.”  
+The walls rose with teeth of cannon and a river of banners. At the gate the crowd spoke in half a dozen tongues. A cart rattled past with Rhineland wine. Burghers haggled over tolls. Two Landsknechte compared bruises as if they were coin. Above it all a spire fixed the grey sky and made the streets below feel measured.
 
-I found lodging at a modest tavern near the fish market. I tuned my lute and played quietly by the window, watching the street as the light faded. Tomorrow I would seek out Master Merryen. Tonight I let the city teach me its rhythms: clattering hooves, church bells, the murmur of deals, the occasional clink of steel. Each was a note in the song of this new chapter.
+I asked a boy with a basket of apples for Merryen. His eyes lifted. He pointed toward the Tanner’s Quarter and said the young master kept a hall where the floorboards taught you to move. He said Merryen was writing new pages and that the old men argued but still came to watch.
+
+I took a room near the fish market and tuned the lute by the window while the light went copper on the river. Hooves, bells, bargains, a brief ring of steel. The city kept time. Tomorrow I will look for the Fechtschule. Tonight I learn the meter of these streets.
+
+{{< lutebox pool="letters" title="Open a Letter from Maraisbourg" hint="A young master in the Tanner's Quarter rewrites the book." cooldown="0" >}}
