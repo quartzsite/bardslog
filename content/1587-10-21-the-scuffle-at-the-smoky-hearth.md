@@ -2,37 +2,34 @@
 title: "The Scuffle at the Smoky Hearth"
 date: "1587-10-21"
 slug: "the-scuffle-at-the-smoky-hearth"
-place: "The Smoky Hearth, Lower Quarter"
-mood: "defiant"
+place: "The Smoky Hearth, Lower Quarter, Mulecrest"
+mood: "defiant, alert"
 arc: "Road to Maraisbourg"
-lesson: "Even a lute can be a shield"
 chronology:
   index: 2
   prev: "1587-10-20-before-the-scuffle"
-  next: "1587-10-22-born-again"
-tags: ["tavern", "scuffle", "measure", "silence", "improvisation"]
+  next: "1587-10-22-born-again-in-steel"
+tags: ["tavern", "self-defense", "measure", "rest", "improvised-guard"]
 factions: ["Free Cities"]
-voices: ["Silence", "Wind", "Steel"]
+voices: ["Silence", "Wind"]
 foreshadow:
-  - "Name-dropped teaching of Merryen without yet meeting him"
-  - "Keeping measure and distance becomes a habit"
-  - "A taste for rests as tactic"
-lutebox:
-  pool: "letters"
-  suggest_ids: ["basilith-common-thumbprint","basilith-common-sunmiss"]
-  cooldown_hours: 0
-  show_copy_key: true
-draft: false
+  - "First time Merryen is named across a crowded room"
+  - "Silence held like a guard will matter later"
+  - "Lute as shield points toward waster and steel"
 ---
 
-It happened in a low tavern in the Lower Quarter. Three songs for a bowl of stew, then a fourth demanded for nothing. I refused. He lunged and the room went to splinters and ale. I brought the lute up like a buckler. Old spruce bit the knife’s edge and lived.
+# The Scuffle at the Smoky Hearth  
+**1587-10-21**  
+*The Smoky Hearth, Lower Quarter, Mulecrest*
 
-My feet moved on their own—wide step, heel light, the kind of measure I have only heard taught. Someone yelled, “Mind your distance, like Merryen!” I did not know Merryen, but the name landed where my stance should be.
+Three songs bought me stew. A fourth was demanded without coin. I refused. A knife flashed and mugs fell.
 
-He pressed with a dagger, short and greedy. I gave him a rest. A held beat, no flinch, no sound. He rushed to fill it. I shifted off-line and let the pause spend his arm. The back of the lute kissed his wrist. Steel rang on the floorboards.
+The lute came up like a buckler. Old spruce met iron and lived. I stepped wide and let the floorboards count the beat. Heel, toe, settle. The room shouted for blood. Someone called, “Keep your distance, like Merryen teaches.” I had never met Merryen. The feet knew anyway.
 
-The gamblers laughed. “A bard’s guard,” someone said. I checked the rim—cracked but true—then the room, then my breath. I had won nothing worth a song, only space enough to leave and a clearer sense of how to keep it.
+We circled. He pressed. I gave him a small quiet, a held breath between beats. He stepped into it. The dagger showed first. I struck the wrist and the blade skittered along the planks to the gamblers. Laughter rose like smoke.
 
-I stepped out into the night with a bruised forearm and a problem I wanted to solve properly.
+No speeches. No clever lines. Just measure, guard, and a rest kept long enough to make a man forget himself. The lute rim splintered. I did not.
 
-{{< lutebox pool="letters" title="Open a Letter from the Smoky Hearth" hint="Gamblers jeer about a bard’s guard; tavern talk says Merryen teaches distance." cooldown="0" >}}
+I left before the crowd remembered the bill.
+
+{{< lutebox pool="letters" title="Open a Letter from Mulecrest" hint="A held rest can break a rush." cooldown="0" >}}
