@@ -1,13 +1,38 @@
 ---
 title: "The Scuffle at the Smoky Hearth"
-date: 1587-10-21
+date: "1587-10-21"
+slug: "the-scuffle-at-the-smoky-hearth"
 place: "The Smoky Hearth, Lower Quarter"
-mood: "Defiant"
+mood: "defiant"
+arc: "Road to Maraisbourg"
 lesson: "Even a lute can be a shield"
+chronology:
+  index: 2
+  prev: "1587-10-20-before-the-scuffle"
+  next: "1587-10-22-born-again"
+tags: ["tavern", "scuffle", "measure", "silence", "improvisation"]
+factions: ["Free Cities"]
+voices: ["Silence", "Wind", "Steel"]
+foreshadow:
+  - "Name-dropped teaching of Merryen without yet meeting him"
+  - "Keeping measure and distance becomes a habit"
+  - "A taste for rests as tactic"
+lutebox:
+  pool: "letters"
+  suggest_ids: ["basilith-common-thumbprint","basilith-common-sunmiss"]
+  cooldown_hours: 0
+  show_copy_key: true
+draft: false
 ---
 
-It happened in a low tavern on the Lower Quarter. I had been playing three songs for a bowl of stew when a drunken patron insisted on a fourth without payment. When I refused, he lunged, knocking over mugs. Without thinking I swung my lute up like a shield. The old spruce wood sang a different song that night, catching the edge of a knife and turning it aside. Somewhere in the chaos I found myself stepping wide, keeping measure, my feet moving as though guided by the rhythm of some long‑dead master. Someone shouted "Watch your distance, like Master Merryen teaches!" but I had never met this Merryen. I only knew that my body was moving as if the stories were true.
+It happened in a low tavern in the Lower Quarter. Three songs for a bowl of stew, then a fourth demanded for nothing. I refused. He lunged and the room went to splinters and ale. I brought the lute up like a buckler. Old spruce bit the knife’s edge and lived.
 
-We circled, he with his dagger and I with a cracked lute. I managed to strike his wrist and send his blade skittering across the floor. Laughter erupted from the gamblers’ table. "Even von Lychenar never wrote of a bard’s guard!" someone jeered. When the scuffle ended I still had my lute, though a piece of its rim splintered like my pride. I realized I had defended myself not with a clever lyric but with motion and nerve.
+My feet moved on their own—wide step, heel light, the kind of measure I have only heard taught. Someone yelled, “Mind your distance, like Merryen!” I did not know Merryen, but the name landed where my stance should be.
 
-For the first time since taking up the road I felt something stir in me that was not bitterness. Perhaps I am not just a failure with a song. Perhaps there is a place for me among those who study the dance of blades. The lute bruises on my forearm throbbed as I left the tavern, but in my chest a new melody began — one that might be made with steel.
+He pressed with a dagger, short and greedy. I gave him a rest. A held beat, no flinch, no sound. He rushed to fill it. I shifted off-line and let the pause spend his arm. The back of the lute kissed his wrist. Steel rang on the floorboards.
+
+The gamblers laughed. “A bard’s guard,” someone said. I checked the rim—cracked but true—then the room, then my breath. I had won nothing worth a song, only space enough to leave and a clearer sense of how to keep it.
+
+I stepped out into the night with a bruised forearm and a problem I wanted to solve properly.
+
+{{< lutebox pool="letters" title="Open a Letter from the Smoky Hearth" hint="Gamblers jeer about a bard’s guard; tavern talk says Merryen teaches distance." cooldown="0" >}}
