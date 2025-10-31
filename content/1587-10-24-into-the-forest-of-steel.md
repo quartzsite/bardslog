@@ -1,14 +1,34 @@
 ---
 title: "Into the Forest of Steel"
-date: 1587-10-24
+date: "1587-10-24"
+slug: "into-the-forest-of-steel"
 place: "Edge of the Blackwood"
-mood: "Determined"
+mood: "determined, attentive"
+arc: "Road to Maraisbourg"
 lesson: "Every path begins with a single step and a single cut"
+chronology:
+  index: 5
+  prev: "1587-10-23-setting-out-to-seek-the-masters"
+  next: "1587-10-25-learning-the-oberhau"
+tags: ["hermit", "forest", "measure", "practice", "oberhau"]
+factions: ["Free Cities"]
+voices: ["Silence", "Wind"]
+foreshadow:
+  - "A hermit whose posture recalls von Lychenar"
+  - "First true strike will be named, not guessed"
+  - "Old red towers thrum faintly beyond the trees"
 ---
 
-I left the cobbles of the city behind today and stepped into the Blackwood, following rumors of a hermit who knew the blade like no other.  
-The pines whispered with stories older than any of my songs. My lute bounced at my side, its cracked frame a reminder of the Smoky Hearth and of the path that brought me here.  
-After hours of walking, I found a small clearing where an old man was splitting logs with motions so precise they could have been written in notation. He looked up with piercing eyes that seemed to hold centuries.  
-When I gave my name he laughed and said names are as light as feathers. He called himself nothing at all, yet when he took up a stick his posture and cuts matched the descriptions of the mysterious Grandmaster von Lychenar that I had recited in taverns.  
-We spoke of battles fought in the Empire and the Mediterranean, of condottieri and mercenaries, of princes who paid for armies while poets starved. He told me that steel is a verse you must learn to read and write.  
-Tomorrow he will begin to show me the first true strike. My heart beats faster than it ever did when stepping onto a stage.
+# Into the Forest of Steel  
+**1587-10-24**  
+*Edge of the Blackwood*
+
+I left the city cobbles for pine roots and needles. Rumor said a hermit lived here who read steel like script. The trunks held the wind in long notes and the ground smelled of resin.
+
+By a small clearing an old man split logs with a rhythm that needed no drum. His cuts were square, his recovery clean, his stance exactly where the weight asked to be. He asked my name, then waved it away and watched how I stood. When he lifted a stick his lines matched the plates I had spoken of as stories. I had not met von Lychenar, but I knew the look of his school.
+
+We talked little. He pointed once at my shoulders, once at my feet, and let the silence do the rest. Far off a tower beat the hour and the trees answered with their own soft time. He said steel is a verse and you learn it by reading out loud until the mouth knows it.
+
+Tomorrow he will begin the first true strike. I feel the road behind me and the work ahead.
+
+{{< lutebox pool="letters" title="Open a Letter from the Blackwood" hint="A hermit’s cut is measure made visible." cooldown="0" >}}
