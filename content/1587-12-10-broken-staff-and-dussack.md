@@ -1,19 +1,38 @@
 ---
 title: "Broken Staff and Dussack"
-date: 1587-12-10
+date: "1587-12-10"
+slug: "broken-staff-and-dussack"
 place: "Road to Bonona"
 mood: "Resolute"
 lesson: "Adaptation turns misfortune into advantage"
+arc: "Road to Bonona"
+chronology:
+  index: 20
+  prev: "1587-11-28-songs-as-shields"
+  next: "1587-12-13-strings-turned-to-steel"
+tags: ["robbers", "improvised-weapon", "dussack", "structure", "timing"]
+factions: ["Free Cities", "Road Wardens"]
+voices: ["Wind", "Wood"]
+foreshadow:
+  - "Ash-scarves glimpsed at a crossroads shrine watching the hearth fire"
+  - "A red tower’s hum faint across the winter fields"
+  - "Rumor of Bonona’s basiliths judging the faithful by craft and cut"
 ---
 
-A week into my journey south the weather turned sour, and the road narrowed through a stand of leafless trees. As I rounded a bend, three men slid out of the brush with the easy confidence of those who have robbed before.
+# Broken Staff and Dussack  
+**1587-12-10**  
+*Road to Bonona*
 
-I caught up a fallen branch and leveled it as I had the polearms in the hermit’s clearing—hands apart, back heel rooted, breath steady. They laughed until the first thrust struck like a ram against a shield, driving one man stumbling into the ruts.
+A week south the weather soured and the road pinched to a tunnel of grey branches. Three men slid from the brush with the ease of practice. No words. Only hands out, palms up, steel ready.
 
-A heavy cut crashed down and shattered my makeshift staff in two. I did not panic. Merryen’s dussack lesson rose in my hands without bidding. I slid my grip, let the thicker length become a single-edged blade, and cut on the short arc—shoulder, wrist, then the back of the hand that reached for me. Wood whistled; knuckles split; courage wavered.
+I took a fallen limb and set it like a polearm. Hands apart. Back heel rooted. Breath even. The first press came loose and lazy, then fast. I drove a straight thrust down the center and pushed one man back into the ruts.
 
-They pressed once more and found only angles. I stepped off on a slant, let their force pass, and answered with a turning blow that clipped bone without breaking it. Steel hissed back into sheaths not out of honour but calculation; they decided a singing stranger with a broken stick was not the easy prize they wanted.
+A heavy cut dropped and snapped the limb in two. No panic. I slid my grip and let the longer piece become a single edge. Merryen’s dussack lesson rose of its own accord. Short arc. Shoulder. Wrist. The back of a reaching hand. Wood whistled. Knuckles split. Nerve thinned.
 
-When the road was mine again, I stood amid bark and splinters and felt something settle. A weapon is only what your structure, timing, and will make of it. The road to Bonona was teaching me to let misfortune shape the form of my answers.
+They tried the rush. I stepped on a slant, gave them space to miss, and turned the answer across the line. Angle over anger. Bone found the flat and thought better of it. Steel went home to sheaths by choice, not honor. The three of them chose profit over pride and bled into the trees.
 
-With the broken length tucked through my belt and my lute slung across my back, I walked on—warier than before, but unafraid.
+Silence returned with the wind. I stood among bark and splinters and felt the road teach its rule. A weapon is what structure, timing, and will make of it. Misfortune shapes the form of the answer.
+
+I tucked the broken length through my belt, shouldered the lute, and walked on.
+
+{{< lutebox pool="letters" title="Open a Letter from the Southern Road" hint="A broken stick learns a new edge." cooldown="0" >}}
