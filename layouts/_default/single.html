@@ -13,7 +13,6 @@
     <main>
       {{/* Show the template title only if the page doesn't ask to hide it */}}
       {{ if not .Params.hide_title }}
-        <h2>{{ .Title }}</h2>
       {{ end }}
 
       {{ with .Params.image }}
