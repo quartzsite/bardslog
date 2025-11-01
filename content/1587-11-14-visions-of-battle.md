@@ -27,7 +27,7 @@ Master Merryen did not stop at swords. He gave me a poleaxe and told me to grow 
 
 “Imagine men beside you,” he said. “A wall of steel and ash. You are not alone when you hold this.”
 
-I closed my eyes and saw fields I had only ever sung. A damp bank along the Rhine. A chalk road in Swabia. Dry squares that smell of powder. Ranks leaned together like chords. Cavalry broke like surf and fell back. The push of pikes was a slow drum that never missed a step. In those visions the drills became pieces of a larger pattern. What I did with my hands belonged to more bodies than mine.
+I closed my eyes and saw fields I had only ever sung. A damp bank along the Rhanube River. A chalk road in the Salt Dunes. Dry asquares that smell of powder. Ranks leaned together like chords. Cavalry broke like surf and fell back. The push of pikes was a slow drum that never missed a step. In those visions the drills became pieces of a larger pattern. What I did with my hands belonged to more bodies than mine.
 
 By week’s end I moved with more certainty than I ever felt on a stage. My songs remained, but now they shared the room with ordered lines and patient spears. The form made sense because the field was beginning to.
 
