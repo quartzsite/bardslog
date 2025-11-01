@@ -61,7 +61,7 @@ The last pair leapt for our rail and found only empty space and cold sea.
 Silence arrived all at once, broken by breath and gulls.  
 We had bled, but we had kept our deck.  
 Afterwards the crew slapped my shoulders and called me “Master Faelar” with grins that tasted of brine.  
-The captain poured me a measure of watered wine and spoke of opening a guild when we reached land.  
+The captain poured me a measure of watered wine and the crew spoke of opening a guild when we reached land.  
 For the first time since leaving Bonona I felt less a stowaway and more a teacher again, as when I taught music in quieter years; only now the lessons travel through steel as surely as they ever did through song.
 
 {{< lutebox pool="letters" title="Open a Salt-Stamped Letter" hint="Tar on the page, a line held against black sails." cooldown="0" >}}
