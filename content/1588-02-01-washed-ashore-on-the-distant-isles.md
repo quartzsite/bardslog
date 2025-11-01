@@ -42,3 +42,5 @@ I said little. The tide had chosen my path, and my thoughts were still tangled i
 But the stew steadied my hands, and the hearth unknotted my jaw.
 
 I had drifted to a new shore, and a new master had found me.
+
+{{< lutebox pool=“letters” title=“Open the Letter: Washed Ashore on the Distant Isles” hint=“Salt in the lungs, strange shore underfoot, a shadow with a sabre.” cooldown=“24” >}}
