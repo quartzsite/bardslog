@@ -5,45 +5,44 @@
     <title>{{ .Title }} – {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/style.css">
     <style>
-      /* Bigger page title, minimal & namespaced */
+      /* Title sizing: large but responsive */
       .post-title{
-        font-size: clamp(1.9rem, 4.5vw, 2.6rem);
-        line-height: 1.15;
-        margin: 0 0 1rem 0;
+        margin:0 0 1rem 0;
+        font-size:clamp(1.9rem, 4.8vw, 2.75rem);
+        line-height:1.15;
+        letter-spacing:.01em;
+        text-align:center;
       }
 
-      /* Nav: full-width, large targets, accessible focus */
-      .post-nav{ margin-top: 2.25rem; }
+      /* Nav buttons – consistent sizes without arrows */
+      .post-nav{ margin-top:2rem }
       .post-nav .nav-grid{
-        display:flex; gap:1rem; justify-content:space-between; align-items:stretch;
+        display:flex; gap:.75rem; justify-content:space-between; align-items:stretch;
+        max-width:920px; margin:0 auto;
       }
-      .post-nav .nav-cell{ flex:1 1 33%; }
-      .post-nav .nav-center{ text-align:center; }
-      .post-nav .nav-link{
-        display:block; text-align:center; padding:.9rem 1rem; border-radius:.6rem;
-        text-decoration:none; outline-offset:3px; border:1px solid rgba(255,255,255,.08);
-        background: rgba(0,0,0,.12);
+      .post-nav a{
+        display:inline-block; padding:.6rem .9rem; border-radius:.65rem;
+        border:1px solid rgba(255,255,255,.08);
+        text-decoration:none;
+        background:rgba(0,0,0,.18);
       }
-      .post-nav .nav-link:hover,
-      .post-nav .nav-link:focus{ filter:brightness(1.1); text-decoration:underline; }
+      .post-nav a:focus-visible{ outline:2px solid currentColor; outline-offset:2px }
+      .post-nav .center{ text-align:center }
 
-      /* Small caption automatically above any .lutebox on the page */
-      article .lutebox::before{
-        content:"Lutebox";
-        display:block; margin:0 0 .4rem; font-size:.95rem; opacity:.8; letter-spacing:.02em;
+      /* Lutebox label */
+      .lute-label{
+        text-align:center; opacity:.7; font-size:.9rem; margin:.25rem 0 .5rem 0;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1><a href="/">{{ .Site.Title }}</a></h1>
+      <h1 style="text-align:center;"><a href="/">{{ .Site.Title }}</a></h1>
     </header>
 
     <main>
-      {{/* Show the template title only if the page doesn't ask to hide it */}}
-      {{ if not .Params.hide_title }}
-        <h2 class="post-title">{{ .Title }}</h2>
-      {{ end }}
+      <!-- Big page title only (we'll hide any duplicate inside the article below) -->
+      <h1 class="post-title">{{ .Title }}</h1>
 
       {{ with .Params.image }}
         <img src="{{ . }}" alt="{{ $.Title }}" />
@@ -52,6 +51,9 @@
       <article>
         {{ .Content }}
       </article>
+
+      <!-- Lutebox small heading (kept) -->
+      <div class="lute-label">Lutebox</div>
 
       {{/* ----- Robust prev/next: sort, then de-duplicate by permalink ----- */}}
       {{- $sorted := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
@@ -74,25 +76,33 @@
 
       <nav class="post-nav" aria-label="Post navigation">
         <div class="nav-grid">
-          <div class="nav-cell">
+          <div>
             {{- if ge $idx 1 -}}
               {{- $prev := index $uniq (sub $idx 1) -}}
-              <a class="nav-link" href="{{ $prev.RelPermalink }}" aria-label="Previous: {{ $prev.Title }}">← Previous</a>
+              <a href="{{ $prev.RelPermalink }}" aria-label="Previous">Previous</a>
             {{- end -}}
           </div>
-
-          <div class="nav-cell nav-center">
-            <a class="nav-link" href="{{ "/" | relURL }}" aria-label="Back to Home">Back to Home</a>
-          </div>
-
-          <div class="nav-cell" style="text-align:right">
+          <div class="center"><a href="{{ "/" | relURL }}">Back to Home</a></div>
+          <div>
             {{- if and (ge $idx 0) (lt (add $idx 1) (len $uniq)) -}}
               {{- $next := index $uniq (add $idx 1) -}}
-              <a class="nav-link" href="{{ $next.RelPermalink }}" aria-label="Next: {{ $next.Title }}">Next →</a>
+              <a href="{{ $next.RelPermalink }}" aria-label="Next">Next</a>
             {{- end -}}
           </div>
         </div>
       </nav>
     </main>
+
+    <!-- Hide the first in-article heading if it duplicates the page title -->
+    <script>
+      (function(){
+        var t = {{ printf "%q" .Title }}; // safe-quoted title
+        var first = document.querySelector('article h1, article h2, article h3');
+        if(first && first.textContent.trim().toLowerCase() === t.trim().toLowerCase()){
+          first.style.display = 'none';
+          first.setAttribute('aria-hidden','true');
+        }
+      })();
+    </script>
   </body>
 </html>
