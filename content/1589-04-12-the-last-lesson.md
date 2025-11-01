@@ -74,3 +74,5 @@ I have walked under many roofs and learned from many hands. The hermit’s patie
 Close this book. Take one breath. Feel the star under your feet though you cannot see it. When the world asks for the song of war, remember our vow.
 
 **Sing before you draw.**
+
+{{< lutebox pool="letters" title="Open the Letter: The Last Lesson" hint="Forest stream, alder roots, an oilcloth-wrapped journal; the last line reads sing before you draw." cooldown="0" >}}
