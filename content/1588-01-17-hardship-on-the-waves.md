@@ -48,3 +48,5 @@ I gave up my share to wet their lips and taught the healthy to move even when th
 The ship began to feel like a weapon drawn and held too long—edge quivering, arm burning, no safe recovery in sight.  
 The ropes thrummed like strings tuned a quarter-turn too tight.  
 We were on a line we could not yet release, and I feared that when it finally slackened it would not be by choice.
+
+{{< lutebox pool=“letters” title=“Open the Letter: Hardship on the Waves” hint=“Water low, biscuits weeviled—tempers fray and shares are questioned.” cooldown=“24” >}}
