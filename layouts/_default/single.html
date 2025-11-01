@@ -2,52 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ .Title }} – {{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ .Title }} – {{ site.Title }}</title>
     <link rel="stylesheet" href="/style.css">
+    {{- with .Permalink }}<link rel="canonical" href="{{ . }}">{{ end -}}
   </head>
   <body>
     <header>
-      <h1><a href="/">{{ .Site.Title }}</a></h1>
+      <h1><a href="/">{{ site.Title }}</a></h1>
     </header>
 
     <main>
       <h2>{{ .Title }}</h2>
 
+      {{/* optional meta row from front-matter */}}
+      {{- $hasMeta := or .Date (or .Params.place (or .Params.mood .Params.lesson)) -}}
+      {{- if $hasMeta }}
+      <ul class="post-meta">
+        {{- with .Date }}<li>{{ .Format "2006-01-02" }}</li>{{ end -}}
+        {{- with .Params.place }}<li>{{ . }}</li>{{ end -}}
+        {{- with .Params.mood }}<li>{{ . }}</li>{{ end -}}
+        {{- with .Params.lesson }}<li>{{ . }}</li>{{ end -}}
+      </ul>
+      {{- end }}
+
       {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" />
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
       {{ end }}
 
       <article>
         {{ .Content }}
       </article>
 
-      <nav class="post-nav">
-  {{- $cur := . -}}
-  {{- $all := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
-  {{- $idx := -1 -}}
-
-  {{- range $i, $p := $all -}}
-    {{- if eq $p.File.Path $cur.File.Path -}}
-      {{- $idx = $i -}}
-    {{- end -}}
-  {{- end -}}
-
-  <div class="nav-grid" style="display:flex;gap:1rem;justify-content:space-between">
-    <div>
-      {{- if ge $idx 1 -}}
-        {{- $prev := index $all (sub $idx 1) -}}
-        <a href="{{ $prev.RelPermalink }}">← Previous</a>
+      {{/* ---- Robust prev/next (no self-links) ---- */}}
+      {{- $cur := . -}}
+      {{- $all := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
+      {{- $idx := -1 -}}
+      {{- range $i, $p := $all -}}
+        {{- if eq $p.RelPermalink $cur.RelPermalink -}}
+          {{- $idx = $i -}}
+        {{- end -}}
       {{- end -}}
-    </div>
-    <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
-    <div>
-      {{- if lt (add $idx 1) (len $all) -}}
-        {{- $next := index $all (add $idx 1) -}}
-        <a href="{{ $next.RelPermalink }}">Next →</a>
-      {{- end -}}
-    </div>
-  </div>
-</nav>
+
+      <nav class="post-nav" aria-label="Post navigation" style="display:flex;gap:1rem;justify-content:space-between">
+        <div>
+          {{- if ge $idx 1 -}}
+            {{- $prev := index $all (sub $idx 1) -}}
+            {{- if ne $prev.RelPermalink $cur.RelPermalink -}}
+              <a href="{{ $prev.RelPermalink }}" aria-label="Previous: {{ $prev.Title }}">← Previous</a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+
+        <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
+
+        <div>
+          {{- if and (ge $idx 0) (lt (add $idx 1) (len $all)) -}}
+            {{- $next := index $all (add $idx 1) -}}
+            {{- if ne $next.RelPermalink $cur.RelPermalink -}}
+              <a href="{{ $next.RelPermalink }}" aria-label="Next: {{ $next.Title }}">Next →</a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+      </nav>
     </main>
   </body>
 </html>
