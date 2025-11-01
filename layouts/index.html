@@ -36,10 +36,17 @@
   {{ end }}
 
   <ul>
-    {{ range .Site.RegularPages.ByDate.Reverse }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}</li>
+  {{ $seen := newScratch }}
+  {{ range .Site.RegularPages.ByDate }}
+    {{ $k := .RelPermalink }}
+    {{ if not ($seen.Get $k) }}
+      {{ $seen.Set $k true }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Date.Format "2006-01-02" }}
+      </li>
     {{ end }}
-  </ul>
+  {{ end }}
+</ul>
 
   <div class="footer-banner">
     <img src="https://raw.githubusercontent.com/quartzsite/bardslog/main/static/images/bardslog.png" alt="Faelar writing by candlelight - Bardslog banner" loading="lazy">
