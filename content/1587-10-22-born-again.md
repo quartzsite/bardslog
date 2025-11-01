@@ -1,13 +1,33 @@
 ---
 title: "Born Again in Steel"
-date: 1587-10-22
-place: "Road out of the City"
-mood: "Reborn"
-lesson: "A new path begins where an old one shatters"
+date: "1587-10-22"
+slug: "born-again-in-steel"
+place: "Road out of Mulecrest"
+mood: "reborn, steady"
+arc: "Road to Maraisbourg"
+chronology:
+  index: 3
+  prev: "1587-10-21-the-scuffle-at-the-smoky-hearth"
+  next: "1587-10-23-setting-out-to-seek-the-masters"
+tags: ["waster", "resolve", "journey", "measure", "practice"]
+factions: ["Free Cities"]
+voices: ["Silence", "Wind"]
+foreshadow:
+  - "First bruises from a waster teach the cut to come"
+  - "A hermit’s clearing waits beyond the river road"
+  - "Old red towers along the way hum with new use"
 ---
 
-My lute is cracked along its rim, but my spirit has never been more whole. After the scuffle at the Smoky Hearth I spent the night staring at the splinter in the instrument's soundboard and thinking of the look in the dockhand’s eyes when I parried his blade. I felt something I had not felt since my youth: purpose.
+# Born Again in Steel  
+**1587-10-22**  
+*Road out of Mulecrest*
 
-This morning I traded the last of my coin for a wooden waster at a smith’s stall. It is a simple length of oak cut to resemble a sword, weighted and balanced but blunt. It is heavier than the lute, but it sits in my hand with the promise of possibilities. As I left the city gates, the dawn fog over the river seemed to part as if making way.
+The lute is cracked along the rim. It will sing still, but not the same. I held the splinter to the light and thought of the dockhand’s eyes when the knife missed. Purpose returned like breath after a plunge.
 
-For so long I believed that songs were my only gift. Now I see that learning to fight is not a betrayal of who I am but an extension of it. The old songs speak of heroes who were poets and warriors both. If I am to survive and to be heard, I must learn to let my body tell its own stories. Today I begin again, born not of blood but of will.
+At the smith’s cart I bought a waster. Oak, blunt, balanced, honest. It sits in my hand like a promise. The first cuts are clumsy. The shoulders complain. The road answers with dust.
+
+I walked past the gates at dawn. Fog held the fields and the river kept its own time. I counted steps and set the blade moving with them. Down from the shoulder. Recover. Guard. Again. The rhythm takes. The mind quiets.
+
+Songs were my trade. They remain. But the body needs a new verse and it will be written in practice. If I am to be heard, I must first learn to listen to weight and line. Today I begin.
+
+{{< lutebox pool="letters" title="Open a Letter from the Road" hint="A wooden blade is a teacher that bruises true." cooldown="0" >}}
