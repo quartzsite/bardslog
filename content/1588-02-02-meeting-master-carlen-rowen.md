@@ -16,11 +16,6 @@ voices: ["Salt", "Steel"]
 foreshadow:
   - "Rowen’s yard becomes a star traced in sand for new lessons"
   - "Island talk of raids and press gangs nips at the edges of training"
-lutebox:
-  pool: "letters"
-  suggest_ids: ["lynden-common-apple-ale", "rowen-uncommon-horsehead-guard"]
-  cooldown_hours: 0
-draft: false
 ---
 
 The day after he found me, Rowen led me inland. Scrub and stone gave way to pale timber and low eaves. Nets hung to dry. Gulls worried at fish heads. Children chased chickens between racks and boats.  
