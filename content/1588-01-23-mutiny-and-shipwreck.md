@@ -43,3 +43,5 @@ I caught a loose plank and held as the sea tossed me like a leaf.
 Between wave and wind I thought of the eight-pointed star—of lines begun, lines ended, lines crossed by folly.  
 The promise of a guild sank with the crew, but I remained afloat.  
 Land lay somewhere ahead. A new chapter waited on its shore.
+
+{{< lutebox pool=“letters” title=“Open the Letter: Mutiny and Shipwreck” hint=“A captain’s ledger, a raised blade, and a storm that answers no man.” cooldown=“24” >}}
