@@ -4,6 +4,35 @@
     <meta charset="utf-8">
     <title>{{ .Title }} – {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/style.css">
+    <style>
+      /* Bigger page title, minimal & namespaced */
+      .post-title{
+        font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+        line-height: 1.15;
+        margin: 0 0 1rem 0;
+      }
+
+      /* Nav: full-width, large targets, accessible focus */
+      .post-nav{ margin-top: 2.25rem; }
+      .post-nav .nav-grid{
+        display:flex; gap:1rem; justify-content:space-between; align-items:stretch;
+      }
+      .post-nav .nav-cell{ flex:1 1 33%; }
+      .post-nav .nav-center{ text-align:center; }
+      .post-nav .nav-link{
+        display:block; text-align:center; padding:.9rem 1rem; border-radius:.6rem;
+        text-decoration:none; outline-offset:3px; border:1px solid rgba(255,255,255,.08);
+        background: rgba(0,0,0,.12);
+      }
+      .post-nav .nav-link:hover,
+      .post-nav .nav-link:focus{ filter:brightness(1.1); text-decoration:underline; }
+
+      /* Small caption automatically above any .lutebox on the page */
+      article .lutebox::before{
+        content:"Lutebox";
+        display:block; margin:0 0 .4rem; font-size:.95rem; opacity:.8; letter-spacing:.02em;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,6 +42,7 @@
     <main>
       {{/* Show the template title only if the page doesn't ask to hide it */}}
       {{ if not .Params.hide_title }}
+        <h2 class="post-title">{{ .Title }}</h2>
       {{ end }}
 
       {{ with .Params.image }}
@@ -42,19 +72,23 @@
         {{- end -}}
       {{- end -}}
 
-      <nav class="post-nav">
-        <div class="nav-grid" style="display:flex;gap:1rem;justify-content:space-between">
-          <div>
+      <nav class="post-nav" aria-label="Post navigation">
+        <div class="nav-grid">
+          <div class="nav-cell">
             {{- if ge $idx 1 -}}
               {{- $prev := index $uniq (sub $idx 1) -}}
-              <a href="{{ $prev.RelPermalink }}">← Previous</a>
+              <a class="nav-link" href="{{ $prev.RelPermalink }}" aria-label="Previous: {{ $prev.Title }}">← Previous</a>
             {{- end -}}
           </div>
-          <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
-          <div>
+
+          <div class="nav-cell nav-center">
+            <a class="nav-link" href="{{ "/" | relURL }}" aria-label="Back to Home">Back to Home</a>
+          </div>
+
+          <div class="nav-cell" style="text-align:right">
             {{- if and (ge $idx 0) (lt (add $idx 1) (len $uniq)) -}}
               {{- $next := index $uniq (add $idx 1) -}}
-              <a href="{{ $next.RelPermalink }}">Next →</a>
+              <a class="nav-link" href="{{ $next.RelPermalink }}" aria-label="Next: {{ $next.Title }}">Next →</a>
             {{- end -}}
           </div>
         </div>
