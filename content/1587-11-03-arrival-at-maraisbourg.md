@@ -25,7 +25,7 @@ foreshadow:
 
 The road from the Blackwood ran through vineyards and drill fields, then widened into the approach where carts and pilgrims stacked in patient ranks. At night inns bought my supper for quiet ballads, and after the rooms slept I stepped cuts behind barns until dew climbed my boots. Word of a bard with a practice blade walked ahead of me. Some laughed. Some listened.
 
-The walls rose with teeth of cannon and a river of banners. At the gate the crowd spoke in half a dozen tongues. A cart rattled past with Rhineland wine. Burghers haggled over tolls. Two Landsknechte compared bruises as if they were coin. Above it all a spire fixed the grey sky and made the streets below feel measured.
+The walls rose with teeth of cannon and a river of banners. At the gate the crowd spoke in half a dozen tongues. A cart rattled past with Rhanubeland wine. Burghers haggled over tolls. Two Landsknechte compared bruises as if they were coin. Above it all a spire fixed the grey sky and made the streets below feel measured.
 
 I asked a boy with a basket of apples for Merryen. His eyes lifted. He pointed toward the Tanner’s Quarter and said the young master kept a hall where the floorboards taught you to move. He said Merryen was writing new pages and that the old men argued but still came to watch.
 
