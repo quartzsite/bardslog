@@ -1,15 +1,44 @@
 ---
-title: "Washed Ashore on the Distant Isles"  
-date: 1588-02-01  
-place: "Shore of the Distant Isles"  
-mood: "Exhausted"  
-lesson: "Sometimes the tide chooses your path"  
----  
-  
-I awoke on a strand of pebbles and salt, the waves having thrown me like driftwood onto a shore I did not know. My hands were still wrapped around the plank that had kept me alive. Seaweed clung to my hair, and my limbs shook with cold.  
-  
-A shadow fell across me. A man stood there with a grin, his hair tied back and a sabre at his side. "Bonona even sends its lads by sea now?" he said. His accent was different—rounder, rougher. He offered me a hand and a crust of bread. I learned his name was Master Carlen Rowen of Lynden.  
-  
-Rowen chuckled at my tale. He mocked the "high-society twirlers" of Bonona, calling them perfumed peacocks. Yet there was kindness behind the teasing. He wrapped me in a cloak and led me to a small cottage overlooking the grey-green water. As we walked, he spoke with pride about the Empire and the free cities that kept its edges sharp. In his mind, Bonona's grace was weakness; Maraisbourg's guilds, he insisted, should have taken the capital long ago.  
-  
-I said little. My body was too tired and my mind too tangled with what I had heard in Bonona. But I felt the warmth of the fire Rowen lit and the welcome of the stew he set before me. I had drifted to a new shore, and a new master had found me.
+title: "Washed Ashore on the Distant Isles"
+date: "1588-02-01"
+slug: "1588-02-01-washed-ashore-on-the-distant-isles"
+place: "Shore of the Distant Isles"
+mood: "Exhausted"
+lesson: "Sometimes the tide chooses your path"
+arc: "Distant Isles"
+chronology:
+  index: 33
+  prev: "1588-01-23-mutiny-and-shipwreck"
+  next: "1588-02-02-meeting-master-carlen-rowen"
+tags: ["sea", "shipwreck", "rescue", "sabre", "exile"]
+factions: ["Isles Fisherfolk", "Bononese Guild", "Imperial Loyalists"]
+voices: ["Tide", "Gull", "Hearth"]
+foreshadow:
+  - "Driftwood can become a staff."
+  - "Grace and grit will cross blades."
+  - "A coast sharpens what the sea leaves dull."
+---
+
+# Washed Ashore on the Distant Isles  
+**1588-02-01**  
+*Shore of the Distant Isles*
+
+I woke on a strand of pebbles and salt, my arms locked around the plank that had kept me afloat.  
+Seaweed glued my hair to my face; cold shook the marrow in my bones. The surf breathed in and out like a sleeping beast.
+
+A shadow leaned over me. A man with his hair tied back, a sabre riding easy at his hip, grinned down.  
+“Bonona sends its lads by sea now?” His accent was rounder, rougher, the humor quick behind it.  
+He offered a hand and a heel of bread. “Carlen Rowen of Lynden,” he said. “Up you come.”
+
+I told him, haltingly, of storm and wreck. Rowen snorted at the first mention of Bonona.  
+“High-society twirlers,” he said. “Perfumed peacocks with pretty guards.”  
+The words were sharp, but the cloak he wrapped around my shoulders was warmer than any insult was cold.
+
+He led me up a wind-polished path to a low cottage above the grey-green water.  
+A fire caught; a pot began to sing. Between spoonfuls he spoke of the Empire’s edges and the free cities that kept them honed.  
+In his telling, Bonona’s grace was a weakness; Maraisbourg’s guilds, he said, ought to have taken the capital long ago.
+
+I said little. The tide had chosen my path, and my thoughts were still tangled in the whispers I had heard in Bonona.  
+But the stew steadied my hands, and the hearth unknotted my jaw.
+
+I had drifted to a new shore, and a new master had found me.
