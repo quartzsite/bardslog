@@ -1,4 +1,3 @@
-<!-- layouts/_default/single.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,22 +21,11 @@
         {{ .Content }}
       </article>
 
-      {{/* Build a de-duplicated, stably sorted list of posts by permalink */}}
-      {{- $all := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
-      {{- $seen := newScratch -}}
-      {{- $uniq := slice -}}
-      {{- range $p := $all -}}
-        {{- $key := $p.RelPermalink -}}
-        {{- if not ($seen.Get $key) -}}
-          {{- $seen.Set $key true -}}
-          {{- $uniq = $uniq | append $p -}}
-        {{- end -}}
-      {{- end -}}
-
-      {{/* Locate current index inside the unique list */}}
+      {{/* --- Robust prev/next by permalink --- */}}
+      {{- $pages := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
       {{- $idx := -1 -}}
-      {{- range $i, $p := $uniq -}}
-        {{- if eq $p.File.Path .File.Path -}}
+      {{- range $i, $p := $pages -}}
+        {{- if eq $p.Permalink $.Permalink -}}
           {{- $idx = $i -}}
         {{- end -}}
       {{- end -}}
@@ -46,17 +34,17 @@
         <div class="nav-grid" style="display:flex;gap:1rem;justify-content:space-between">
           <div>
             {{- if ge $idx 1 -}}
-              {{- $prev := index $uniq (sub $idx 1) -}}
+              {{- $prev := index $pages (sub $idx 1) -}}
               <a href="{{ $prev.RelPermalink }}">← Previous</a>
             {{- end -}}
           </div>
+
           <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
+
           <div>
-            {{- if lt (add $idx 1) (len $uniq) -}}
-              {{- $next := index $uniq (add $idx 1) -}}
-              {{- if ne $next.RelPermalink .RelPermalink -}}
-                <a href="{{ $next.RelPermalink }}">Next →</a>
-              {{- end -}}
+            {{- if and (ge $idx 0) (lt (add $idx 1) (len $pages)) -}}
+              {{- $next := index $pages (add $idx 1) -}}
+              <a href="{{ $next.RelPermalink }}">Next →</a>
             {{- end -}}
           </div>
         </div>
