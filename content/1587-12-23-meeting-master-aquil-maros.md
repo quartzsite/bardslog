@@ -7,7 +7,7 @@ mood: "humbled"
 arc: "Distant Isles"
 lesson: "Grace and grit can share a blade"
 chronology:
-  index: 42
+  index: 25
   prev: "1588-02-01-washed-ashore-on-the-distant-isles"
   next: "1588-02-04-sabre-lessons-in-the-isles"
 tags: ["journey", "lynden", "sabre", "sprezzatura", "measure"]
