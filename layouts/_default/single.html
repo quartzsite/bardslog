@@ -1,9 +1,9 @@
+<!-- layouts/_default/single.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{{ .Title }} – {{ .Site.Title }}</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
@@ -15,67 +15,52 @@
       <h2>{{ .Title }}</h2>
 
       {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}">
+        <img src="{{ . }}" alt="{{ $.Title }}" />
       {{ end }}
 
       <article>
         {{ .Content }}
       </article>
 
-      {{/* -------- Robust prev/next -------- */}}
-      {{- $cur := . -}}
-      {{- $all := where site.RegularPages "Kind" "page" -}}
-      {{- $all = where $all "Section" "ne" "lutebox" -}}
-      {{- $all = sort $all "Date" "asc" "Title" "asc" -}}
+      {{/* Build a de-duplicated, stably sorted list of posts by permalink */}}
+      {{- $all := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
+      {{- $seen := newScratch -}}
+      {{- $uniq := slice -}}
+      {{- range $p := $all -}}
+        {{- $key := $p.RelPermalink -}}
+        {{- if not ($seen.Get $key) -}}
+          {{- $seen.Set $key true -}}
+          {{- $uniq = $uniq | append $p -}}
+        {{- end -}}
+      {{- end -}}
 
-      {{- /* Find the first index whose Permalink matches the current page */ -}}
+      {{/* Locate current index inside the unique list */}}
       {{- $idx := -1 -}}
-      {{- range $i, $p := $all -}}
-        {{- if eq $p.Permalink $cur.Permalink -}}
+      {{- range $i, $p := $uniq -}}
+        {{- if eq $p.File.Path .File.Path -}}
           {{- $idx = $i -}}
-          {{- break -}}
-        {{- end -}}
-      {{- end -}}
-
-      {{- /* Compute previous (skip duplicates that equal current) */ -}}
-      {{- $prev := nil -}}
-      {{- if ge $idx 1 -}}
-        {{- $cand := index $all (sub $idx 1) -}}
-        {{- if eq $cand.Permalink $cur.Permalink -}}
-          {{- if ge $idx 2 -}}
-            {{- $prev = index $all (sub $idx 2) -}}
-          {{- end -}}
-        {{- else -}}
-          {{- $prev = $cand -}}
-        {{- end -}}
-      {{- end -}}
-
-      {{- /* Compute next (skip duplicates that equal current) */ -}}
-      {{- $next := nil -}}
-      {{- $n := len $all -}}
-      {{- if lt (add $idx 1) $n -}}
-        {{- $cand := index $all (add $idx 1) -}}
-        {{- if eq $cand.Permalink $cur.Permalink -}}
-          {{- if lt (add $idx 2) $n -}}
-            {{- $next = index $all (add $idx 2) -}}
-          {{- end -}}
-        {{- else -}}
-          {{- $next = $cand -}}
         {{- end -}}
       {{- end -}}
 
       <nav class="post-nav">
         <div class="nav-grid" style="display:flex;gap:1rem;justify-content:space-between">
           <div>
-            {{ with $prev }}<a href="{{ .RelPermalink }}">← Previous</a>{{ end }}
+            {{- if ge $idx 1 -}}
+              {{- $prev := index $uniq (sub $idx 1) -}}
+              <a href="{{ $prev.RelPermalink }}">← Previous</a>
+            {{- end -}}
           </div>
           <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
           <div>
-            {{ with $next }}<a href="{{ .RelPermalink }}">Next →</a>{{ end }}
+            {{- if lt (add $idx 1) (len $uniq) -}}
+              {{- $next := index $uniq (add $idx 1) -}}
+              {{- if ne $next.RelPermalink .RelPermalink -}}
+                <a href="{{ $next.RelPermalink }}">Next →</a>
+              {{- end -}}
+            {{- end -}}
           </div>
         </div>
       </nav>
-      {{/* -------- /prev/next -------- */}}
     </main>
   </body>
 </html>
