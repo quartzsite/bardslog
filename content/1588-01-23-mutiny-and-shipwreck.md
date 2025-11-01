@@ -1,19 +1,45 @@
 ---
 title: "Mutiny and Shipwreck"
-date: 1588-01-23
+date: "1588-01-23"
+slug: "mutiny-and-shipwreck"
 place: "Western Sea"
 mood: "Shipwrecked"
 lesson: "Even masters cannot tame the storm"
+arc: "Sea Road West"
+chronology:
+  index: 32
+  prev: "1588-01-17-hardship-on-the-waves"
+  next: "1588-02-01-washed-ashore-on-the-distant-isles"
+tags: ["sea", "mutiny", "storm", "shipwreck", "survival"]
+factions: ["Westward Trader Crew", "Mutineers"]
+voices: ["Ledger", "Rope", "Wave"]
+foreshadow:
+  - "A ledger can outweigh a captain."
+  - "Every compass has a point you should not follow."
+  - "Planks float; promises sink."
 ---
 
-The tension that had simmered below decks finally boiled over. Food and water were nearly gone, and the captain’s ledger seemed the only thing fatter than our bellies. At dusk a knot of men confronted him, voices raised, hands on hilts. I knew the fear in their eyes; I had cut through it in training—but there is no drill for hunger.
+# Mutiny and Shipwreck  
+**1588-01-23**  
+*Western Sea*
 
-They seized the captain, bound his hands, and made him walk the plank as the sun bled into the sea. He saluted me before he fell, reminding me of our promise to found a guild, and vanished beneath the waves.
+The tension that had simmered below decks finally boiled.  
+Food and water were nearly gone, and the captain’s ledger seemed the only thing fatter than our bellies.  
+At dusk a knot of men confronted him—voices raised, hands on hilts.  
+I knew the fear in their eyes; I had cut through it in training, but there is no drill for hunger.
 
-With the most seasoned sailor gone, the mutineers argued over charts and currents. They scoffed at my caution and steered us toward a wall of dark cloud, believing a faster route lay through the heart of the storm.
+They seized the captain, bound his hands, and walked him out along a plank lashed over the rail.  
+He met my gaze and gave a small salute—the salute of our promised guild—then stepped into the red wake of sunset and was gone.
 
-When the squall struck, it was like facing a giant with a stick. Masts splintered; sails tore; the deck bucked to fling us into the deep. Men who had called me Master clung to the rigging and prayed. In the end the ship broke apart on unseen rocks.
+With the most seasoned sailor lost to the deep, the mutineers argued over charts and currents.  
+They scoffed at caution and steered for a wall of cloud, certain the fastest road lay through the heart of the storm.
 
-I caught a floating plank and held fast as the sea claimed the *Westward Trader* and those who had mutinied. The storm tossed me like a leaf. Somewhere between wave and wind I thought of the eight-pointed star, turning endlessly, and of the masters whose lessons had borne me this far.
+When the squall struck, it was like facing a giant with a stick.  
+Masts splintered; sails tore; the deck heaved to fling us into the dark.  
+Ropes screamed. Spars scythed. Men who had called me Master clung to rigging and prayed.  
+Somewhere in the blackness the keel kissed unseen rock, and the *Westward Trader* broke her back.
 
-The promise of a guild sank with the captain, but I remained afloat. Where the current would cast me I did not know—only that land lay somewhere ahead, and a new chapter waited on its shore.
+I caught a loose plank and held as the sea tossed me like a leaf.  
+Between wave and wind I thought of the eight-pointed star—of lines begun, lines ended, lines crossed by folly.  
+The promise of a guild sank with the crew, but I remained afloat.  
+Land lay somewhere ahead. A new chapter waited on its shore.
