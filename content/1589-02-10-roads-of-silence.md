@@ -1,14 +1,32 @@
 ---
 title: "Roads of Silence"
-date: 1589-02-10
+date: "1589-02-10"
+slug: "roads-of-silence"
 place: "Empire's Backroads"
-mood: "Contemplative"
+mood: "contemplative"
+arc: "Ashes of Maraisbourg"
 lesson: "The world may burn, but memory guides your steps"
+chronology:
+  index: 45
+  prev: "1589-02-05-the-apprentice-in-hiding"
+  next: "1589-02-14-a-bard-among-ashes"
+tags: ["journey", "memory", "inscription", "restraint", "bandits", "measure"]
+factions: ["Road Wardens", "Bandits", "Censors"]
+voices: ["Wind", "Ash", "Bootsteps"]
+foreshadow:
+  - "Quiet marks on beams will become a map for students who travel by night"
+  - "The name Silent Bard will open one door and close another"
+  - "Green that survives the cinder will shelter a school"
+  - "A compass in the hand will point toward a vow"
 ---
-I left Maraisbourg with only my lute and the weight of ash in my lungs.  
-The Empire's roads wound through fields and forests, past the charred husks of villages where Fechtschules once stood.  
-At each burned hall I carved a verse into a beam or a tree, a fragment of Merryen's compass or a line of Lychenar's song, as if words could keep the wind from carrying them away.  
-I thought often of the hermit in his forest and wondered if any green remained unscorched.  
-Once, bandits sprang from the roadside, their blades bright with rust. I did not cut them, only the cords that held their weapons. The blades fell useless at their feet.  
-They stared, unsure, and one whispered, "The silent bard." They ran, leaving me with the echo of their boots in the mud.  
-The world had grown cruel, but the sword in my hand felt different now — less a weapon than a compass, pointing me toward something I had not yet named.
+
+I left Maraisbourg with my lute and the weight of ash in my lungs.  
+The backroads wound through fields and dark copses, past halls burned to ribs where Fechtschules had stood.  
+At each ruin I carved a short verse into a beam or a standing tree, a line of Merryen’s compass or a bar from Lychenar’s song, as if words could anchor what the wind would steal.
+
+I thought of the hermit and wondered if any clearing still held green.  
+Once, bandits slid from a ditch with rust bright on their blades. I did not cut them. I cut the cords that held their weapons. Steel dropped into mud and the men stared. One breathed, “The Silent Bard,” and they ran.
+
+The world has grown cruel, yet the sword in my hand feels changed. It is less a weapon and more a compass. It points toward a task I have not yet named, and my steps keep time with a song I am still learning.
+
+{{< lutebox pool="letters" title="Open a Letter from the Quiet Roads" hint="Verses carved at burned halls; cords cut from bandit blades; a new name whispered in mud." cooldown="0" >}}
