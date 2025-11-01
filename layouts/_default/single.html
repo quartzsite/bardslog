@@ -11,7 +11,10 @@
     </header>
 
     <main>
-      <h2>{{ .Title }}</h2>
+      {{/* Show the template title only if the page doesn't ask to hide it */}}
+      {{ if not .Params.hide_title }}
+        <h2>{{ .Title }}</h2>
+      {{ end }}
 
       {{ with .Params.image }}
         <img src="{{ . }}" alt="{{ $.Title }}" />
@@ -21,10 +24,20 @@
         {{ .Content }}
       </article>
 
-      {{/* --- Robust prev/next by permalink --- */}}
-      {{- $pages := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
+      {{/* ----- Robust prev/next: sort, then de-duplicate by permalink ----- */}}
+      {{- $sorted := sort site.RegularPages "Date" "asc" "Title" "asc" -}}
+      {{- $seen := newScratch -}}
+      {{- $uniq := slice -}}
+      {{- range $p := $sorted -}}
+        {{- $k := $p.Permalink -}}
+        {{- if not ($seen.Get $k) -}}
+          {{- $uniq = $uniq | append $p -}}
+          {{- $seen.Set $k true -}}
+        {{- end -}}
+      {{- end -}}
+
       {{- $idx := -1 -}}
-      {{- range $i, $p := $pages -}}
+      {{- range $i, $p := $uniq -}}
         {{- if eq $p.Permalink $.Permalink -}}
           {{- $idx = $i -}}
         {{- end -}}
@@ -34,16 +47,14 @@
         <div class="nav-grid" style="display:flex;gap:1rem;justify-content:space-between">
           <div>
             {{- if ge $idx 1 -}}
-              {{- $prev := index $pages (sub $idx 1) -}}
+              {{- $prev := index $uniq (sub $idx 1) -}}
               <a href="{{ $prev.RelPermalink }}">← Previous</a>
             {{- end -}}
           </div>
-
           <div><a href="{{ "/" | relURL }}">Back to Home</a></div>
-
           <div>
-            {{- if and (ge $idx 0) (lt (add $idx 1) (len $pages)) -}}
-              {{- $next := index $pages (add $idx 1) -}}
+            {{- if and (ge $idx 0) (lt (add $idx 1) (len $uniq)) -}}
+              {{- $next := index $uniq (add $idx 1) -}}
               <a href="{{ $next.RelPermalink }}">Next →</a>
             {{- end -}}
           </div>
