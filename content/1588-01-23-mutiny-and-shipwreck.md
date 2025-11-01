@@ -44,4 +44,4 @@ Between wave and wind I thought of the eight-pointed star—of lines begun, line
 The promise of a guild sank with the crew, but I remained afloat.  
 Land lay somewhere ahead. A new chapter waited on its shore.
 
-{{< lutebox pool=“letters” title=“Open the Letter: Mutiny and Shipwreck” hint=“A captain’s ledger, a raised blade, and a storm that answers no man.” cooldown=“0” >}}
+{{< lutebox pool="letters" title="Open the Letter: Mutiny and Shipwreck" hint="A captain’s ledger, a raised blade, and a storm that answers no man." cooldown="0" >}}
