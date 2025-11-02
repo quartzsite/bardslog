@@ -19,6 +19,10 @@ foreshadow:
   - "A blank page waits for what water and wind will teach"
 ---
 
+# The Last Lesson 
+**1589-04-12**  
+*Beside a Forest Stream*
+
 ## What the art is
 
 - Keep the art free. Teach for love, not for coin. Copy with a steady hand.
