@@ -1,70 +1,46 @@
 ---
 title: "Washed Ashore on the Distant Isles"
 date: "1588-02-01"
-slug: "washed-ashore-on-the-distant-isles"
-place: "Black Reef, Distant Isles"
-mood: "haggard but exact"
-arc: "Wreck, Weather, and the Fifth"
-lesson: "Discipline before blades; count first, cut last."
+slug: "1588-02-01-washed-ashore-on-the-distant-isles"
+place: "Shore of the Distant Isles"
+mood: "Exhausted"
+lesson: "Sometimes the tide chooses your path"
+arc: "Distant Isles"
 chronology:
-  index: 49
+  index: 33
   prev: "1588-01-23-mutiny-and-shipwreck"
   next: "1588-02-02-meeting-master-carlen-rowen"
-tags: ["wreck", "survival", "ethic", "count-first-cut-last"]
-factions: ["Distant Isles"]
-voices: ["Garran Strake (master-at-arms)"]
+tags: ["sea", "shipwreck", "rescue", "sabre", "exile"]
+factions: ["Isles Fisherfolk", "Bononese Guild", "Imperial Loyalists"]
+voices: ["Tide", "Gull", "Hearth"]
 foreshadow:
-  - "A fifth voice will arrive by wind and map."
-  - "Signals draw knives as quickly as help."
-  - "Numbers become a shelter stronger than steel."
+  - "Driftwood can become a staff."
+  - "Grace and grit will cross blades."
+  - "A coast sharpens what the sea leaves dull."
 ---
 
 # Washed Ashore on the Distant Isles  
 **1588-02-01**  
-*Black Reef, Distant Isles — Garran Strake (master-at-arms)*
+*Shore of the Distant Isles*
 
-Stone under my ribs. The sea picking my pockets. I spat brine, counted to five, and only reached four.
+I woke on a strand of pebbles and salt, my arms locked around the plank that had kept me afloat.  
+Seaweed glued my hair to my face; cold shook the marrow in my bones. The surf breathed in and out like a sleeping beast.
 
-“Osric!”—too loud. Wind carries fear better than orders. A cough from the wrack line answered, then Rell’s whistle—two short, one long—_alive but pinned_. I found a sprung oar—ash, good flex, iron cuff—more spear than paddle today.
+A shadow leaned over me. A man with his hair tied back, a sabre riding easy at his hip, grinned down.  
+"Bonona sends its lads by sea now?" His accent was rounder, rougher, the humor quick behind it.  
+He offered a hand and a heel of bread. "Carlen Rowen of Lynden," he said. "Up you come."
 
-**Count first.** Four moving: Osric Talledger with his ledger still lashed under his shirt; Elowen “Rell” Rell tangled in net; Ivor Blackmere face-down but cursing the surf for salting his stew; and me. One more shape downshore, too still—_not ours_. The Trader had sailed light; luck for once.
+I told him, haltingly, of storm and wreck. Rowen snorted at the first mention of Bonona.  
+"High-society twirlers," he said. "Perfumed peacocks with pretty guards."  
+The words were sharp, but the cloak he wrapped around my shoulders was warmer than any insult was cold.
 
-Rell stopped fighting as I levered the net. We rode the heave; tarred twine barked, let go. “Aye, Sergeant,” she said by habit. I corrected her with a hand. “Boatswain. Ship’s gone. Titles stay.”
+He led me up a wind-polished path to a low cottage above the grey-green water.  
+A fire caught; a pot began to sing. Between spoonfuls he spoke of the Empire's edges and the free cities that kept them honed.  
+In his telling, Bonona's grace was a weakness; Maraisbourg's guilds, he said, ought to have taken the capital long ago.
 
-Osric squinted through salt. “Count?” he asked.
+I said little. The tide had chosen my path, and my thoughts were still tangled in the whispers I had heard in Bonona.  
+But the stew steadied my hands, and the hearth unknotted my jaw.
 
-“Four,” I said. “Make it five if you insist.” He grinned around a cough and patted the oilskin: an accountant rescuing numbers from a sinking world.
+I had drifted to a new shore, and a new master had found me.
 
-Ivor brandished a section of deck grating. “Found the pantry,” he said—meaning wood. His smile was cracked porcelain but serviceable.
-
-We set three jobs before noon.
-
-- **Watch.** Two hours on, two off, eyes to the rip where the reef’s teeth bit hardest. Wreckage, not raiders.
-- **Water.** Rell took a ridge—line coiled, fish spine for a hook. Where the green thickened, a trickle would argue with thirst.
-- **Fire.** Ivor nursed heat without smoke; signals invite answers you can’t afford.
-
-I took **tools**. A shattered yard gave me haft, a pump shard edge. With Osric’s belt iron I bound a spearhead big as my hand—ugly, honest. It would go through fish. Through a man if the math said so.
-
-By dusk we’d raised a lean-to that didn’t leak and a fire more heat than talk. The surf argued in two voices—crash and undertow—and I liked neither. Osric wrote the unwriteable at the fire’s edge: _four souls, one spear, forty fathoms line, nine hooks imagined_. “Do we signal?” he asked.
-
-“Not till we can pay for the answer,” I said. “A flag calls, but it doesn’t choose.”
-
-Rell returned, hands wet, boots limed. “Trickle behind fern,” she reported. “Sweet, slow. We need a catch to argue with it.”  
-“Then nets first, knives later,” I said. “Fish with brains before hunt with steel.” Even Ivor nodded.
-
-We built a neat cairn for the too-still man downshore—three stones. We didn’t rifle. If I ever meet a man who lived on what he took off the dead, I’ll ask him who tallied the interest.
-
-Near moonrise a half barrel rode the rip, kissed the teeth twice, slid into reach. No. 5 by Perin & Sons’ stamp, leak-plugged with seaweed. Inside: three sodden sacks of barley and the Trader’s last prayer.  
-“Stew,” Ivor breathed.  
-“Porridge,” I corrected. “Stew when we can afford salt.”
-
-Second watch, a shadow—low, steady—beyond the teeth. Not barrel, not beam: hull. I let the oar show first, long and harmless. The shadow turned away. I didn’t call it mercy. I called it **accounting**.
-
-At dawn I cut the empty scabbard free and burned it. A man shouldn’t carry the shape of a thing he doesn’t have. Then I drilled the morning words, because repetition is shelter.
-
-“Count first—”  
-“—cut last,” they answered.
-
-That was our beginning on Black Reef: one spear, one barrel, four souls, and a rule that tasted like flint. We’d add water, wind, and stone soon enough. But number came first.
-
-{{< lutebox pool="letters" title="Open the Lutebox" hint="Rescue lives first; triumph later." cooldown="24" >}}
+{{< lutebox pool="letters" title="Open the Letter: Washed Ashore on the Distant Isles" hint="Salt in the lungs, strange shore underfoot, a shadow with a sabre." cooldown="0" >}}
