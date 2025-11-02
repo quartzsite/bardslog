@@ -4,28 +4,32 @@ date: "1588-01-26"
 slug: "trial-by-tide"
 place: "Outer Reef Cut"
 mood: "Wary"
-lesson: "Measure the sea before you leave shore"
+lesson: "Count before you cut"
 arc: "Five Against the Song of War"
 homeExclude: true
 chronology:
   index: 51
   prev: "1588-01-25-fire-wind-water-stone"
-  next: "1588-01-27-out-to-blue"
-tags: ["raft", "navigation", "measure", "sea"]
+  next: "1588-02-10-rule-born-count-first-cut-last"
+tags: ["raft", "tide", "counting", "ember", "smoke", "navigation"]
 factions: ["Crew of Four"]
 voices: ["Tide"]
 foreshadow:
-  - "A star that does not move teaches the rest"
-  - "The reef keeps what it takes"
-  - "Smoke where no village should be"
+  - "The rule will be born from numbers spoken aloud"
+  - "An ember kept in clay will feed a larder"
+  - "Smoke will climb with no answer from the horizon"
+  - "A board will learn to point east"
+  - "The small globe will be crossed when the star will not move"
 ---
 
-We dragged the hull to the channel where the lagoon breathes. Rell counted the sets. Three slow, one fast, then quiet water like a held breath. Garran tested the lashings with both hands. The quartermaster weighed the sail in his palms and called it good enough. I marked a star on a board with charcoal and drew a line to the reef gap.
+We learned the inlet like a page. Three long sets, one short, then still water that holds its breath. We said the count out loud until the mouth of the reef answered to our timing. Garran logged each surge with a notch. Rell called when to push and when to wait. The quartermaster cut no rope until the numbers were sure.
 
-We launched on the quiet and learned at once that the sea keeps its own measure. The outrigger hummed when wind and water agreed, then bucked when they did not. We practiced turning on the breath between sets. We named the points of the compass by what the body must do. Wind for the reach. Water for the slip. Stone for the brace. Flame for the moment the bow cuts free.
+We kept a coal in a clay cup under sand so the next fire would not steal our morning. Meat hung above the smoke. Salt dried on palm leaves. A larder began where there had been only hunger.
 
-When the current took us past the last coral head, I felt the island tug at my heels like a memory. We did not go far. That was the lesson. We let the sail fold and rode the return along the inside of the reef. On the sand again we spoke what we had learned and wrote the words on the board beside the star.
+On the headland we stacked wet driftwood for a black column and dry for a white. Smoke climbed. No craft turned. The sea kept its counsel, and we kept our count.
 
-Tomorrow the blue water. Tonight the small fire and a cup passed hand to hand.
+At dusk I scratched a fixed star onto a board and pegged a line through the center. In the lagoon the board settled true when the raft faced the same star. A toy, then a tool, then a thought we could not put down — a boat that points east if we trust what does not move.
 
-{{< lutebox pool="letters2" title="Open a Letter from the Reef" hint="Charcoal star on a board, a reef gap breathing, four hands on one small hull." cooldown="0" >}}
+We did not leave the reef today. We learned how to leave tomorrow.
+
+{{< lutebox pool="letters2" title="Open a Letter from the Inlet" hint="Three-long one-short then still; a clay cup with a coal; a board that points where the star does not move." cooldown="0" >}}
