@@ -6,6 +6,10 @@ mood: "Philosophical"
 lesson: "To strike is to sing; to sing is to remember"
 ---
 
+# The Four Voices of Lutefecht  
+**1589-03-10**  
+*Crescent Hearth, Port City*
+
 Between classes the room held its breath. The hearth clicked, the shutters tapped, the chalk star waited on the floor. I set my lute on a table and began to name what our bodies had been saying. Not a list of guards. Not a parade of cuts. **Voices**. A name pins a feeling so a student can find it again when courage is thin.
 
 **The Voice of Wind**  
