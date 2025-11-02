@@ -40,14 +40,12 @@
   {{ end }}
 
   <ul>
-    {{- /* Build a list that includes EVERY markdown page:
-          - regular pages, section _index.md, and the site home if it has content
-          - ignore any exclude flags; show all */ -}}
+    {{- /* List EVERY page (regular, section, home). Do not honor exclude flags. */ -}}
     {{- $all := union (slice .Site.Home) .Site.AllPages -}}
-    {{- $md := where $all "File.Ext" "in" (slice "md" "markdown") -}}
-    {{- $sorted := sort $md "Date" "asc" "Title" "asc" -}}
+    {{- $keep := where $all "Kind" "in" (slice "home" "section" "page") -}}
+    {{- $sorted := sort $keep "Date" "desc" "Title" "asc" -}}
 
-    {{- /* Deduplicate by permalink just in case */ -}}
+    {{- /* Deduplicate by permalink */ -}}
     {{- $seen := newScratch -}}
     {{- range $p := $sorted -}}
       {{- $k := $p.RelPermalink -}}
@@ -55,7 +53,7 @@
         {{- $seen.Set $k true -}}
         <li>
           <a href="{{ $p.RelPermalink }}">{{ or $p.Title $p.LinkTitle }}</a>
-          {{ with $p.Date }}<span class="date">— {{ .Format "2006-01-02" }}</span>{{ end }}
+          {{ with $p.Date }}<span class="date">- {{ .Format "2006-01-02" }}</span>{{ end }}
         </li>
       {{- end -}}
     {{- end -}}
