@@ -1,0 +1,31 @@
+---
+title: "Trial by Tide"
+date: "1588-01-26"
+slug: "trial-by-tide"
+place: "Outer Reef Cut"
+mood: "Wary"
+lesson: "Measure the sea before you leave shore"
+arc: "Five Against the Song of War"
+homeExclude: true
+chronology:
+  index: 51
+  prev: "1588-01-25-fire-wind-water-stone"
+  next: "1588-01-27-out-to-blue"
+tags: ["raft", "navigation", "measure", "sea"]
+factions: ["Crew of Four"]
+voices: ["Tide"]
+foreshadow:
+  - "A star that does not move teaches the rest"
+  - "The reef keeps what it takes"
+  - "Smoke where no village should be"
+---
+
+We dragged the hull to the channel where the lagoon breathes. Rell counted the sets. Three slow, one fast, then quiet water like a held breath. Garran tested the lashings with both hands. The quartermaster weighed the sail in his palms and called it good enough. I marked a star on a board with charcoal and drew a line to the reef gap.
+
+We launched on the quiet and learned at once that the sea keeps its own measure. The outrigger hummed when wind and water agreed, then bucked when they did not. We practiced turning on the breath between sets. We named the points of the compass by what the body must do. Wind for the reach. Water for the slip. Stone for the brace. Flame for the moment the bow cuts free.
+
+When the current took us past the last coral head, I felt the island tug at my heels like a memory. We did not go far. That was the lesson. We let the sail fold and rode the return along the inside of the reef. On the sand again we spoke what we had learned and wrote the words on the board beside the star.
+
+Tomorrow the blue water. Tonight the small fire and a cup passed hand to hand.
+
+{{< lutebox pool="letters2" title="Open a Letter from the Reef" hint="Charcoal star on a board, a reef gap breathing, four hands on one small hull." cooldown="0" >}}
