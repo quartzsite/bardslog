@@ -19,6 +19,10 @@ foreshadow:
   - "A chalk mark tonight will become a charter in ink"
 ---
 
+# The Tavern Without a Name  
+**1589-03-01**  
+*Ruined Port City*
+
 In a ruined port city I sought shelter from wind and salt spray.  
 Among broken docks and charred warehouses stood a half collapsed tavern with no signboard.  
 Inside, a few wanderers warmed their hands at a guttering fire: a scarred mercenary with a torn coat, a Bonona student who still wore his sidesword though his eyes were empty, and a monk whose lute had only three strings. They shared cheap wine and the kind of grief that needs no words.
