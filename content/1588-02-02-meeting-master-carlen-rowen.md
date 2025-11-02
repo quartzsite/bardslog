@@ -18,6 +18,10 @@ foreshadow:
   - "Island talk of raids and press gangs nips at the edges of training"
 ---
 
+# Meeting Master Carlen Rowen  
+**1588-02-02**  
+*Lynden, Distant Isles*
+
 The day after he found me, Rowen led me inland. Scrub and stone gave way to pale timber and low eaves. Nets hung to dry. Gulls worried at fish heads. Children chased chickens between racks and boats.  
 "This is Lynden," he said. "Some call it a backwater. It suits me."
 
