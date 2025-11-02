@@ -19,6 +19,10 @@ foreshadow:
   - "A writ will travel farther than its bearer"
 ---
 
+# The Noble's Challenge  
+**1588-04-01**  
+*Crescent Hearth*
+
 He came with rain on his cloak and pride in his step. The room went still the way a string goes still when a hand closes over it. He said that we taught cowardice and called our lessons a dance. I took up my lute and stepped into the street.
 
 The cobbles were slick. Lantern light shook in the puddles. He drew bright steel. I set the lute against my forearm like a small shield.
