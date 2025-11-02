@@ -18,6 +18,10 @@ foreshadow:
   - "City eyes turn toward the Crescent Hearth"
 ---
 
+# A Duel of Belief  
+**1589-03-15**  
+*Street outside the Crescent Hearth*
+
 He came at noon with the harbor wind in his cloak and old campaigns in his eyes. A veteran by the set of his shoulders, he pushed through the tavern door and set a gauntlet on the table.
 
 “You are turning men soft,” he said. “You teach dances where there should be steel.”
