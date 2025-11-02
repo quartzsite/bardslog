@@ -19,6 +19,10 @@ foreshadow:
   - "Keeping the art free will make quiet enemies"
 ---
 
+# A Guild of Light and Ink
+**1588-03-21**  
+*Crescent Hearth, Port City*
+
 By candle and daylight we became a guild without charter. The tables that once held ale now bore quills and blades side by side. The monk’s steady hand traced circles and stars while I set verses in the margins so the motions would not slip from memory when bruises faded.
 
 We copied what could be salvaged, fragments from Lychenar’s cryptic lines, scraps of Maraisbourg drills remembered by heart, notes from Bonona’s compass written from feel rather than theft. For each figure on the page there was a stanza, measure to mark distance, breath to keep tempo, a single word to remind the hand where the edge must turn. Half art, half scripture.
