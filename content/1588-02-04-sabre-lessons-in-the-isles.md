@@ -19,6 +19,10 @@ foreshadow:
   - "The eight pointed star returns in salt and sand"
 ---
 
+# Sabre Lessons in the Isles  
+**1588-02-04**  
+*Lynden Training Yard, Distant Isles*
+
 The morning after I agreed to train with Master Carlen Rowen, he led me to a patch of flattened grass behind his cottage.  
 He carried two curved blades with knuckle guards and pommels carved like horse heads. "These are not your Bononese spaghet twirlers," he said with a grin. "This is a sabre; it sings a rougher tune."
 
