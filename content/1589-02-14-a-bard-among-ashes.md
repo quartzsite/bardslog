@@ -19,6 +19,10 @@ foreshadow:
   - "Sealed pages will one day reopen a Fechtschule door"
 ---
 
+# A Bard Among Ashes
+**1588-02-14**  
+*Abbey near Maraisbourg*
+
 The road brought me to a quiet monastery that had once hosted noisy tournaments.  
 Now the halls were hushed. Monks bent over psalters by candlelight, quills ticking like beetles. Wax and old paper filled the air instead of steel and sweat.
 
