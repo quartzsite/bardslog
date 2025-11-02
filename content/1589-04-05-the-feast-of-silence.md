@@ -19,6 +19,10 @@ foreshadow:
   - "Recognition draws eyes that do not clap"
 ---
 
+# The Feast of Silence
+**1589-04-05**  
+*Crescent Hearth*
+
 We set the long tables end to end and covered ink stains with loaves and stews. Lanterns swung from their hooks. The writ above the hearth caught the firelight like a small sun. The monk tuned a borrowed viol. The veteran kept time on the tabletop with two fingers, stern as any drum.
 
 They came from every corner of the broken Empire: sailors with rope burns, apprentices with chalk on their boots, a clerk with ink on his cuff, the proud noble with no sword at his hip. We ate. We told the kind of stories that walk backward, softening edges without lying. Someone recited the Four Voices. Someone else answered with the names of the steps on the star. When a young student lost a line, the room carried him through without remark.
