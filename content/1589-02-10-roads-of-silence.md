@@ -20,6 +20,10 @@ foreshadow:
   - "A compass in the hand will point toward a vow"
 ---
 
+# Roads of Silence
+**1588-02-10**  
+*Empire's Backroads*
+
 I left Maraisbourg with my lute and the weight of ash in my lungs.  
 The backroads wound through fields and dark copses, past halls burned to ribs where Fechtschules had stood.  
 At each ruin I carved a short verse into a beam or a standing tree, a line of Merryen’s compass or a bar from Lychenar’s song, as if words could anchor what the wind would steal.
