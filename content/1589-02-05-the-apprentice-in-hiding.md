@@ -20,6 +20,10 @@ foreshadow:
   - "A noble challenge will test a vow"
 ---
 
+# The Apprentice in Hiding 
+**1588-02-05**  
+*Maraisbourg*
+
 In an alley between the ruins of Maraisbourg I heard the whisper of steel where none should be.  
 A skinny boy stood there with a stick held like Merryen’s blade, tracing faint compass petals in the mud. He moved alone and hungry, repeating footwork he had stolen from a glimpse of pages.
 
