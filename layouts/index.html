@@ -41,13 +41,14 @@
 
   <ul>
     {{- $seen := newScratch -}}
-    {{- range sort site.RegularPages "Date" "asc" "Title" "asc" -}}
-      {{- $k := .RelPermalink -}}
+    {{- $pages := sort (where .Site.RegularPages ".Params.homeExclude" "ne" true) "Date" "asc" "Title" "asc" -}}
+    {{- range $p := $pages -}}
+      {{- $k := $p.RelPermalink -}}
       {{- if not ($seen.Get $k) -}}
         {{- $seen.Set $k true -}}
         <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="date">— {{ .Date.Format "2006-01-02" }}</span>
+          <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+          <span class="date">— {{ $p.Date.Format "2006-01-02" }}</span>
         </li>
       {{- end -}}
     {{- end -}}
