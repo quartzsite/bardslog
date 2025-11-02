@@ -19,6 +19,10 @@ foreshadow:
   - "Notes and diagrams will grow into a primer that others can copy"
 ---
 
+# Lessons at the Crescent Hearth
+**1588-03-03**  
+*The Crescent Hearth, Seagate Quarter*
+
 By dawn we had turned ruin into room. We swept broken glass into a corner, planed splinters from the floorboards, and set the long tavern tables upright as if they were sturdy pells. The hearth coughed back to life; lanterns swung from ceiling hooks like slow pendulums marking time. A painted crescent hung above the bar, and in its dim light the faces that had wandered in, soldier, student, sailor, monk, began to look less like strangers and more like a class.
 
 I told them we would not begin with stances. Stances are where one ends when one knows what one is doing. We would begin instead with principles.
