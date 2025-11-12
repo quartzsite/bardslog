@@ -27,7 +27,7 @@
 </style>
 
 {{/* Inline from data/lutebox/pools/letters.json (no fetch) */}}
-{{- $pool := site.Data.lutebox.pools.letters | default (dict "items" (slice) "odds" (dict)) -}}
+{{- $pool := .Site.Data.lutebox.pools.letters | default (dict "items" (slice) "odds" (dict)) -}}
 
 <script>
 (() => {
